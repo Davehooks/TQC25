@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 06f7d0f2296d1b548b0d3571d1818dc1
+guid: 3480922da05cd5a4aacc814c60b027d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7510131475040605336
-    second: TanqueProjectile_0
-  - first:
-      213: 3060032133114802307
-    second: TanqueProjectile_1
-  - first:
-      213: -9143227912316994316
-    second: TanqueProjectile_2
-  - first:
-      213: -5251301483471861308
-    second: TanqueProjectile_3
+      213: -400737993670264652
+    second: "F\xE1brica_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,56 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TanqueProjectile_0
+      name: "F\xE1brica_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 31
-        height: 24
+        y: 384
+        width: 480
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,74 +115,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86b69bdb637a6c790800000000000000
-      internalID: -7510131475040605336
+      spriteID: 4b8f74ffaea407af0800000000000000
+      internalID: -400737993670264652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TanqueProjectile_1
+      name: "F\xE1brica_1"
       rect:
         serializedVersion: 2
-        x: 31
-        y: 4
-        width: 32
-        height: 24
+        x: 0
+        y: 0
+        width: 480
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 380b697230b677a20800000000000000
-      internalID: 3060032133114802307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TanqueProjectile_2
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 4
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fcb8e918aabc1180800000000000000
-      internalID: -9143227912316994316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TanqueProjectile_3
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 4
-        width: 32
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c98d259f11af17b0800000000000000
-      internalID: -5251301483471861308
+      spriteID: eab8d30f24e34f44d98d8ddce4ade1b4
+      internalID: 1347099531
       vertices: []
       indices: 
       edges: []
@@ -239,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b00601e92d0b56f4487e3ef0fdc4744b
     internalID: 0
     vertices: []
     indices: 
@@ -247,12 +155,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":480.0,"y":384.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TanqueProjectile_0: -7510131475040605336
-      TanqueProjectile_1: 3060032133114802307
-      TanqueProjectile_2: -9143227912316994316
-      TanqueProjectile_3: -5251301483471861308
+      "F\xE1brica_0": -400737993670264652
+      "F\xE1brica_1": 1347099531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

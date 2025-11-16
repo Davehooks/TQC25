@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 162bbe65e867e754b920744880f80dbf
+guid: 21b1369939799f64393aef3cca346a1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4890769148847542423
-    second: RedEnemySheet_0
+      213: 83521634984499261
+    second: arvere_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedEnemySheet_0
+      name: arvere_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 13
         y: 0
-        width: 38
-        height: 52
+        width: 73
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96fa08c1f5f702cb0800000000000000
-      internalID: -4890769148847542423
+      spriteID: d389f480c7ab82100800000000000000
+      internalID: 83521634984499261
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RedEnemySheet_0: -4890769148847542423
+      arvere_0: 83521634984499261
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

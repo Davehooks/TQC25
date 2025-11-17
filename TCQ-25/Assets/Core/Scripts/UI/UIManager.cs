@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject[] _vida;
     [SerializeField] private Sprite[] _vidas;
 
+    private bool gameStarted = false;
 
     private void Awake()
     {
@@ -49,6 +50,8 @@ public class UIManager : MonoBehaviour
     public void OnFxVolumeChanged(float volume) // vai no Slider FX
     {
         GameSettingsManager.SettingsInstance.SetFxVolume(volume);
+
+        if (!gameStarted ) { gameStarted = true;return; }
 
         if (!_testSound.isPlaying)
         {

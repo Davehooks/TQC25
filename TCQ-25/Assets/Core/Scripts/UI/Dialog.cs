@@ -9,7 +9,7 @@ public class Dialog : MonoBehaviour
     [Header("Referencias")]
     [SerializeField] private Image _profile;
     public TMP_Text _speakText;
-    [SerializeField] private AudioSource _blablation;
+    [SerializeField] private AudioSource _audioSource;
      public GameObject _UITutorial;
 
     [Header("Configs da fala")]
@@ -20,6 +20,7 @@ public class Dialog : MonoBehaviour
     public int _speakIndex;
     private void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         _profileAnimator = _profile.GetComponent<Animator>();
         _speakIndex = 0;
     }
@@ -29,8 +30,9 @@ public class Dialog : MonoBehaviour
         
         _speakText.text = "";
         _profileAnimator.SetBool("isTalking", true);
-        foreach( char letter in phrases[_speakIndex].ToCharArray())
+        foreach (char letter in phrases[_speakIndex].ToCharArray())
         {
+            _audioSource.pitch = UnityEngine.Random.Range(0.0f, 1.0f); // é o que faz o baurulho de robô
             _speakText.text += letter;
             yield return new WaitForSeconds(_textSpeed);
         }

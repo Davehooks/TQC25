@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.5248, y: 0.1806}
+  m_AnchoredPosition: {x: -0.5248, y: -0.29}
   m_SizeDelta: {x: 3.3416, y: 3.9624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8959642698803654529
@@ -187,7 +187,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.35606408, y: -0.19145584}
+  m_Offset: {x: -0.18569183, y: 0.07363224}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -197,7 +197,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.3182673, y: 1.8318443}
+  m_Size: {x: 2.753868, y: 2.3620205}
   m_EdgeRadius: 0
 --- !u!114 &5675192197478132364
 MonoBehaviour:
@@ -800,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.56, y: 0.00000041723}
+  m_AnchoredPosition: {x: 0.56, y: 0.49}
   m_SizeDelta: {x: 21, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &13872871583005766

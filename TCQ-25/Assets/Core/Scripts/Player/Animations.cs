@@ -9,6 +9,7 @@ public class Animations : MonoBehaviour
     [SerializeField] private Animator _currentAnimator;
     private SpriteRenderer _spriteRenderer;
     [SerializeField] private ParticleSystem[] _particle;
+    [SerializeField] private ParticleSystem _choqueParticle;
     private void Start()
     {
         player = GetComponent<PlayerController>();
@@ -16,23 +17,37 @@ public class Animations : MonoBehaviour
     }
     public void AnimationFunc(int currentModeState, bool IsGrounded, bool _isCrouching, Vector2 moveInput)
     {
-        //Puxa os modos do personagem e coloca na cor certa
-        switch (currentModeState)
+        if (_currentAnimator.runtimeAnimatorController != _animators[currentModeState])
         {
-            case 0:
-                _currentAnimator.runtimeAnimatorController = _animators[0];
-                break;
-            case 1:
-                _currentAnimator.runtimeAnimatorController = _animators[1]; // agility
-                break;
-            case 2:
-                _currentAnimator.runtimeAnimatorController = _animators[2]; //defense
-                break;
+            var main = _choqueParticle.main;
 
-            case 3:
-                _currentAnimator.runtimeAnimatorController = _animators[3]; // attack
-                break;
-        }
+            Debug.Log("Animator diferente do anterior.");
+            switch (currentModeState)
+            {
+                case 0:
+                    _currentAnimator.runtimeAnimatorController = _animators[0];
+                    main.startColor = Color.white;
+                    _choqueParticle.Play();
+                    return;
+                case 1:
+                    _currentAnimator.runtimeAnimatorController = _animators[1]; // agility
+                    main.startColor = Color.green;
+                    _choqueParticle.Play();
+                    return;
+                case 2:
+                    _currentAnimator.runtimeAnimatorController = _animators[2]; //defense
+                    main.startColor = Color.blue;
+                    _choqueParticle.Play();
+                    return;
+                case 3:
+                    _currentAnimator.runtimeAnimatorController = _animators[3]; // attack
+                    main.startColor = Color.red;
+                    _choqueParticle.Play();
+                    return;
+            }
+        }//Puxa os modos do personagem e coloca na cor certa
+        
+        UIManager.UImanagerInstance.ModoHud(currentModeState);
         _currentAnimator.SetBool("IsGrounded", IsGrounded); // mostra se t� no ch�o ou n�o
 
         _currentAnimator.SetBool("IsCrouching", _isCrouching); // t� agachado ou n�o
@@ -63,7 +78,7 @@ public class Animations : MonoBehaviour
 
         }
     }
-    public void IsntHit()
+    public void IsntHit() // Usado como event na animação de dano
     {
         player._isBeingHit = false;
     }

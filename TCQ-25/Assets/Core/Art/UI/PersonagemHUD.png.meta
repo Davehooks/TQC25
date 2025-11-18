@@ -1,0 +1,2838 @@
+fileFormatVersion: 2
+guid: 62065560a1059914c80a18cdfe12bed2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3120927627262334937
+    second: GreyFeliz0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreyFeliz0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d79ca04423cf4b20800000000000000
+      internalID: 3120927627262334937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyFeliz1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d96b3efb90225479871f4fb3c08603
+      internalID: -1623197119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyFeliz2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 440
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96308c24c06b6314086115aea2bfa55e
+      internalID: 1885774827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyFeliz3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 440
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4703ecc1f1928478392d224658ec09
+      internalID: 1622277324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyFeliz4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 440
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eeb2bac9a7e4b439eed6e62b66b1f8
+      internalID: -1173422036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyFeliz5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 440
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc54b9849ecbcb04fbf990541a8d7934
+      internalID: 2143505304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148a5260c8d6ac843aecf6fa55136e01
+      internalID: 1299901635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8169e8d53e73c90468149df3f69b28ca
+      internalID: -145023574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab2c895f111e84458dfd3e23d0b1a18
+      internalID: 354616610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb848b04d58ff84d8f0e0e5f8791f29
+      internalID: -1654006122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8949e72e16af7fb45912349a208e8fd8
+      internalID: 2102374610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a80908ae87bbed44b4826632636028c
+      internalID: 1002598627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb27b2b2dd01ba409e5b120910b36d8
+      internalID: 139799047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babcacf09c5e89b47ae0e443d6d03259
+      internalID: 1154345368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyNeutro8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 400
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa213f5f761c294e8bbca5f214d38b8
+      internalID: -1609055837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0963bfa691bf247b9de97fbb153bc8
+      internalID: 995637211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bc1394540ba884494819cb62dac1ca
+      internalID: 1991064198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e08a4ce76f28a4dadf71fec209aeb6
+      internalID: -682087005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fc9e4d9a1cee8499078e8dcf5505eb
+      internalID: -2057784764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a064a93cf98ecd4b83df28ee2a169d4
+      internalID: 1174122468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d302195b85880e42b066ff201ecba2e
+      internalID: -1386937300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488894c273aede54fa60b3c284aecfa6
+      internalID: -751954016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4e3c7e426bed469234dcd2e93b8c1
+      internalID: 1162424103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cb240f5c664ca4ea81c834d83e2d2c
+      internalID: -1031605719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e1cdd53e227b64aabb6065a1e4b927
+      internalID: -1895658522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d48982f2efec40b12b0e9e06e92d7
+      internalID: 1093816822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77de1fd1b5556324d8c78936d02de2c4
+      internalID: 2084293876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyTriste12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 360
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ecd4f5c2839724e98e321b222820c2
+      internalID: 1311554446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c2852a655cd3349b1a16832a4f5feb
+      internalID: 1513059000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0affddcaaaae9664bbfa129e6117008e
+      internalID: -271086605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be9267005f555148896d2cf16906fde
+      internalID: 740717033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf7b00731e039b4e9d87908c800fb0b
+      internalID: 514803530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdc39883720eff40a1a26964d7fc6cf
+      internalID: -805101723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedFeliz5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c952fd5bee21dc747b565e80aeb30c06
+      internalID: -1987460701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4839016a51cc5c04cb4eb884a9317295
+      internalID: 716308935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0385af81bcdb05a489b5a0d043a5ce67
+      internalID: -36079473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca547530ed19eba47ad4c53e1ba19636
+      internalID: -48660856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dc90ece8c9709449cc6d6c819aa33d
+      internalID: -672905648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b399826a37877ec46b0f69eeacfa8bbd
+      internalID: -597795608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0643efd88852c094b974aa91ce790c72
+      internalID: -1452894245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f70a694532cea142bf5d259a45e8277
+      internalID: 284751832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b39ccd1178b87a4b8de02756094127e
+      internalID: 647113763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedNeutro8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 280
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c1a4f1da3ef448baf747a0f38e32e
+      internalID: 787334333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570ac0182e3496b469c4ad7e9d7bff48
+      internalID: -83244876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963c1eb72b893474682a27fa3c0dd1c7
+      internalID: -1627687846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37caae46ad37af9459dcae8c8e219a2c
+      internalID: 538046948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8515cb3ad5b34774588d46c655b958d9
+      internalID: 1985251265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4859b98785ef9a945a3d680eabb770c5
+      internalID: -448053569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44662de1b274c848a81b0d04d7b7715
+      internalID: -422709593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fb02c10a6f7474182ad2ebce50578a
+      internalID: 113847399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642ec6eaff7fda441b5c2cd4eaff352a
+      internalID: 1964994994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da58d6e50eb1a8940853c299a01d2a16
+      internalID: 935875867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e881a0303fb012c49aece7de3f013ba0
+      internalID: 880627963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d8c45c17325a34b9a9dcc77df19905
+      internalID: 1783694691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf3e9326f764c2478f60c14c90ac9da
+      internalID: 1908607631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriste12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 240
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0031f93920e925e469534b469234d1f4
+      internalID: -1366712011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5709a3e054547843bace56b556ef8ff
+      internalID: 1291900795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d4c93418f78c4eb171d15262bec65
+      internalID: 1488156609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 200
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd54f007dc757fc4b9846417ca2a9d55
+      internalID: -629825185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 200
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3811d809068f984f912da4ab732e84f
+      internalID: 1104988093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 200
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ae76b8ef24440428246c16d7e5fc31
+      internalID: -190570677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueFeliz5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 200
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b6e45a7ef986442b1384fa5d8f84d6
+      internalID: 1632645416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c56441b2cae99488d090f75373d64a
+      internalID: 618134395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3aee11da777bd4eb80096eba156f21
+      internalID: 2029017315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fd2e15920c0f843886c0fc92b0f91f
+      internalID: 47482825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800b3fab07a5eb6488ac6e353a52ad4e
+      internalID: 1378955347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eddf7bbf88c7d4c883eaabe082bb56
+      internalID: -1672637447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b621cef4cfdcc9743a3c43e8fb1c9f28
+      internalID: 194489723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da76d305c3eb3942a41fc29258b6f8e
+      internalID: -1713601354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cbc26c0f4c2d44cb2ae7eb62cb3d86
+      internalID: -1300156355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueNeutro8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 160
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104c208eae1dac547ba698873036456e
+      internalID: -1034898273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e982ed6149f4d24aa0e6d15f39a60fd
+      internalID: -1857831033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9625b4a97dc86da45b2285e13958ee7c
+      internalID: -971965968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed71eb4128234824cb29b91efed519c5
+      internalID: -521713593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b158c94e8030843b4360a3520d5046
+      internalID: 636294409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77eee352cfdacd42a9e49391fbe0289
+      internalID: 282502990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61f200a5e89fc341af957f822670764
+      internalID: -1572256703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73cf8e4287612e448b4887a320912bf
+      internalID: 954764137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159d97897aa20bc42bce087800180892
+      internalID: -197685952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511589b8040e8e0489df66f89dea0ae1
+      internalID: 1420026008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44ede8c72203a84a8a8124f7da14ebd
+      internalID: 648567565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc26d2c793a241b43bf30caca1c814b9
+      internalID: 1949681139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20cdadea3ba1ca47be75ced877226bf
+      internalID: 320152472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriste12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 120
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc93bed36c42b848963d4083af8de58
+      internalID: -1015638134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd641080971b6904a87b10da533e384d
+      internalID: -2123429059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40da5d0f68035fd4e885753b50f1d7da
+      internalID: 2049179825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 80
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce0bef1f0e4c4b44aaa080b4c17cfdc
+      internalID: 740640309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a907af76a01dd264091fa8dac0238681
+      internalID: 1067479876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d397ca26775ef24db18ead93d27610a
+      internalID: 1364500701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenFeliz5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36172617b81643849944a1d05d5b5977
+      internalID: -893978348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b2a39d68e07f6478b303d78e83e9b7
+      internalID: -1455874546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bd4e8d6dd6e9043a85e944a0ee3632
+      internalID: 1946766607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1943d9eb5f23c54e9eed97a6659c3f8
+      internalID: 428186935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9461650fd8c0bc74c8abda30767a3fe0
+      internalID: -1455781469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3def130c57dba48b956115649be1ff
+      internalID: -2052982783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30b273523090f246bca679d4d8175e3
+      internalID: -1489101269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8932f32f564034abcea7aca207d91d
+      internalID: -1987277490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d828a8f7b7baf41971be6245377f65
+      internalID: -1920748761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenNeutro8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 40
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61ae3bafd9572469e90b2db7217423
+      internalID: 650296043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6c493d558c23243b0d519f63d7ed40
+      internalID: -1058155236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9404918dab4a3438c1eae82464671f
+      internalID: -825722409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db0dfd5a6d10a449822c0f313649ae0
+      internalID: 1412264526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0739c3928ff8de244b8dfe213ca6e9d2
+      internalID: -1493937233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d4df3c85e9df44a8757be8c0f42b9b
+      internalID: 487180154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e009d4b2281deaa458c637ef2786ba32
+      internalID: 1237844831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785a28289bae70e4ca1ee7f7b50b9e4a
+      internalID: 827008645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562ef203665288a499a9df18587c751b
+      internalID: -1003427937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282b912aaf808c943b7611a16e7b8cfd
+      internalID: -2106952879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4931771da78824fb6dc9e9791140f7
+      internalID: -1943211508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac621f0a1ccbbb47950817cc00666fc
+      internalID: -1656691578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d61bb36d5456b843b3898413a6a3c54
+      internalID: -662232271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenTriste12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f120fdfa095bd564192f6a90a1ff1b99
+      internalID: 1508346148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d7c73fe3a39a86742ae76ef4330c8265
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":28.0,"y":20.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BlueFeliz0: 1291900795
+      BlueFeliz1: 1488156609
+      BlueFeliz2: -629825185
+      BlueFeliz3: 1104988093
+      BlueFeliz4: -190570677
+      BlueFeliz5: 1632645416
+      BlueNeutro0: 618134395
+      BlueNeutro1: 2029017315
+      BlueNeutro2: 47482825
+      BlueNeutro3: 1378955347
+      BlueNeutro4: -1672637447
+      BlueNeutro5: 194489723
+      BlueNeutro6: -1713601354
+      BlueNeutro7: -1300156355
+      BlueNeutro8: -1034898273
+      BlueTriste0: -1857831033
+      BlueTriste1: -971965968
+      BlueTriste10: 1949681139
+      BlueTriste11: 320152472
+      BlueTriste12: -1015638134
+      BlueTriste2: -521713593
+      BlueTriste3: 636294409
+      BlueTriste4: 282502990
+      BlueTriste5: -1572256703
+      BlueTriste6: 954764137
+      BlueTriste7: -197685952
+      BlueTriste8: 1420026008
+      BlueTriste9: 648567565
+      GreenFeliz0: -2123429059
+      GreenFeliz1: 2049179825
+      GreenFeliz2: 740640309
+      GreenFeliz3: 1067479876
+      GreenFeliz4: 1364500701
+      GreenFeliz5: -893978348
+      GreenNeutro0: -1455874546
+      GreenNeutro1: 1946766607
+      GreenNeutro2: 428186935
+      GreenNeutro3: -1455781469
+      GreenNeutro4: -2052982783
+      GreenNeutro5: -1489101269
+      GreenNeutro6: -1987277490
+      GreenNeutro7: -1920748761
+      GreenNeutro8: 650296043
+      GreenTriste0: -1058155236
+      GreenTriste1: -825722409
+      GreenTriste10: -1656691578
+      GreenTriste11: -662232271
+      GreenTriste12: 1508346148
+      GreenTriste2: 1412264526
+      GreenTriste3: -1493937233
+      GreenTriste4: 487180154
+      GreenTriste5: 1237844831
+      GreenTriste6: 827008645
+      GreenTriste7: -1003427937
+      GreenTriste8: -2106952879
+      GreenTriste9: -1943211508
+      GreyFeliz0: 3120927627262334937
+      GreyFeliz1: -1623197119
+      GreyFeliz2: 1885774827
+      GreyFeliz3: 1622277324
+      GreyFeliz4: -1173422036
+      GreyFeliz5: 2143505304
+      GreyHUD_0: 3120927627262334937
+      GreyHUD_1: -1623197119
+      GreyHUD_10: 2102374610
+      GreyHUD_11: 1002598627
+      GreyHUD_12: 139799047
+      GreyHUD_13: 1154345368
+      GreyHUD_14: -1609055837
+      GreyHUD_15: 995637211
+      GreyHUD_16: 1991064198
+      GreyHUD_17: -682087005
+      GreyHUD_18: -2057784764
+      GreyHUD_19: 1174122468
+      GreyHUD_2: 1885774827
+      GreyHUD_20: -1386937300
+      GreyHUD_21: -751954016
+      GreyHUD_22: 1162424103
+      GreyHUD_23: -1031605719
+      GreyHUD_24: -1895658522
+      GreyHUD_25: 1093816822
+      GreyHUD_26: 2084293876
+      GreyHUD_27: 1311554446
+      GreyHUD_3: 1622277324
+      GreyHUD_4: -1173422036
+      GreyHUD_5: 2143505304
+      GreyHUD_6: 1299901635
+      GreyHUD_7: -145023574
+      GreyHUD_8: 354616610
+      GreyHUD_9: -1654006122
+      GreyNeutro0: 1299901635
+      GreyNeutro1: -145023574
+      GreyNeutro2: 354616610
+      GreyNeutro3: -1654006122
+      GreyNeutro4: 2102374610
+      GreyNeutro5: 1002598627
+      GreyNeutro6: 139799047
+      GreyNeutro7: 1154345368
+      GreyNeutro8: -1609055837
+      GreyTriste0: 995637211
+      GreyTriste1: 1991064198
+      GreyTriste10: 1093816822
+      GreyTriste11: 2084293876
+      GreyTriste12: 1311554446
+      GreyTriste2: -682087005
+      GreyTriste3: -2057784764
+      GreyTriste4: 1174122468
+      GreyTriste5: -1386937300
+      GreyTriste6: -751954016
+      GreyTriste7: 1162424103
+      GreyTriste8: -1031605719
+      GreyTriste9: -1895658522
+      PersonagemHUD_0: 3120927627262334937
+      PersonagemHUD_1: -1623197119
+      PersonagemHUD_10: 2102374610
+      PersonagemHUD_100: -825722409
+      PersonagemHUD_101: 1412264526
+      PersonagemHUD_102: -1493937233
+      PersonagemHUD_103: 487180154
+      PersonagemHUD_104: 1237844831
+      PersonagemHUD_105: 827008645
+      PersonagemHUD_106: -1003427937
+      PersonagemHUD_107: -2106952879
+      PersonagemHUD_108: -1943211508
+      PersonagemHUD_109: -1656691578
+      PersonagemHUD_11: 1002598627
+      PersonagemHUD_110: -662232271
+      PersonagemHUD_111: 1508346148
+      PersonagemHUD_12: 139799047
+      PersonagemHUD_13: 1154345368
+      PersonagemHUD_14: -1609055837
+      PersonagemHUD_15: 995637211
+      PersonagemHUD_16: 1991064198
+      PersonagemHUD_17: -682087005
+      PersonagemHUD_18: -2057784764
+      PersonagemHUD_19: 1174122468
+      PersonagemHUD_2: 1885774827
+      PersonagemHUD_20: -1386937300
+      PersonagemHUD_21: -751954016
+      PersonagemHUD_22: 1162424103
+      PersonagemHUD_23: -1031605719
+      PersonagemHUD_24: -1895658522
+      PersonagemHUD_25: 1093816822
+      PersonagemHUD_26: 2084293876
+      PersonagemHUD_27: 1311554446
+      PersonagemHUD_28: 1513059000
+      PersonagemHUD_29: -271086605
+      PersonagemHUD_3: 1622277324
+      PersonagemHUD_30: 740717033
+      PersonagemHUD_31: 514803530
+      PersonagemHUD_32: -805101723
+      PersonagemHUD_33: -1987460701
+      PersonagemHUD_34: 716308935
+      PersonagemHUD_35: -36079473
+      PersonagemHUD_36: -48660856
+      PersonagemHUD_37: -672905648
+      PersonagemHUD_38: -597795608
+      PersonagemHUD_39: -1452894245
+      PersonagemHUD_4: -1173422036
+      PersonagemHUD_40: 284751832
+      PersonagemHUD_41: 647113763
+      PersonagemHUD_42: 787334333
+      PersonagemHUD_43: -83244876
+      PersonagemHUD_44: -1627687846
+      PersonagemHUD_45: 538046948
+      PersonagemHUD_46: 1985251265
+      PersonagemHUD_47: -448053569
+      PersonagemHUD_48: -422709593
+      PersonagemHUD_49: 113847399
+      PersonagemHUD_5: 2143505304
+      PersonagemHUD_50: 1964994994
+      PersonagemHUD_51: 935875867
+      PersonagemHUD_52: 880627963
+      PersonagemHUD_53: 1783694691
+      PersonagemHUD_54: 1908607631
+      PersonagemHUD_55: -1366712011
+      PersonagemHUD_56: 1291900795
+      PersonagemHUD_57: 1488156609
+      PersonagemHUD_58: -629825185
+      PersonagemHUD_59: 1104988093
+      PersonagemHUD_6: 1299901635
+      PersonagemHUD_60: -190570677
+      PersonagemHUD_61: 1632645416
+      PersonagemHUD_62: 618134395
+      PersonagemHUD_63: 2029017315
+      PersonagemHUD_64: 47482825
+      PersonagemHUD_65: 1378955347
+      PersonagemHUD_66: -1672637447
+      PersonagemHUD_67: 194489723
+      PersonagemHUD_68: -1713601354
+      PersonagemHUD_69: -1300156355
+      PersonagemHUD_7: -145023574
+      PersonagemHUD_70: -1034898273
+      PersonagemHUD_71: -1857831033
+      PersonagemHUD_72: -971965968
+      PersonagemHUD_73: -521713593
+      PersonagemHUD_74: 636294409
+      PersonagemHUD_75: 282502990
+      PersonagemHUD_76: -1572256703
+      PersonagemHUD_77: 954764137
+      PersonagemHUD_78: -197685952
+      PersonagemHUD_79: 1420026008
+      PersonagemHUD_8: 354616610
+      PersonagemHUD_80: 648567565
+      PersonagemHUD_81: 1949681139
+      PersonagemHUD_82: 320152472
+      PersonagemHUD_83: -1015638134
+      PersonagemHUD_84: -2123429059
+      PersonagemHUD_85: 2049179825
+      PersonagemHUD_86: 740640309
+      PersonagemHUD_87: 1067479876
+      PersonagemHUD_88: 1364500701
+      PersonagemHUD_89: -893978348
+      PersonagemHUD_9: -1654006122
+      PersonagemHUD_90: -1455874546
+      PersonagemHUD_91: 1946766607
+      PersonagemHUD_92: 428186935
+      PersonagemHUD_93: -1455781469
+      PersonagemHUD_94: -2052982783
+      PersonagemHUD_95: -1489101269
+      PersonagemHUD_96: -1987277490
+      PersonagemHUD_97: -1920748761
+      PersonagemHUD_98: 650296043
+      PersonagemHUD_99: -1058155236
+      RedFeliz0: 1513059000
+      RedFeliz1: -271086605
+      RedFeliz2: 740717033
+      RedFeliz3: 514803530
+      RedFeliz4: -805101723
+      RedFeliz5: -1987460701
+      RedNeutro0: 716308935
+      RedNeutro1: -36079473
+      RedNeutro2: -48660856
+      RedNeutro3: -672905648
+      RedNeutro4: -597795608
+      RedNeutro5: -1452894245
+      RedNeutro6: 284751832
+      RedNeutro7: 647113763
+      RedNeutro8: 787334333
+      RedTriste0: -83244876
+      RedTriste1: -1627687846
+      RedTriste10: 1783694691
+      RedTriste11: 1908607631
+      RedTriste12: -1366712011
+      RedTriste2: 538046948
+      RedTriste3: 1985251265
+      RedTriste4: -448053569
+      RedTriste5: -422709593
+      RedTriste6: 113847399
+      RedTriste7: 1964994994
+      RedTriste8: 935875867
+      RedTriste9: 880627963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

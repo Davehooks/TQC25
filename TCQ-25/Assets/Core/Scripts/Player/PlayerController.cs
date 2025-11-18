@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput))]
+[RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput), typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Componentes")]
-    
     [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] private Animator _animator;
     
     [Header("Estatísticas")]
     [SerializeField] private int maxHealth;
@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool _isFacingRight = false;
     [SerializeField] public bool _isBeingHit = false;
     [SerializeField] private bool _isCrouching = false;
-
     [SerializeField] private Animations _anim;
 
     private Vector2 moveInput;
@@ -35,6 +34,8 @@ public class PlayerController : MonoBehaviour
     private ModeState currentModeState;
 
     public Rigidbody2D Rigidbody => _rb;
+    public Animator Animator => _animator;
+    public Animations AnimationSystem => _anim;
     public bool IsGrounded { get => _isGrounded; set => _isGrounded = value; }
     public bool IsBeingHit => _isBeingHit;
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_anim == null) _anim = GetComponent<Animations>();
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
+        if (_animator == null) _animator = GetComponent<Animator>();
         Debug.Log($"base velocidade inicio:{_baseSpeed}");
         Speed = _baseSpeed;
         Debug.Log($"velocidade inico:{Speed}");
@@ -87,7 +89,6 @@ public class PlayerController : MonoBehaviour
         if (input.started)
         {
             currentMode?.HandleAction1();
-            _anim.PlayAction1();
         }
         
     }
@@ -97,7 +98,6 @@ public class PlayerController : MonoBehaviour
         if (input.started)
         { 
             currentMode?.HandleAction2();
-            _anim.PlayAction2();
         }
     }
 

@@ -43,8 +43,5 @@ public abstract class BasePlayerMode : IPlayerMode
         player.IsCrouching = !player.IsCrouching;
     }
     
-    public virtual void UpdateAnimations()
-    {
-    }
-
+    public virtual void UpdateAnimations() { }
 }

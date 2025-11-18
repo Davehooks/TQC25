@@ -10,14 +10,20 @@ public class Dialog : MonoBehaviour
     [SerializeField] private Image _profile;
     public TMP_Text _speakText;
     [SerializeField] private AudioSource _audioSource;
-     public GameObject _UITutorial;
+    [SerializeField] private GameObject _EButton;
 
     [Header("Configs da fala")]
     [SerializeField] private float _textSpeed = 0.2f;
     [SerializeField] private string[] phrases;
 
+    [Header("LiberarSkill")]
+    [SerializeField] private int _skillToUnlock = 0;
+
+
     private Animator _profileAnimator;
-    public int _speakIndex;
+    [HideInInspector]public int _speakIndex;
+    
+
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -27,7 +33,8 @@ public class Dialog : MonoBehaviour
 
     private IEnumerator TypePhrase() // Faz escrever  letrinha a letrinha
     {
-        
+        if (_speakIndex < phrases.Length - 1) _EButton.SetActive(true);
+
         _speakText.text = "";
         _profileAnimator.SetBool("isTalking", true);
         foreach (char letter in phrases[_speakIndex].ToCharArray())
@@ -37,14 +44,11 @@ public class Dialog : MonoBehaviour
             yield return new WaitForSeconds(_textSpeed);
         }
         _profileAnimator.SetBool("isTalking", false);
-
-        if (_UITutorial != null)
-        { _UITutorial.SetActive(true);}
     }
 
     public void NextPhrase()
-    {
-        if(_speakText.text != phrases[_speakIndex])
+    { 
+        if (_speakText.text != phrases[_speakIndex])
         {
             StopAllCoroutines();
             _speakText.text = phrases[_speakIndex];
@@ -53,9 +57,16 @@ public class Dialog : MonoBehaviour
         }
         else if (_speakIndex < phrases.Length -1)
         {
+            
             _speakIndex++;
             StartCoroutine(TypePhrase());
         }
+        else
+        {
+            UnlockSkill();
+            _EButton.SetActive(false);
+        }
+
     }
 
     public void CallText() // Usado no evento de uma animação
@@ -63,5 +74,12 @@ public class Dialog : MonoBehaviour
         StartCoroutine(TypePhrase());
     }
 
-
+    private void UnlockSkill()
+    {
+        if (_skillToUnlock == 0) return;
+        else if (_skillToUnlock > 0)
+        {
+            UIManager.UImanagerInstance.UnlockSkill(_skillToUnlock);
+        }
+    }
 }

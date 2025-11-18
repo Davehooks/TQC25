@@ -1,5 +1,7 @@
 using TMPro;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -15,9 +17,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private AudioSource _testSound;
 
     [Header("InGame")]
-    [SerializeField] private TextMeshPro _morseUI;
-    [SerializeField] private GameObject[] _vida;
-    [SerializeField] private Sprite[] _vidas;
+    private CallHud callhud;
+
+    private PlayerController _playerController;
+    
+   
 
     private bool gameStarted = false;
 
@@ -36,6 +40,9 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        if(_playerController == null && SceneManager.GetActiveScene().name == "SampleScene")
+            FindAnyObjectByType(typeof(PlayerController));
+        callhud =GetComponent<CallHud>();
         _isFullScreen.isOn = GameSettingsManager.SettingsInstance.IsFullScreen();
         _FXVolumeSliders.value = GameSettingsManager.SettingsInstance.GetFXVolume();
         _MusicVolumeSliders.value = GameSettingsManager.SettingsInstance.GetMusicVolume();
@@ -85,5 +92,13 @@ public class UIManager : MonoBehaviour
         _SettingsPanel.SetActive(false);
     }
 
+    public void UnlockSkill(int i)
+    {
+        callhud.EnableSkill(i);
+    }
 
+    public void ModoHud(int modo)
+    {
+        callhud.ChangeModo(modo);
+    }
 }

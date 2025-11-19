@@ -50,7 +50,7 @@ public class AgilityMode : BasePlayerMode
         
         if (player.Animator != null)
         {
-            player.Animator.SetTrigger("Dash");
+            player._anim.PlayAction1();
             Debug.Log("Animação Dash acionada");
         }
         else

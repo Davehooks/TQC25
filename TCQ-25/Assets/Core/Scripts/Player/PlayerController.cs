@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool _isFacingRight = false;
     [SerializeField] public bool _isBeingHit = false;
     [SerializeField] private bool _isCrouching = false;
-    [SerializeField] private Animations _anim;
+    [SerializeField] public Animations _anim;
 
     private Vector2 moveInput;
     
@@ -96,7 +96,8 @@ public class PlayerController : MonoBehaviour
     public void InputAction2(InputAction.CallbackContext input)
     {
         if (input.started)
-        { 
+        {
+
             currentMode?.HandleAction2();
         }
     }

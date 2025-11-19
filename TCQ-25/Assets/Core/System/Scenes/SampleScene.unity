@@ -15917,6 +15917,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
+      propertyPath: _skillToUnlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
       propertyPath: phrases.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -53127,7 +53131,7 @@ PrefabInstance:
     - target: {fileID: 5938194434216931340, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 176254af4b20e164e95ec750ffb76b52, type: 2}
+      objectReference: {fileID: 9100000, guid: b2936858cc5a81946a1ca641322cb481, type: 2}
     - target: {fileID: 6576585063858561879, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -55465,9 +55469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d2f9a21ec12874689ac7fdf1382f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text:
-  - {fileID: 1149384062}
-  - {fileID: 964550868}
+  text: []
   chuva: {fileID: 1322614225}
 --- !u!114 &2141835439 stripped
 MonoBehaviour:
@@ -55511,13 +55513,15 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 83928bba256bdf84fbf4e49bf28d9f21, type: 2}
   _modosAnimator: {fileID: 0}
   _playerController: {fileID: 0}
+  MorseSprites: []
   _vida: []
-  _morseCodes:
-  - {fileID: 1872963941}
-  - {fileID: 978940013}
-  - {fileID: 219171849}
+  _morseCodesToEnable:
+  - {fileID: 1992249626}
+  - {fileID: 1816446828}
+  - {fileID: 1875605170}
   _morseIndex: 0
   morse: {fileID: 0}
+  morseElements: []
   modo: {fileID: 1478810301}
   Personagem: {fileID: 1478810301}
 --- !u!1 &2144347625

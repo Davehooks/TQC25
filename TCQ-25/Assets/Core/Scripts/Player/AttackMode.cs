@@ -74,12 +74,12 @@ public class AttackMode : BasePlayerMode
     
     private void MeleeAttack()
     {
-        player.Animator.SetTrigger("Melee");
+        player._anim.PlayAction1();
     }
     
     private void ShootLaser()
     {
-        player.Animator.SetTrigger("ShootLaser");
+        player._anim.PlayAction2();
         
         GameObject laser = GameObject.Instantiate(
             laserPrefab, 

@@ -16,7 +16,8 @@ public class CallHud : MonoBehaviour
     [SerializeField] private Image[] _morseCodesToEnable;
     [SerializeField] private int _morseIndex;
     [SerializeField] private Image morse;
-    [SerializeField] private Image modo,Personagem;
+    [SerializeField] private Image[] morseElements;
+    [SerializeField] private Image modo, Personagem;
 
     private void Start()
     {
@@ -43,7 +44,7 @@ public class CallHud : MonoBehaviour
 
     public void EnableSkill(int EnabledSkill)
     {
-        for(int i = 0; i <EnabledSkill; i++)
+        for (int i = 0; i < EnabledSkill; i++)
         {
             if (_morseCodesToEnable[i].gameObject.activeInHierarchy) return;
             else _morseCodesToEnable[i].gameObject.SetActive(true);
@@ -52,14 +53,18 @@ public class CallHud : MonoBehaviour
 
     public void MorseCode(char morse)
     {
-        if (_morseIndex<3)
+        if (_morseIndex < 3)
         {
-            switch(morse) {
+            morseElements[_morseIndex].gameObject.SetActive(true);
+            switch (morse)
+            {
                 case '.':
-                    _morse
+                    morseElements[_morseIndex].sprite = MorseSprites[0];
                     break;
                 case '-':
+                    morseElements[_morseIndex].sprite = MorseSprites[1];
                     break;
+            }
         }
     }
 }

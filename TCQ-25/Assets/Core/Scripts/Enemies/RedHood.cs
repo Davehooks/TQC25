@@ -14,7 +14,7 @@ public class RedHood : Enemy
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float checkRadius = 0.1f; //bem baixo para ser preciso
     
-    private bool isFacingRight = false;
+    [SerializeField] private bool isFacingRight = false;
     [SerializeField] private float shootingTime = 0.2f;
     [SerializeField] private GameObject _prefabProjectile;
     [SerializeField] private bool canShoot = true;

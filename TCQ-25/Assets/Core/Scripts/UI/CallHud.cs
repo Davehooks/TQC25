@@ -9,18 +9,19 @@ public class CallHud : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robô
     [SerializeField] private Animator _modosAnimator;
     [SerializeField] private PlayerController _playerController;
-    [SerializeField] private Sprite[] MorseSprites;
+    [SerializeField] private Sprite[] MorseSprites, modoSprites;
 
     [Header("Referencias da HUD")]
     [SerializeField] private GameObject[] _vida;
     [SerializeField] private Image[] _morseCodesToEnable;
-    [SerializeField] private int _morseIndex;
+    [SerializeField] private int _morseIndex = 0;
     [SerializeField] private Image morse;
     [SerializeField] private Image[] morseElements;
     [SerializeField] private Image modo, Personagem;
 
     private void Start()
     {
+        _morseIndex = 0;
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
 
@@ -31,13 +32,21 @@ public class CallHud : MonoBehaviour
         switch (i)
         {
             case 0:
-                _modosAnimator.runtimeAnimatorController = _playerModosController[0]; break;
+                _modosAnimator.runtimeAnimatorController = _playerModosController[0];
+                modo.sprite = modoSprites[i];
+                 break;
             case 1:
-                _modosAnimator.runtimeAnimatorController = _playerModosController[1]; break;
+                _modosAnimator.runtimeAnimatorController = _playerModosController[1];
+                modo.sprite = modoSprites[i];
+                break;
             case 2:
-                _modosAnimator.runtimeAnimatorController = _playerModosController[2]; break;
+                _modosAnimator.runtimeAnimatorController = _playerModosController[2];
+                modo.sprite = modoSprites[i];
+                break;
             case 3:
-                _modosAnimator.runtimeAnimatorController = _playerModosController[3]; break;
+                _modosAnimator.runtimeAnimatorController = _playerModosController[3];
+                modo.sprite = modoSprites[i];
+                break;
 
         }
     }
@@ -49,22 +58,38 @@ public class CallHud : MonoBehaviour
             if (_morseCodesToEnable[i].gameObject.activeInHierarchy) return;
             else _morseCodesToEnable[i].gameObject.SetActive(true);
         }
+        morse.gameObject.SetActive(true);
     }
 
-    public void MorseCode(char morse)
+    public void MorseCode(char morseChar)
     {
-        if (_morseIndex < 3)
+        if (!morse.gameObject.activeInHierarchy) morse.gameObject.SetActive(true);
+        if(_morseIndex < 3)
         {
             morseElements[_morseIndex].gameObject.SetActive(true);
-            switch (morse)
+            if (morseChar == '.')
             {
-                case '.':
-                    morseElements[_morseIndex].sprite = MorseSprites[0];
-                    break;
-                case '-':
-                    morseElements[_morseIndex].sprite = MorseSprites[1];
-                    break;
+                morseElements[_morseIndex].sprite = MorseSprites[0];
             }
+            else if (morseChar == '-')
+            {
+                morseElements[_morseIndex].sprite = MorseSprites[1];
+            }
+            _morseIndex++;
         }
+        else { Debug.Log("Aqui passou"); }
     }
+
+    public void ZerarMorse()
+    {
+        Animator morseAnim = morse.gameObject.GetComponent<Animator>();
+
+        for (int i = 0;i < morseElements.Length;i++)
+        {
+            morseElements[i].gameObject.SetActive(false);
+        }
+        _morseIndex = 0;
+        morseAnim.SetTrigger("FadeOut");
+    }
+
 }

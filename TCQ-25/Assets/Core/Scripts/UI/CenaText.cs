@@ -7,13 +7,7 @@ public class CenaText : MonoBehaviour
 {
     private bool entrou = false;
     [SerializeField] private TMP_Text[] text;
-    private Collider2D collider;
     [SerializeField] private GameObject chuva;
-
-    private void Start()
-    {
-        collider = GetComponent<Collider2D>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +19,7 @@ public class CenaText : MonoBehaviour
             Debug.Log("Ativou o texto");
             if (chuva != null && chuva.activeInHierarchy)
             {
-                chuva.SetActive(false);
+                chuva.SetActive(!chuva.activeInHierarchy);
             }
         }
     }

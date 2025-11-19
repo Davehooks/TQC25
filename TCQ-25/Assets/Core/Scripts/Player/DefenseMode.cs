@@ -5,8 +5,6 @@ public class DefenseMode : BasePlayerMode
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);
-        player.Speed = player.Speed * 0.8f;
-        player.JumpForce = player.JumpForce * 0.8f;
         Debug.Log("Defense Mode Ativado");
     }
     

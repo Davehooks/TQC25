@@ -53,7 +53,6 @@ public class TriggerCapsula : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Saiu do trigger");
         if (collision.tag == "Player")
         {
             dialog._speakIndex = 0;

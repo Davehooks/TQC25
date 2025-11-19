@@ -11,7 +11,7 @@ public class Morse : MonoBehaviour
 
     private string currentMorse = "";
     public float inputThreshold = 0.3f;
-    public float morseTimeout = 2f; 
+    public float morseTimeout = 2f;
     private Coroutine timeout;
 
     private Dictionary<string, char> morseDictionary = new Dictionary<string, char>()
@@ -19,7 +19,7 @@ public class Morse : MonoBehaviour
         {".-", 'A'}, {"-...", 'B'}, {"-.-.", 'C'}, {"-..", 'D'},
         {".", 'E'}, {"..-.", 'F'}, {"--.", 'G'}, {"....", 'H'},
         {"..", 'I'},{".---", 'J'}, {"-.-", 'K'}, {".-..", 'L'},
-        
+
         {"--", 'M'}, {"-.", 'N'}, {"---", 'O'}, {".--.", 'P'},
         {"--.-", 'Q'}, {".-.", 'R'}, {"...", 'S'}, {"-", 'T'},
         {"..-", 'U'}, {"...-", 'V'}, {".--", 'W'}, {"-..-", 'X'},
@@ -27,7 +27,7 @@ public class Morse : MonoBehaviour
     };
 
     private PlayerController.ModeState GetModeFromChar(char letter)
-    {   
+    {
         return letter switch
         {
             'N' => PlayerController.ModeState.Normal,
@@ -40,19 +40,19 @@ public class Morse : MonoBehaviour
 
     void Update()
     {
-        
+
         var keyboard = Keyboard.current;
-        if (keyboard == null) 
+        if (keyboard == null)
         {
             return;
         }
 
-        if (keyboard.kKey.wasPressedThisFrame)
+        if (keyboard.iKey.wasPressedThisFrame)
         {
             pressStart = Time.time;
             isPressing = true;
 
-            if(timeout != null)
+            if (timeout != null)
             {
                 StopCoroutine(timeout);
             }
@@ -63,51 +63,55 @@ public class Morse : MonoBehaviour
         {
             yield return new WaitForSeconds(morseTimeout);
             Debug.Log($"{morseTimeout} segundos sem apertar, limpando codigo");
+            UIManager.UImanagerInstance.ZerarMorse();
             currentMorse = "";
         }
-        if (keyboard.kKey.wasReleasedThisFrame && isPressing)
+        if (keyboard.iKey.wasReleasedThisFrame && isPressing)
         {
             float pressDuration = Time.time - pressStart;
 
             if (pressDuration < inputThreshold)
             {
                 currentMorse += ".";
+                UIManager.UImanagerInstance.MorseHud('.');
                 Debug.Log("Ponto");
             }
             else
             {
                 currentMorse += "-";
+                UIManager.UImanagerInstance.MorseHud('-');
                 Debug.Log("Traço");
             }
 
             isPressing = false;
             Debug.Log("Código atual: " + currentMorse);
-            
+
         }
 
-        if(!isPressing)
+        if (!isPressing)
         {
 
         }
 
-        if (keyboard.lKey.wasPressedThisFrame)
+        if (keyboard.oKey.wasPressedThisFrame)
         {
             if (morseDictionary.TryGetValue(currentMorse, out char letter))
-{
-    if (playerController == null)
-    {
-        playerController = FindFirstObjectByType<PlayerController>();
-        if (playerController == null)
-        {
-            return;
-        }
-    }
+            {
+                if (playerController == null)
+                {
+                    playerController = FindFirstObjectByType<PlayerController>();
+                    if (playerController == null)
+                    {
+                        return;
+                    }
+                }
 
-    PlayerController.ModeState mode = GetModeFromChar(letter);
-    playerController.SwitchMode(mode);
-}
+                PlayerController.ModeState mode = GetModeFromChar(letter);
+                playerController.SwitchMode(mode);
+            }
 
             currentMorse = "";
+            UIManager.UImanagerInstance.ZerarMorse();
         }
     }
 }

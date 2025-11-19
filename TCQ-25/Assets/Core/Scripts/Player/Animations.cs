@@ -21,7 +21,6 @@ public class Animations : MonoBehaviour
         {
             var main = _choqueParticle.main;
 
-            Debug.Log("Animator diferente do anterior.");
             switch (currentModeState)
             {
                 case 0:
@@ -107,12 +106,6 @@ public class Animations : MonoBehaviour
         }
 
     }
-
-    public void PlayWakeUp()
-    {
-        _currentAnimator.SetTrigger("WakeUP");
-    }
-
     public void PlayDamage()
     {
         _currentAnimator.SetTrigger("Hit");

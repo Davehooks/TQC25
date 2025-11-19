@@ -58,7 +58,6 @@ public class MusicManager : MonoBehaviour
     }
     public void PlayTrack(MusicState state)
     {
-        Debug.Log($"{state}");
         int trackIndex=0;
         if(state == MusicState.Menu)
         {

@@ -6,7 +6,9 @@ public class PlayerCollider : MonoBehaviour
     [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private BoxCollider2D bodyCollider;
     [SerializeField] private PlayerController playerController;
-    [SerializeField] private float _bounce = 5.0f;
+    [SerializeField] private float _bounceY = 5.0f;
+    [SerializeField] private float _bounceX = 3.5f;
+    
     private Rigidbody2D _rb;
 
     void Start()
@@ -21,7 +23,7 @@ public class PlayerCollider : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("COLLIDER: Perdeu uma vida no Collision");
-            playerController.CurrentHealth--;
+            playerController.TakeDamage(1);
             QuicaQuica();
         }
     }
@@ -34,7 +36,7 @@ public class PlayerCollider : MonoBehaviour
         if (enemy != null && collision.CompareTag("Obstacle"))
         {
             Debug.Log("COLLIDER: Perdeu uma vida no Trigger");
-            playerController.CurrentHealth--;
+            playerController.TakeDamage(1);
             QuicaQuica();
         }
         else if (enemy != null)
@@ -60,14 +62,18 @@ public class PlayerCollider : MonoBehaviour
     {
         //aqui ele quica pra cima
             _rb.linearVelocity = Vector2.zero;
-            _rb.AddForceY(_bounce, ForceMode2D.Impulse);
+            _rb.AddForceY(_bounceY, ForceMode2D.Impulse);
+
+        float direction = playerController.IsFacingRight ? -1f : 1f;
+            _rb.AddForceX(_bounceX, ForceMode2D.Impulse);
+
     }
-   /* void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            playerController.IsGrounded = true;
-        }
-    }
-    */
+    /* void OnCollisionEnter2D(Collision2D collision)
+     {
+         if (collision.gameObject.CompareTag("Ground"))
+         {
+             playerController.IsGrounded = true;
+         }
+     }
+     */
 }

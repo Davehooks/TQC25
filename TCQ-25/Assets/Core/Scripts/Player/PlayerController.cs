@@ -53,9 +53,7 @@ public class PlayerController : MonoBehaviour
         if (_anim == null) _anim = GetComponent<Animations>();
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();
-        Debug.Log($"base velocidade inicio:{_baseSpeed}");
         Speed = _baseSpeed;
-        Debug.Log($"velocidade inico:{Speed}");
         JumpForce = _baseJumpForce;
         CurrentHealth = maxHealth;
         InitializeModes();
@@ -168,11 +166,12 @@ public class PlayerController : MonoBehaviour
     {
         if(!_isBeingHit)
         {
-        CurrentHealth -= damage;
-        if (CurrentHealth <= 0)
-        {
-            Destroy(gameObject);
-        }
+            _anim.PlayDamage();
+            CurrentHealth -= damage;
+            if (CurrentHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

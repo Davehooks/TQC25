@@ -101,4 +101,14 @@ public class UIManager : MonoBehaviour
     {
         callhud.ChangeModo(modo);
     }
+
+    public void MorseHud(char morse)
+    {
+        callhud.MorseCode(morse);
+    }
+
+    public void ZerarMorse()
+    {
+        callhud.ZerarMorse();
+    }
 }

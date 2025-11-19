@@ -6,6 +6,7 @@ public class ActivateDeactivateGO : MonoBehaviour
     [SerializeField] private GameObject[] _gameObject;
     [SerializeField] private Image[] _imagens;
     [SerializeField] private Dialog _dialog;
+    [SerializeField] private DialogEnemy _dialogEnemy;
     [SerializeField] private TriggerCapsula trigger;
 
 
@@ -41,6 +42,11 @@ public class ActivateDeactivateGO : MonoBehaviour
     public void CallDialog() // usado na animação pra chamar o balão de fala
     {
         _dialog.CallText();
+    }
+
+    public void CallEnemyDialog() // usado na animação pra chamar o balão de fala
+    {
+        _dialogEnemy.CallText();
     }
 
     public void OpenEntire() // Vai ser usado na animação pra aparecer o cientista quando a fumaça subir, mamãe saiu

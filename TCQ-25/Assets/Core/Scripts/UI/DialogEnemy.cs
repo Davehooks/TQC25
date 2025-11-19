@@ -63,6 +63,7 @@ public class DialogEnemy : MonoBehaviour
             _EButton.SetActive(false);
             BalaoFala.SetActive(false);
             _playerController._isBeingHit = false;
+            _playerController.Speed = _playerController._baseSpeed;
         }
 
     }

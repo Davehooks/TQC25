@@ -10,10 +10,10 @@ public class ChoqueScript : MonoBehaviour
     [SerializeField] private GameObject BalaoFala;
     [SerializeField] private bool Entered = false;
     [SerializeField] private DialogEnemy dialogEnemy;
-
+    float playerSpeed;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !Entered)
         {
             playerController = collision.gameObject.GetComponent<PlayerController>();
             PlayerAnim = playerController.gameObject.GetComponent<Animations>();
@@ -23,16 +23,9 @@ public class ChoqueScript : MonoBehaviour
             UIManager.UImanagerInstance.ModoHud(3);
             Entered = true;
             BalaoFala.SetActive(true);
-            
-            if(BalaoFala.activeInHierarchy)
-            {
             playerController.Speed = 0;
-            }
-            else
-            {
-                playerController.Speed = playerController._baseSpeed;
-                Debug.Log($"{playerController.Speed}");
-            }
+            Entered = true;
+
         }
     }
 
@@ -40,7 +33,6 @@ public class ChoqueScript : MonoBehaviour
     {
         if (BalaoFala.activeInHierarchy && input.performed)
         {
-            Debug.Log("Era pra chamar o prox dialogo");
             dialogEnemy.NextPhrase();
         }
     }

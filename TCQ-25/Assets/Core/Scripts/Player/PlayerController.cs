@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput), typeof(Animator))]
 public class PlayerController : MonoBehaviour
@@ -39,14 +37,15 @@ public class PlayerController : MonoBehaviour
     public Animator Animator => _animator;
     public Animations AnimationSystem => _anim;
     public bool IsGrounded { get => _isGrounded; set => _isGrounded = value; }
-    public bool IsBeingHit => _isBeingHit;
+    public bool IsBeingHit {  get => _isBeingHit; set => _isBeingHit = value; }
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
     public bool IsFacingRight { get => _isFacingRight; set => _isFacingRight = value; }
     public float Speed { get; set; }
     public float JumpForce { get; set; }
     public float ImpulseJump => _impulseJump;
     public float CrouchSlow => _crouchSlow;
-    public int CurrentHealth { get; set; }
+    public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public int MaxHealth { get => maxHealth;}
 
     public enum ModeState { Normal, Agility, Defense, Attack }
 
@@ -56,6 +55,7 @@ public class PlayerController : MonoBehaviour
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();
         if ( soundScript == null) soundScript = GetComponent<PlayerSFX>();
+        _isGrounded = true;
         Speed = _baseSpeed;
         JumpForce = _baseJumpForce;
         CurrentHealth = maxHealth;
@@ -65,8 +65,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log($"base velocidade fixed: {_baseSpeed}");
-        Debug.Log($"velocidade fixed: {Speed}");
         if (!_isBeingHit)
         {
             currentMode?.HandleMovement(moveInput);
@@ -112,8 +110,8 @@ public class PlayerController : MonoBehaviour
     {
         if (_isGrounded && input.performed &&  !_isBeingHit)
         {
-            _anim.PlayJump();
             currentMode?.HandleJump();
+            _anim.PlayJump();
         }
     }
 
@@ -169,16 +167,11 @@ public class PlayerController : MonoBehaviour
     {
         if(!_isBeingHit)
         {
-            soundScript.PlayDamage(false);
-            _anim.PlayDamage();
-            CurrentHealth -= damage;
-            UIManager.UImanagerInstance.VidaHUD();
-
-            if (CurrentHealth <= 0)
-            {
-                soundScript.PlayDamage(true);
-                SceneManager.LoadScene("SampleScene");
-            }
+        CurrentHealth -= damage;
+        if (CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
         }
     }
 
@@ -188,5 +181,16 @@ public class PlayerController : MonoBehaviour
         else if (currentModeState == ModeState.Agility) { return 1; }
         else if (currentModeState == ModeState.Defense) { return 2; }
         return 0;
+    }
+
+    //USADO NA ANIMAÇÃO
+
+    public void SetBeingHit()
+    {
+        IsBeingHit = true;
+    }
+    public void UnsetBeingHit()
+    {
+        IsBeingHit = false;
     }
 }

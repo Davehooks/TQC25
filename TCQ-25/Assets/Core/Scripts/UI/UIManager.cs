@@ -112,7 +112,7 @@ public class UIManager : MonoBehaviour
     }
     public void VidaHUD()
     {
-        callhud.VidaHUD();
+        callhud.VidaPersonagemHUD();
     }
 
 }

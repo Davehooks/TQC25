@@ -22,19 +22,13 @@ public class AttackMode : BasePlayerMode
     {
         if (laserPrefab == null)
         {
-            laserPrefab = Resources.Load<GameObject>("Core/Prefabs/Player/Laser");
+            laserPrefab = Resources.Load<GameObject>("Prefabs/Laser");
             if (laserPrefab != null)
             {
                 Debug.Log("Laser carregado da pasta");
             }
         }
               
-        if (laserPrefab == null)
-        {
-            Debug.LogError("Laser prefab não encontrado'");
-            return;
-        }
-        
         if (firePoint == null)
         {
             firePoint = player.transform.Find("FirePoint");
@@ -49,9 +43,9 @@ public class AttackMode : BasePlayerMode
     {
         GameObject fp = new GameObject("FirePoint");
         fp.transform.SetParent(player.transform);
-        fp.transform.localPosition = new Vector3(0.8f, 0.3f, 0f);
+        fp.transform.localPosition = new Vector3(1f, 0.5f, 0f);
         firePoint = fp.transform;
-        Debug.Log("FirePoint criado automaticamente");
+        Debug.Log("FirePoint criado");
     }
     
     public override void HandleAction1()

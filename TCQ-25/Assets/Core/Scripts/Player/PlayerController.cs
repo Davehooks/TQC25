@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _crouchSlow = 0.7f;
 
     [Header("Som")]
-    [SerializeField] private CallSFX soundScript;
+    [SerializeField] private PlayerSFX soundScript;
     
     [Header("Estado")]
     [SerializeField] private bool _isGrounded = true;
@@ -37,14 +37,15 @@ public class PlayerController : MonoBehaviour
     public Animator Animator => _animator;
     public Animations AnimationSystem => _anim;
     public bool IsGrounded { get => _isGrounded; set => _isGrounded = value; }
-    public bool IsBeingHit => _isBeingHit;
+    public bool IsBeingHit {  get => _isBeingHit; set => _isBeingHit = value; }
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
     public bool IsFacingRight { get => _isFacingRight; set => _isFacingRight = value; }
     public float Speed { get; set; }
     public float JumpForce { get; set; }
     public float ImpulseJump => _impulseJump;
     public float CrouchSlow => _crouchSlow;
-    public int CurrentHealth { get; set; }
+    public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public int MaxHealth { get => maxHealth;}
 
     public enum ModeState { Normal, Agility, Defense, Attack }
 
@@ -53,6 +54,8 @@ public class PlayerController : MonoBehaviour
         if (_anim == null) _anim = GetComponent<Animations>();
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();
+        if ( soundScript == null) soundScript = GetComponent<PlayerSFX>();
+        _isGrounded = true;
         Speed = _baseSpeed;
         JumpForce = _baseJumpForce;
         CurrentHealth = maxHealth;
@@ -178,5 +181,16 @@ public class PlayerController : MonoBehaviour
         else if (currentModeState == ModeState.Agility) { return 1; }
         else if (currentModeState == ModeState.Defense) { return 2; }
         return 0;
+    }
+
+    //USADO NA ANIMAÇÃO
+
+    public void SetBeingHit()
+    {
+        IsBeingHit = true;
+    }
+    public void UnsetBeingHit()
+    {
+        IsBeingHit = false;
     }
 }

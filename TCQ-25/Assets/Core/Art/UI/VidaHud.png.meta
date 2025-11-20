@@ -1,0 +1,952 @@
+fileFormatVersion: 2
+guid: aa693471a4687d2479ab76bce8815a26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6485268242058280361
+    second: LastLife0
+  - first:
+      213: -6249684515995660489
+    second: LastLife1
+  - first:
+      213: -7345658195485027530
+    second: LastLife2
+  - first:
+      213: 393135731511587653
+    second: LastLife3
+  - first:
+      213: -6211583658700448023
+    second: LastLife4
+  - first:
+      213: -2136248707566899866
+    second: LastLife5
+  - first:
+      213: 5240984345049310922
+    second: LastLife6
+  - first:
+      213: 6076891850438596711
+    second: LastLife7
+  - first:
+      213: 8185072064070697315
+    second: LastLife8
+  - first:
+      213: 1847529909948408905
+    second: FullLife0
+  - first:
+      213: -447270942404362294
+    second: FullLife1
+  - first:
+      213: -5157861293779981773
+    second: FullLife2
+  - first:
+      213: -4126772682928826448
+    second: FullLife3
+  - first:
+      213: -8757560039479451092
+    second: FullLife4
+  - first:
+      213: 5958447439240429043
+    second: FullLife5
+  - first:
+      213: 3308887948504158532
+    second: FullLife6
+  - first:
+      213: -4648201350940962155
+    second: FullLife7
+  - first:
+      213: -6922361094934262475
+    second: FullLife8
+  - first:
+      213: -4625560963389545130
+    second: MediumLife0
+  - first:
+      213: -7164626521991650344
+    second: MediumLife1
+  - first:
+      213: -6420052457802613763
+    second: MediumLife2
+  - first:
+      213: -958000127562951987
+    second: MediumLife3
+  - first:
+      213: -4672595603949426963
+    second: MediumLife4
+  - first:
+      213: -6612178879020572793
+    second: MediumLife5
+  - first:
+      213: 4930677806993692255
+    second: MediumLife6
+  - first:
+      213: 5139586815101695484
+    second: MediumLife7
+  - first:
+      213: -7536588508858660049
+    second: MediumLife8
+  - first:
+      213: 5838035613042221226
+    second: VidaHud_27
+  - first:
+      213: -7184536814747489653
+    second: VidaHud_28
+  - first:
+      213: 6327091368955102272
+    second: VidaHud_29
+  - first:
+      213: -2771916486294516592
+    second: VidaHud_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LastLife0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad71011b1d400a50800000000000000
+      internalID: 6485268242058280361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fc1d18b09a449a0800000000000000
+      internalID: -6249684515995660489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6339da84acafe0a90800000000000000
+      internalID: -7345658195485027530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543f2496dd2b47500800000000000000
+      internalID: 393135731511587653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eed982a2950cc9a0800000000000000
+      internalID: -6211583658700448023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d66996e158a52e0800000000000000
+      internalID: -2136248707566899866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac62c007e77bbb840800000000000000
+      internalID: 5240984345049310922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768dbd3f0f4755450800000000000000
+      internalID: 6076891850438596711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LastLife8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 21
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36148e70da7379170800000000000000
+      internalID: 8185072064070697315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944626a1aaeb3a910800000000000000
+      internalID: 1847529909948408905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf32a79279fac9f0800000000000000
+      internalID: -447270942404362294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ae1871b789b68b0800000000000000
+      internalID: -5157861293779981773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7dd350c12cab6c0800000000000000
+      internalID: -4126772682928826448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22ebab2b85e67680800000000000000
+      internalID: -8757560039479451092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdf2c47068a0b250800000000000000
+      internalID: 5958447439240429043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4415924de088bed20800000000000000
+      internalID: 3308887948504158532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5925ca0af754e7fb0800000000000000
+      internalID: -4648201350940962155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullLife8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 14
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d8579a245deef90800000000000000
+      internalID: -6922361094934262475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655a042afc4becfb0800000000000000
+      internalID: -4625560963389545130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d368585322229c90800000000000000
+      internalID: -7164626521991650344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb3d45fd4467e6a0800000000000000
+      internalID: -6420052457802613763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2d4dda5ff74b2f0800000000000000
+      internalID: -958000127562951987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6ea8ffd0b972fb0800000000000000
+      internalID: -4672595603949426963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f53a4a752dc34a0800000000000000
+      internalID: -6612178879020572793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d2c377594d6440800000000000000
+      internalID: 4930677806993692255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5fa664afa735740800000000000000
+      internalID: 5139586815101695484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLife8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b40378ea8a86790800000000000000
+      internalID: -7536588508858660049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumFull
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa02675757ed40150800000000000000
+      internalID: 5838035613042221226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LowFull
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a624115d56b4c90800000000000000
+      internalID: -7184536814747489653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumEmpty
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0444204e3185ec750800000000000000
+      internalID: 6327091368955102272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighEmpty
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ccd5754ac2889d0800000000000000
+      internalID: -2771916486294516592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 40dbf1d5c35005c41a937bf4d1e96960
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FullLife0: 1847529909948408905
+      FullLife1: -447270942404362294
+      FullLife2: -5157861293779981773
+      FullLife3: -4126772682928826448
+      FullLife4: -8757560039479451092
+      FullLife5: 5958447439240429043
+      FullLife6: 3308887948504158532
+      FullLife7: -4648201350940962155
+      FullLife8: -6922361094934262475
+      HighEmpty: -2771916486294516592
+      LastLife0: 6485268242058280361
+      LastLife1: -6249684515995660489
+      LastLife2: -7345658195485027530
+      LastLife3: 393135731511587653
+      LastLife4: -6211583658700448023
+      LastLife5: -2136248707566899866
+      LastLife6: 5240984345049310922
+      LastLife7: 6076891850438596711
+      LastLife8: 8185072064070697315
+      LowFull: -7184536814747489653
+      MediumEmpty: 6327091368955102272
+      MediumFull: 5838035613042221226
+      MediumLife0: -4625560963389545130
+      MediumLife1: -7164626521991650344
+      MediumLife2: -6420052457802613763
+      MediumLife3: -958000127562951987
+      MediumLife4: -4672595603949426963
+      MediumLife5: -6612178879020572793
+      MediumLife6: 4930677806993692255
+      MediumLife7: 5139586815101695484
+      MediumLife8: -7536588508858660049
+      VidaHud_0: 6485268242058280361
+      VidaHud_1: -6249684515995660489
+      VidaHud_10: -447270942404362294
+      VidaHud_11: -5157861293779981773
+      VidaHud_12: -4126772682928826448
+      VidaHud_13: -8757560039479451092
+      VidaHud_14: 5958447439240429043
+      VidaHud_15: 3308887948504158532
+      VidaHud_16: -4648201350940962155
+      VidaHud_17: -6922361094934262475
+      VidaHud_18: -4625560963389545130
+      VidaHud_19: -7164626521991650344
+      VidaHud_2: -7345658195485027530
+      VidaHud_20: -6420052457802613763
+      VidaHud_21: -958000127562951987
+      VidaHud_22: -4672595603949426963
+      VidaHud_23: -6612178879020572793
+      VidaHud_24: 4930677806993692255
+      VidaHud_25: 5139586815101695484
+      VidaHud_26: -7536588508858660049
+      VidaHud_3: 393135731511587653
+      VidaHud_31: 472605227
+      VidaHud_32: -671692227
+      VidaHud_4: -6211583658700448023
+      VidaHud_5: -2136248707566899866
+      VidaHud_6: 5240984345049310922
+      VidaHud_7: 6076891850438596711
+      VidaHud_8: 8185072064070697315
+      VidaHud_9: 1847529909948408905
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

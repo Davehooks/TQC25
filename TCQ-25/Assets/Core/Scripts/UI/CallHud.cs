@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CallHud : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _vidas; // sprites de vida cheia e 
+    [SerializeField] private Sprite[] _vidaSprite; // sprites de vida cheia e 
     [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robô
     [SerializeField] private Animator _modosAnimator;
     [SerializeField] private PlayerController _playerController;
@@ -19,12 +19,14 @@ public class CallHud : MonoBehaviour
     [SerializeField] private Image[] morseElements;
     [SerializeField] private Image modo, Personagem;
 
+    int previousLife;
+
     private void Start()
     {
         _morseIndex = 0;
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
-
+        previousLife = _playerController.CurrentHealth;
     }
 
     public void ChangeModo(int i)
@@ -95,6 +97,12 @@ public class CallHud : MonoBehaviour
     public void VidaHUD()
     {
         _modosAnimator.SetInteger("Life",_playerController.CurrentHealth);
+        if(previousLife > _playerController.CurrentHealth && _playerController.CurrentHealth != 0)
+        {
+            _modosAnimator.SetTrigger("Damage");
+            previousLife = _playerController.CurrentHealth;
+        }
+
     }
 
 }

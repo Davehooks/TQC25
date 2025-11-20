@@ -401,7 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObject: []
   _imagens: []
-  _dialog: {fileID: 0}
+  _dialog: {fileID: 9160731050045465308}
   _dialogEnemy: {fileID: 0}
   trigger: {fileID: 3806893657890064608}
 --- !u!1 &4576064577047468890
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   _profile: {fileID: 86721920389187268}
   _speakText: {fileID: 2335611361851061277}
   _audioSource: {fileID: 0}
-  _EButton: {fileID: 0}
+  _EButton: {fileID: 6962266980893323530}
   _textSpeed: 0.05
   phrases:
   - Ta, eu lembro de ter feito um morse pra esse robo...
@@ -1028,7 +1028,7 @@ MonoBehaviour:
   _gameObject:
   - {fileID: 4174147326804579843}
   _imagens: []
-  _dialog: {fileID: 9160731050045465308}
+  _dialog: {fileID: 0}
   _dialogEnemy: {fileID: 0}
   trigger: {fileID: 0}
 --- !u!114 &6259564608651215961

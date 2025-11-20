@@ -1,12 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class BasePlayerMode : IPlayerMode
 {
     protected PlayerController player;
-    
+    [SerializeField] protected PlayerSFX playerSFX;
+
     public virtual void EnterMode(PlayerController player)
     {
         this.player = player;
+        playerSFX = player.GetComponent<PlayerSFX>();
     }
     
     public virtual void ExitMode() { }
@@ -33,8 +36,9 @@ public abstract class BasePlayerMode : IPlayerMode
     {
         player.Rigidbody.AddForce(Vector2.up * player.JumpForce, ForceMode2D.Impulse);
         player.IsGrounded = false;
+        playerSFX.PlayJump();
     }
-    
+
     public virtual void HandleAction1() { }
     public virtual void HandleAction2() { }
     

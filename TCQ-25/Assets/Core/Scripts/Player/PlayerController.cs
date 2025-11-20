@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput), typeof(Animator))]
 public class PlayerController : MonoBehaviour
@@ -18,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _crouchSlow = 0.7f;
 
     [Header("Som")]
-    [SerializeField] private CallSFX soundScript;
+    [SerializeField] private PlayerSFX soundScript;
     
     [Header("Estado")]
     [SerializeField] private bool _isGrounded = true;
@@ -53,6 +55,7 @@ public class PlayerController : MonoBehaviour
         if (_anim == null) _anim = GetComponent<Animations>();
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();
+        if ( soundScript == null) soundScript = GetComponent<PlayerSFX>();
         Speed = _baseSpeed;
         JumpForce = _baseJumpForce;
         CurrentHealth = maxHealth;
@@ -109,8 +112,8 @@ public class PlayerController : MonoBehaviour
     {
         if (_isGrounded && input.performed &&  !_isBeingHit)
         {
-            currentMode?.HandleJump();
             _anim.PlayJump();
+            currentMode?.HandleJump();
         }
     }
 
@@ -166,11 +169,15 @@ public class PlayerController : MonoBehaviour
     {
         if(!_isBeingHit)
         {
+            soundScript.PlayDamage(false);
             _anim.PlayDamage();
             CurrentHealth -= damage;
+            UIManager.UImanagerInstance.VidaHUD();
+
             if (CurrentHealth <= 0)
             {
-                Destroy(gameObject);
+                soundScript.PlayDamage(true);
+                SceneManager.LoadScene("SampleScene");
             }
         }
     }

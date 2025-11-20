@@ -6,6 +6,7 @@ public class PlayerCollider : MonoBehaviour
     [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private BoxCollider2D bodyCollider;
     [SerializeField] private PlayerController playerController;
+    private PlayerSFX soundScript;
     [SerializeField] private float _bounceY = 5.0f;
     [SerializeField] private float _bounceX = 3.5f;
     
@@ -15,6 +16,7 @@ public class PlayerCollider : MonoBehaviour
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         _rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        soundScript = playerController.gameObject.GetComponent<PlayerSFX>();
     }
     //se tem colisão estou lidando com o corpo
     void OnCollisionEnter2D(Collision2D collision)
@@ -36,8 +38,8 @@ public class PlayerCollider : MonoBehaviour
         if (enemy != null && collision.CompareTag("Obstacle"))
         {
             Debug.Log("COLLIDER: Perdeu uma vida no Trigger");
-            playerController.TakeDamage(1);
             QuicaQuica();
+            playerController.TakeDamage(1);
         }
         else if (enemy != null)
         {
@@ -52,6 +54,11 @@ public class PlayerCollider : MonoBehaviour
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
+            if(!playerController.IsGrounded)
+            {
+                soundScript.PlayDrop();
+            }
+
             playerController.IsGrounded = true;
         }
         

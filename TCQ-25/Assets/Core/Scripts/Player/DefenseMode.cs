@@ -6,6 +6,7 @@ public class DefenseMode : BasePlayerMode
     {
         base.EnterMode(player);
         Debug.Log("Defense Mode Ativado");
+        base.playerSFX.PlayTrocarModo();
     }
     
     public override void ExitMode()
@@ -18,11 +19,11 @@ public class DefenseMode : BasePlayerMode
 
      public override void HandleAction1()
     {
-        
+        base.playerSFX.PlayReflect();
     }
 
      public override void HandleAction2()
     {
-
+        base.playerSFX.PlayBlock();
     }
 }

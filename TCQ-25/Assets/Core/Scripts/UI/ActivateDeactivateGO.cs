@@ -41,12 +41,15 @@ public class ActivateDeactivateGO : MonoBehaviour
 
     public void CallDialog() // usado na animação pra chamar o balão de fala
     {
-        _dialog.CallText();
-    }
+        if (_dialogEnemy != null)
+        {
+            _dialogEnemy.CallText();
+        }
+        else if (_dialog != null) 
+        {
+            _dialog.CallText();
 
-    public void CallEnemyDialog() // usado na animação pra chamar o balão de fala
-    {
-        _dialogEnemy.CallText();
+        }
     }
 
     public void OpenEntire() // Vai ser usado na animação pra aparecer o cientista quando a fumaça subir, mamãe saiu

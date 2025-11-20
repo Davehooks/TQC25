@@ -92,4 +92,9 @@ public class CallHud : MonoBehaviour
         morseAnim.SetTrigger("FadeOut");
     }
 
+    public void VidaHUD()
+    {
+        _modosAnimator.SetInteger("Life",_playerController.CurrentHealth);
+    }
+
 }

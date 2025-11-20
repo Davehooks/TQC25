@@ -8,13 +8,16 @@ public class AttackMode : BasePlayerMode
     private int comboStep = 0;
     private bool canShootLaser = true;
     private float laserCooldown = 1.5f;
+    
+    
 
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);        
         LoadReferences();
+        base.playerSFX.PlayTrocarModo();
     }
-    
+
     private void LoadReferences()
     {
         if (laserPrefab == null)
@@ -54,6 +57,7 @@ public class AttackMode : BasePlayerMode
     public override void HandleAction1()
     {
         MeleeAttack();
+        base.playerSFX.PlayMeleeAttack();
     }
     
     public override void HandleAction2()
@@ -75,11 +79,14 @@ public class AttackMode : BasePlayerMode
     private void MeleeAttack()
     {
         player._anim.PlayAction1();
+        base.playerSFX.PlayMeleeAttack();
+        
     }
     
     private void ShootLaser()
     {
         player._anim.PlayAction2();
+        base.playerSFX.PlayRangedAttack();
         
         GameObject laser = GameObject.Instantiate(
             laserPrefab, 

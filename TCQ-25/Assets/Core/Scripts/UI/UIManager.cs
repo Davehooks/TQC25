@@ -111,4 +111,8 @@ public class UIManager : MonoBehaviour
     {
         callhud.ZerarMorse();
     }
+    public void VidaHUD()
+    {
+        callhud.VidaHUD();
+    }
 }

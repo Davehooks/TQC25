@@ -5,6 +5,7 @@ public class NormalMode : BasePlayerMode
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);
+        base.playerSFX.PlayErrouModo();
         Debug.Log("Normal Mode Ativado");
     }
     

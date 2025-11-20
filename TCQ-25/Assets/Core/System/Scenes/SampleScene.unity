@@ -6410,11 +6410,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629007283}
   m_CullTransparentMesh: 1
---- !u!82 &631130577 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3948721700737103375, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-  m_PrefabInstance: {fileID: 1421074941}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &644481358
 GameObject:
   m_ObjectHideFlags: 0
@@ -105966,10 +105961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriggerCapsula_Intro
       objectReference: {fileID: 0}
-    - target: {fileID: 2592096359812913756, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 7106283666746068605, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
+      propertyPath: _dialog
+      value: 
+      objectReference: {fileID: 1761208643}
     - target: {fileID: 9065498669713142202, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -159.56981
@@ -106014,25 +106009,9 @@ PrefabInstance:
       propertyPath: _EButton
       value: 
       objectReference: {fileID: 433804524}
-    - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: _blablation
+    - target: {fileID: 9189848527765418685, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
+      propertyPath: _dialog
       value: 
-      objectReference: {fileID: 631130577}
-    - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: _skillToUnlock
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: phrases.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: 'phrases.Array.data[2]'
-      value: Que bom saber que minha invencao ta viva
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181380320895965807, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -109696,6 +109675,17 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: fef95b642f964544a8185437faf32242, type: 2}
+--- !u!114 &1761208643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9160731050045465308, guid: b3c0c951a7d1fd84cbd87be2c35f0fc2, type: 3}
+  m_PrefabInstance: {fileID: 1421074941}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3a48b18f9d24640bfde0896e66cea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1775937457
 GameObject:
   m_ObjectHideFlags: 0
@@ -111281,11 +111271,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 176254af4b20e164e95ec750ffb76b52, type: 2}
     - target: {fileID: 8350082703119056602, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 248.79
+      value: -28.12
       objectReference: {fileID: 0}
     - target: {fileID: 8350082703119056602, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -53.37
+      value: -48.99
       objectReference: {fileID: 0}
     - target: {fileID: 8350082703119056602, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_LocalPosition.z
@@ -114818,11 +114808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371808212788783409, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 277.4718
+      value: 0.5618191
       objectReference: {fileID: 0}
     - target: {fileID: 3371808212788783409, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -51.56792
+      value: -47.187923
       objectReference: {fileID: 0}
     - target: {fileID: 3371808212788783409, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -114874,11 +114864,11 @@ PrefabInstance:
       objectReference: {fileID: 1026548427}
     - target: {fileID: 4118734062218225765, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 277.4718
+      value: 0.5618191
       objectReference: {fileID: 0}
     - target: {fileID: 4118734062218225765, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -53.16792
+      value: -48.78792
       objectReference: {fileID: 0}
     - target: {fileID: 4536095512894479005, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: BoundingShape2D
@@ -114906,19 +114896,19 @@ PrefabInstance:
       objectReference: {fileID: 205884290}
     - target: {fileID: 8116015270005888573, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 277.4718
+      value: 0.5618191
       objectReference: {fileID: 0}
     - target: {fileID: 8116015270005888573, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -51.56792
+      value: -47.187923
       objectReference: {fileID: 0}
     - target: {fileID: 9166089126288432856, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 277.4718
+      value: 0.5618191
       objectReference: {fileID: 0}
     - target: {fileID: 9166089126288432856, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -52.46792
+      value: -48.08792
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

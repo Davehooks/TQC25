@@ -13,10 +13,13 @@ public class AgilityMode : BasePlayerMode
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);
-        player.Speed = player._baseSpeed * 1.2f;
+        player.Speed = player._baseSpeed;
+        player.JumpForce = player._baseJumpForce* 1.2f;
         Debug.Log($"Modo Agilidade ativado - Velocidade: {player.Speed}");
+        base.playerSFX.PlayTrocarModo();
+
     }
-    
+
     public override void ExitMode()
     {
         base.ExitMode();
@@ -50,6 +53,7 @@ public class AgilityMode : BasePlayerMode
         
         if (player.Animator != null)
         {
+            base.playerSFX.PlayDash();
             player._anim.PlayAction1();
             Debug.Log("Animação Dash acionada");
         }

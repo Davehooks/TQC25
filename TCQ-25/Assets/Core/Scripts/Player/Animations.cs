@@ -74,7 +74,7 @@ public class Animations : MonoBehaviour
     {
         if (_currentAnimator.runtimeAnimatorController != _animators[0] || _currentAnimator.runtimeAnimatorController != _animators[1])
         {
-            _currentAnimator.SetTrigger("Action");
+            _currentAnimator.SetTrigger("Action2");
 
         }
     }

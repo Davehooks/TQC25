@@ -46796,6 +46796,18 @@ CompositeCollider2D:
         Y: -700000000
       - X: 1089687552
         Y: -700000000
+    - - X: 860000000
+        Y: -719687488
+      - X: 860000000
+        Y: -710000000
+      - X: 830000000
+        Y: -710000000
+      - X: 830000000
+        Y: -719374976
+      - X: 830937472
+        Y: -720000000
+      - X: 859687488
+        Y: -720000000
     - - X: 780000000
         Y: -828750016
       - X: 780000000
@@ -46828,18 +46840,6 @@ CompositeCollider2D:
         Y: -830000000
       - X: 778750016
         Y: -830000000
-    - - X: 860000000
-        Y: -719687488
-      - X: 860000000
-        Y: -710000000
-      - X: 830000000
-        Y: -710000000
-      - X: 830000000
-        Y: -719374976
-      - X: 830937472
-        Y: -720000000
-      - X: 859687488
-        Y: -720000000
     - - X: 560000000
         Y: -792499968
       - X: 560000000
@@ -47078,6 +47078,12 @@ CompositeCollider2D:
       - {x: 106, y: -69.9375}
       - {x: 106.09375, y: -70}
       - {x: 108.96876, y: -70}
+    - - {x: 86, y: -71.96875}
+      - {x: 86, y: -71}
+      - {x: 83, y: -71}
+      - {x: 83, y: -71.9375}
+      - {x: 83.09375, y: -72}
+      - {x: 85.96875, y: -72}
     - - {x: 78, y: -82.875}
       - {x: 78, y: -71}
       - {x: 77, y: -71}
@@ -47094,12 +47100,6 @@ CompositeCollider2D:
       - {x: 77, y: -82.90625}
       - {x: 77.03125, y: -83}
       - {x: 77.875, y: -83}
-    - - {x: 86, y: -71.96875}
-      - {x: 86, y: -71}
-      - {x: 83, y: -71}
-      - {x: 83, y: -71.9375}
-      - {x: 83.09375, y: -72}
-      - {x: 85.96875, y: -72}
     - - {x: 56, y: -79.25}
       - {x: 56, y: -73}
       - {x: 47, y: -73}
@@ -55330,11 +55330,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2123254215255179178, guid: bcef04c8da27c484bad784f719731e9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.448574
+      value: -21.07
       objectReference: {fileID: 0}
     - target: {fileID: 2123254215255179178, guid: bcef04c8da27c484bad784f719731e9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -47.59073
+      value: -48.61
       objectReference: {fileID: 0}
     - target: {fileID: 2123254215255179178, guid: bcef04c8da27c484bad784f719731e9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55371,6 +55371,10 @@ PrefabInstance:
     - target: {fileID: 5729508093691826425, guid: bcef04c8da27c484bad784f719731e9e, type: 3}
       propertyPath: m_Name
       value: RedHood
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729508093691826425, guid: bcef04c8da27c484bad784f719731e9e, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55963,7 +55967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1072942456706511294, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: orthographic size
-      value: 2.8125
+      value: 3.328125
       objectReference: {fileID: 0}
     - target: {fileID: 2478364852730300783, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: Target.TrackingTarget

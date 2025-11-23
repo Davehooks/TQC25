@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class RedHood : Enemy
+public class RedHood : Enemy, IDamageable
 {
     [Header("RedHood Variabels")]
 
@@ -20,6 +20,16 @@ public class RedHood : Enemy
     [SerializeField] private bool canShoot = true;
     [SerializeField] private bool isShooting = false;
 
+
+    [Header("Vida")]
+    [SerializeField] private int enemyCurrentHealth = 3;
+    [SerializeField] private int enemyMaxHealth = 3;
+
+    private void Start()
+    {
+        enemyCurrentHealth = enemyMaxHealth;
+        Debug.Log($"RedHood iniciado com {enemyCurrentHealth} de vida");
+    }
     //Getter / Setter
     public bool IsFacingRight()
     {
@@ -48,10 +58,30 @@ public class RedHood : Enemy
             rb.linearVelocityX = 0;
         }
     }
+    public void TakeDamage(int amount, GameObject source = null)
+    {
+        Debug.Log($"Redhood: TakeDamage chamado Dano: {amount}, Vida antes: {enemyCurrentHealth}");
+        
+        if (enemyCurrentHealth <= 0)
+        {
+            Debug.Log("RedHood morto");
+            return;
+        }
+        
+        enemyCurrentHealth -= amount;
+        Debug.Log($"Vida inimigo: {enemyCurrentHealth}");
+        
+        if (enemyCurrentHealth <= 0)
+        {
+            Debug.Log("Redhood morreu");
+            Die();
+        }
+    }
+
     protected override void OnHitAnimation(int amountDamage, GameObject source)
     {
         base.OnHitAnimation(amountDamage, source);
-        Debug.Log($"{name} foi atingido! Vida atual: {currentHealth}");
+        Debug.Log($"{name} foi atingido Vida atual: {enemyCurrentHealth}");
     }
 
     protected override void Die()

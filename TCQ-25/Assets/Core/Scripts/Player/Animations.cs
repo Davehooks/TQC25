@@ -17,6 +17,9 @@ public class Animations : MonoBehaviour
     }
     public void AnimationFunc(int currentModeState, bool IsGrounded, bool _isCrouching, Vector2 moveInput)
     {
+        if (_currentAnimator == null)
+            return;
+
         if (_currentAnimator.runtimeAnimatorController != _animators[currentModeState])
         {
             var main = _choqueParticle.main;
@@ -115,7 +118,11 @@ public class Animations : MonoBehaviour
         }
         else
         {
-            _currentAnimator.SetTrigger("Morte");
+            _currentAnimator.SetTrigger("Death");
         }
+    }
+    public void CallGameOver()
+    {
+        UIManager.UImanagerInstance.CallGameOver();
     }
 }

@@ -4001,7 +4001,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 580685768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876882743}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: PlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &580685768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6704,13 +6716,14 @@ GameObject:
   - component: {fileID: 876882745}
   - component: {fileID: 876882744}
   - component: {fileID: 876882743}
+  - component: {fileID: 876882747}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &876882742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6744,7 +6757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverPanel: {fileID: 131867663}
-  spriteButtons:
+  _spriteButtons:
   - {fileID: -263511437403757397, guid: caf9cb5a76f67b840bc837299fd28293, type: 3}
   - {fileID: 4804125648906539500, guid: caf9cb5a76f67b840bc837299fd28293, type: 3}
   _buttons:
@@ -6752,7 +6765,7 @@ MonoBehaviour:
   - {fileID: 1897805517}
   TMP_text: {fileID: 133489238}
   text: GAME OVER
-  _textSpeed: 0.5
+  _textSpeed: 0.4
 --- !u!114 &876882744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6816,6 +6829,116 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!114 &876882747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876882741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
+    m_ActionName: 'Player/Crouch[/Keyboard/s,/Keyboard/downArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
+    m_ActionName: 'Player/Action1[/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 71e703de-a1fe-4b14-b1f3-e1e7c47af473
+    m_ActionName: 'Player/Action2[/Keyboard/leftCtrl]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 551f8d91-7d11-41c0-8f45-aac3936bc115
+    m_ActionName: 'Player/Interact[/Keyboard/e,/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 876882743}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: IndexMinus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b8ef31a3-9c4b-448a-8ac6-b2095ad22c18
+    m_ActionName: 'UIInteraction/Up[/Keyboard/w,/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 876882743}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: IndexMinus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 81852315-f708-47ab-a5b3-b89dca66f30b
+    m_ActionName: 'UIInteraction/Down[/Keyboard/s,/Keyboard/downArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 876882743}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: IndexSelect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3f44b449-84e3-4120-bf63-e7d86baccd84
+    m_ActionName: 'UIInteraction/Select[/Keyboard/enter,/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 396813c0-d8f3-43e4-b75e-d9c49af2983b
+    m_ActionName: 'UIInteraction/Close[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 97d15bd5-5c17-4b77-8772-0bfc66862a5f
+    m_ActionName: 'UIInteraction/Cutscene[/Keyboard/anyKey]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UIInteraction
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &884002494
 GameObject:
   m_ObjectHideFlags: 0
@@ -118656,7 +118779,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1897805518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876882743}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: BackMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1897805518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119008,7 +119143,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 176254af4b20e164e95ec750ffb76b52, type: 2}
     - target: {fileID: 8350082703119056602, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.71
+      value: -28.635
       objectReference: {fileID: 0}
     - target: {fileID: 8350082703119056602, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: m_LocalPosition.y
@@ -119220,7 +119355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Menu
+  m_text: Continuar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
   m_sharedMaterial: {fileID: -1634018907126835127, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
@@ -120873,6 +121008,7 @@ MonoBehaviour:
   - {fileID: 219171849}
   modo: {fileID: 1419732642}
   Personagem: {fileID: 1478810301}
+  GameOverPanel: {fileID: 876882741}
   gameObjectAtivo: {fileID: 1930533367}
 --- !u!1 &2146229765
 GameObject:
@@ -121391,7 +121527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371808212788783409, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -47.178062
+      value: -47.177982
       objectReference: {fileID: 0}
     - target: {fileID: 3371808212788783409, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -121443,7 +121579,7 @@ PrefabInstance:
       objectReference: {fileID: 1026548427}
     - target: {fileID: 4118734062218225765, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.79
+      value: 45.864998
       objectReference: {fileID: 0}
     - target: {fileID: 4118734062218225765, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -121483,7 +121619,7 @@ PrefabInstance:
       objectReference: {fileID: 205884290}
     - target: {fileID: 8116015270005888573, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.79
+      value: 45.864998
       objectReference: {fileID: 0}
     - target: {fileID: 8116015270005888573, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -121495,7 +121631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166089126288432856, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.79
+      value: 45.864998
       objectReference: {fileID: 0}
     - target: {fileID: 9166089126288432856, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_LocalPosition.y

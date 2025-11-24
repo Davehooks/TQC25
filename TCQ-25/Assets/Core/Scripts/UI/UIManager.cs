@@ -126,4 +126,10 @@ public class UIManager : MonoBehaviour
         callhud.InstanciarVida();
     }
 
+    public void CallGameOver()
+    {
+        callhud.CallGameOver();
+    }
+
+
 }

@@ -22,10 +22,12 @@ public class CallHud : MonoBehaviour
     [SerializeField] private Image morse;
     [SerializeField] private Image[] morseElements;
     [SerializeField] private Image modo, Personagem;
+    [SerializeField] private GameObject GameOverPanel;
     
 
     private List<Image> _vidasTotais = new List<Image>();
     private List<Animator> _vidaAnimator = new List<Animator>();
+    bool vidaFeita = false;
 
     [SerializeField] private GameObject gameObjectAtivo;
 
@@ -37,6 +39,12 @@ public class CallHud : MonoBehaviour
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
         _modosAnimator.SetInteger("Life", _playerController.CurrentHealth);
+    }
+
+    private void Update()
+    {
+        //if (_vidasTotais.Count <1 && !vidaFeita) { InstanciarVida(); } //Decomentar quando não for ativar o objeto da cutscen
+            
     }
 
     public void ChangeModo(int i)
@@ -146,6 +154,10 @@ public class CallHud : MonoBehaviour
             }
         }
         BarraVidaHUD();
+        if (_vidasTotais != null)
+        {
+            vidaFeita = true;
+        }
     }
 
     public void BarraVidaHUD()
@@ -172,6 +184,11 @@ public class CallHud : MonoBehaviour
                 Debug.Log($"Deu errado {i} vezes");
             }
         }
+    }
+
+    public void CallGameOver()
+    {
+        GameOverPanel.SetActive(true);
     }
 
 }

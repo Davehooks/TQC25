@@ -79,8 +79,6 @@ public class MenuScript : MonoBehaviour
 
     IEnumerator Text()
     {
-        new WaitForSeconds(0.3f);
-
         foreach (TMP_Text texto in _textMeshPro)
         {
             texto.text = "";

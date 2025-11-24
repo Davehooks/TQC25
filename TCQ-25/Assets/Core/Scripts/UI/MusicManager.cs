@@ -12,6 +12,7 @@ public class MusicManager : MonoBehaviour
     public static MusicManager MusicInstance; // fazer com que possa ser chamado independente do lugar
     [Header("Configuracoes")]
     public AudioClip[] tracks;
+    private int trackIndex = 0;
 
     private AudioSource musicSource;
 
@@ -26,11 +27,11 @@ public class MusicManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        musicSource = GetComponent<AudioSource>();
     }
 
     private void Start()
     {
-        musicSource = GetComponent<AudioSource>();
         LoadMusic();
         PlayTrack(currentMusicState);
         previousMusicState = currentMusicState;
@@ -58,7 +59,7 @@ public class MusicManager : MonoBehaviour
     }
     public void PlayTrack(MusicState state)
     {
-        int trackIndex=0;
+        
         if(state == MusicState.Menu)
         {
             trackIndex = 0;

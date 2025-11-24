@@ -8,7 +8,7 @@ public class SetPauseCamera : MonoBehaviour
     private Canvas canva;
     [SerializeField] private Camera[] cameras;
 
-
+    
 
     private void Awake()
     {
@@ -21,13 +21,8 @@ public class SetPauseCamera : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
         canva = GetComponent<Canvas>();
     }
-
     public void SetCamera()
     {
         for (int i = 0; i < cameras.Length; i++)
@@ -35,6 +30,10 @@ public class SetPauseCamera : MonoBehaviour
             if (cameras[i].gameObject.activeInHierarchy)
             {
                 canva.worldCamera = cameras[i];
+            }
+            else
+            {
+                return;
             }
         }
     }

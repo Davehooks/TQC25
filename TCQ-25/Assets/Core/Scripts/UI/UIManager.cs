@@ -1,5 +1,5 @@
 using TMPro;
-using UnityEditor.PackageManager.UI;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider _FXVolumeSliders;
     [SerializeField] private Toggle _isFullScreen;
     [SerializeField] private AudioSource _testSound;
+    [SerializeField] private Image PauseImage;
+    [SerializeField] private Sprite[] pauseSprites;
 
     [Header("InGame")]
     private CallHud callhud;
@@ -100,7 +102,10 @@ public class UIManager : MonoBehaviour
     public void ModoHud(int modo)
     {
         callhud.ChangeModo(modo);
+        PauseImage.sprite = pauseSprites[modo];
     }
+
+
 
     public void MorseHud(char morse)
     {
@@ -115,4 +120,10 @@ public class UIManager : MonoBehaviour
     {
         callhud.VidaPersonagemHUD();
     }
+
+    public void InstanciateVida()
+    {
+        callhud.InstanciarVida();
+    }
+
 }

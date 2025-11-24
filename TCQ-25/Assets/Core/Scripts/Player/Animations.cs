@@ -106,10 +106,16 @@ public class Animations : MonoBehaviour
         }
 
     }
-    public void PlayDamage()
-    {
-        _currentAnimator.SetTrigger("Hit");
-        player._isBeingHit = true;
+    public void PlayDamage(bool morto)
+    {   
+        if (!morto)
+        {
+            _currentAnimator.SetTrigger("Hit");
+            player._isBeingHit = true;
+        }
+        else
+        {
+            _currentAnimator.SetTrigger("Morte");
+        }
     }
-
 }

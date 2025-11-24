@@ -40,7 +40,7 @@ public class ChoqueScript : MonoBehaviour
     IEnumerator WaitForHit()
     {
         yield return new WaitForSeconds(1f);
-        PlayerAnim.PlayDamage();
+        PlayerAnim.PlayDamage(false);
         if(BalaoFala.activeInHierarchy)
         {
             StartCoroutine(WaitForHit());

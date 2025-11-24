@@ -27,8 +27,6 @@ IEnumerator Text(int index)
         }
         _textIndex++;
         CheckText();
-
-
     }
     private void CheckText()
     {

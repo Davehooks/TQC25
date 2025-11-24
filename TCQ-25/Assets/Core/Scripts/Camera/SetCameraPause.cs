@@ -4,7 +4,8 @@ public class SetCameraPause : MonoBehaviour
 {
     void Start()
     {
-        SetPauseCamera.instance.SetCamera();
+        Camera camera = GetComponent<Camera>();
+        SetPauseCamera.instance.SetCamera(camera);
     }
 
 }

@@ -168,12 +168,12 @@ public class PlayerController : MonoBehaviour
         if(!_isBeingHit)
         {
             CurrentHealth -= damage;
-            _anim.PlayDamage();
+            _anim.PlayDamage(false);
             UIManager.UImanagerInstance.VidaHUD();
         if (CurrentHealth <= 0)
         {
-            Destroy(gameObject);
-        }
+                _anim.PlayDamage(true);
+            }
         }
     }
 

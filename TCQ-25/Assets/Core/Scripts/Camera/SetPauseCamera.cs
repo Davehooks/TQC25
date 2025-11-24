@@ -23,18 +23,8 @@ public class SetPauseCamera : MonoBehaviour
         }
         canva = GetComponent<Canvas>();
     }
-    public void SetCamera()
+    public void SetCamera(Camera camera)
     {
-        for (int i = 0; i < cameras.Length; i++)
-        {
-            if (cameras[i].gameObject.activeInHierarchy)
-            {
-                canva.worldCamera = cameras[i];
-            }
-            else
-            {
-                return;
-            }
-        }
+        canva.worldCamera = camera;
     }
 }

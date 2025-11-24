@@ -19,7 +19,7 @@ public class RedHood : Enemy, IDamageable
     [SerializeField] private bool canShoot = true;
     [SerializeField] private bool isShooting = false;
 
-
+    public float shootingAngle = 180f;
     [Header("Vida")]
     [SerializeField] private int enemyCurrentHealth = 3;
     [SerializeField] private int enemyMaxHealth = 3;

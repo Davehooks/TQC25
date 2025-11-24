@@ -67,4 +67,9 @@ public class ActivateDeactivateGO : MonoBehaviour
         }
         }
     }
+
+    public void InstanciateLifes()
+    {
+        UIManager.UImanagerInstance.InstanciateVida();
+    }
 }

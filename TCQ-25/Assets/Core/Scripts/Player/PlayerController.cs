@@ -167,7 +167,9 @@ public class PlayerController : MonoBehaviour
     {
         if(!_isBeingHit)
         {
-        CurrentHealth -= damage;
+            CurrentHealth -= damage;
+            _anim.PlayDamage();
+            UIManager.UImanagerInstance.VidaHUD();
         if (CurrentHealth <= 0)
         {
             Destroy(gameObject);

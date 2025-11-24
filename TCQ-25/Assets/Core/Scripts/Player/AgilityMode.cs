@@ -14,7 +14,7 @@ public class AgilityMode : BasePlayerMode
     {
         base.EnterMode(player);
         player.Speed = player._baseSpeed;
-        player.JumpForce = player._baseJumpForce* 1.2f;
+        player.JumpForce = player._baseJumpForce* 1.5f;
         Debug.Log($"Modo Agilidade ativado - Velocidade: {player.Speed}");
         base.playerSFX.PlayTrocarModo();
 
@@ -25,6 +25,7 @@ public class AgilityMode : BasePlayerMode
         base.ExitMode();
         
         player.Speed = player._baseSpeed;
+        player.Speed = player._baseJumpForce;
         if (player != null) 
         {
             player.StopAllCoroutines();

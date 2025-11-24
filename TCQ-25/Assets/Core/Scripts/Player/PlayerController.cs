@@ -175,6 +175,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Projectile projectile = collision.GetComponent<Projectile>();
+        if (projectile != null)
+        {
+            if (currentMode is DefenseMode defenseMode)
+            {
+                defenseMode.OnProjectileHit(collision.gameObject);
+            }
+            else
+            {
+                TakeDamage(projectile.damage);
+                Destroy(collision.gameObject);
+            }
+        }
+    }
+    
     private int SetAnimationMode()
     {
         if (currentModeState == ModeState.Attack) { return 3; }

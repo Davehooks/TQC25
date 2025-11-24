@@ -5,7 +5,6 @@ public class AttackMode : BasePlayerMode
 {
     private GameObject laserPrefab;
     private Transform firePoint;
-    private int comboStep = 0;
     private bool canShootLaser = true;
     private float laserCooldown = 1.5f;
     

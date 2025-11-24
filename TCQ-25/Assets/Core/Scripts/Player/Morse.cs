@@ -49,6 +49,10 @@ public class Morse : MonoBehaviour
 
         if (keyboard.iKey.wasPressedThisFrame)
         {
+            if(currentMorse.Length == 3)
+            {
+                currentMorse = "";
+            }
             pressStart = Time.time;
             isPressing = true;
 

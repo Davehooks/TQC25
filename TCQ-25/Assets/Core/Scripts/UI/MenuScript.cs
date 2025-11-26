@@ -19,6 +19,8 @@ public class MenuScript : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("WatchCutscene", 1);
+        PlayerPrefs.Save();
         if (_buttons == null)
         {
             Debug.Log("Não tem botão no MenuSript");
@@ -79,8 +81,6 @@ public class MenuScript : MonoBehaviour
 
     IEnumerator Text()
     {
-        new WaitForSeconds(0.3f);
-
         foreach (TMP_Text texto in _textMeshPro)
         {
             texto.text = "";

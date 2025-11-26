@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 270292425341163700}
   - component: {fileID: 4765156843622469511}
   - component: {fileID: 9105416207762429314}
+  - component: {fileID: 4706821083979368932}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -52,9 +53,12 @@ MonoBehaviour:
   _FXVolumeSliders: {fileID: 0}
   _isFullScreen: {fileID: 0}
   _testSound: {fileID: 270292425341163700}
-  _morseUI: {fileID: 0}
-  _vida: []
-  _vidas: []
+  PauseImage: {fileID: 0}
+  pauseSprites:
+  - {fileID: -7762350047352875558, guid: b5809cf537990884e8db16d0ff8a8bde, type: 3}
+  - {fileID: -2715382943813668581, guid: b5809cf537990884e8db16d0ff8a8bde, type: 3}
+  - {fileID: 7690072442612862611, guid: b5809cf537990884e8db16d0ff8a8bde, type: 3}
+  - {fileID: -7931945028459697436, guid: b5809cf537990884e8db16d0ff8a8bde, type: 3}
 --- !u!82 &270292425341163700
 AudioSource:
   m_ObjectHideFlags: 0
@@ -255,3 +259,51 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  PauseImage: {fileID: 0}
+  pauseSprites: []
+--- !u!114 &4706821083979368932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084573400514175156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6017530e662064c9581f16f9b99520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchCutscene: 1
+  cutsceneGO: {fileID: 0}
+  _vidas: []
+  _playerModosController:
+  - {fileID: 9100000, guid: 4a2e9fdceabec8c409c3331a7aebd08c, type: 2}
+  - {fileID: 9100000, guid: 67c959c03d9e86f4f8be5b045b96f83f, type: 2}
+  - {fileID: 9100000, guid: 8526620cb25eb9d4a8668ba845ae8e50, type: 2}
+  - {fileID: 9100000, guid: 83928bba256bdf84fbf4e49bf28d9f21, type: 2}
+  _modosAnimator: {fileID: 0}
+  _playerController: {fileID: 0}
+  MorseSprites:
+  - {fileID: -5162274002923094346, guid: 6a7fd23acd1d909468d47d85d1d94347, type: 3}
+  - {fileID: -640629818678835703, guid: 6a7fd23acd1d909468d47d85d1d94347, type: 3}
+  modoSprites:
+  - {fileID: 309419392, guid: e7ed756e4578034419701b21542e3c7a, type: 3}
+  - {fileID: -930173491193574699, guid: e7ed756e4578034419701b21542e3c7a, type: 3}
+  - {fileID: -5237505512094842554, guid: e7ed756e4578034419701b21542e3c7a, type: 3}
+  - {fileID: -6980134357824097078, guid: e7ed756e4578034419701b21542e3c7a, type: 3}
+  _vidaGO: {fileID: 0}
+  vidaParent: {fileID: 0}
+  _morseCodesToEnable:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _morseIndex: 0
+  morse: {fileID: 0}
+  morseElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  modo: {fileID: 0}
+  Personagem: {fileID: 0}
+  GameOverPanel: {fileID: 0}
+  gameObjectAtivo: {fileID: 0}

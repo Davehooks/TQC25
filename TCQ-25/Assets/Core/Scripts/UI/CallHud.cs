@@ -2,12 +2,14 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CallHud : MonoBehaviour
 {
     //variáveis
 
+    [SerializeField] GameObject cutsceneGO;
     [SerializeField] private Sprite[] _vidas; // sprites de vida cheia e 
     [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robô
     [SerializeField] private Animator _modosAnimator;
@@ -22,21 +24,28 @@ public class CallHud : MonoBehaviour
     [SerializeField] private Image morse;
     [SerializeField] private Image[] morseElements;
     [SerializeField] private Image modo, Personagem;
+    [SerializeField] private GameObject GameOverPanel;
     
 
     private List<Image> _vidasTotais = new List<Image>();
     private List<Animator> _vidaAnimator = new List<Animator>();
+    bool vidaFeita = false;
 
     [SerializeField] private GameObject gameObjectAtivo;
 
 
     private void Start()
     {
-
         _morseIndex = 0;
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
         _modosAnimator.SetInteger("Life", _playerController.CurrentHealth);
+    }
+
+    private void Update()
+    {
+        //if (_vidasTotais.Count <1 && !vidaFeita) { InstanciarVida(); } //Decomentar quando não for ativar o objeto da cutscen
+            
     }
 
     public void ChangeModo(int i)
@@ -146,6 +155,10 @@ public class CallHud : MonoBehaviour
             }
         }
         BarraVidaHUD();
+        if (_vidasTotais != null)
+        {
+            vidaFeita = true;
+        }
     }
 
     public void BarraVidaHUD()
@@ -171,6 +184,34 @@ public class CallHud : MonoBehaviour
             {
                 Debug.Log($"Deu errado {i} vezes");
             }
+        }
+    }
+
+    public void CallGameOver()
+    {
+        GameOverPanel.SetActive(true);
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "SampleScene")
+        {
+            bool watchCutscene = PlayerPrefs.GetInt("WatchCutscene") == 1;
+
+            cutsceneGO.SetActive(watchCutscene);
+            if (!watchCutscene) { InstanciarVida(); }
+            PlayerPrefs.SetInt("WatchCutscene", 0);
+            PlayerPrefs.Save();
         }
     }
 

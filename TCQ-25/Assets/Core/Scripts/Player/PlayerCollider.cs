@@ -72,7 +72,8 @@ public class PlayerCollider : MonoBehaviour
             _rb.AddForceY(_bounceY, ForceMode2D.Impulse);
 
         float direction = playerController.IsFacingRight ? -1f : 1f;
-            _rb.AddForceX(_bounceX, ForceMode2D.Impulse);
+        Debug.Log($"Foi ejetado a {_bounceX}bounces/s e estava virado para direita: {playerController.IsFacingRight} ");
+            _rb.AddForceX(_bounceX * direction, ForceMode2D.Impulse);
 
     }
     /* void OnCollisionEnter2D(Collision2D collision)

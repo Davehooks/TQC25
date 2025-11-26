@@ -233,10 +233,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   checkRadius: 0.09
+  isFacingRight: 0
   shootingTime: 0.5
   _prefabProjectile: {fileID: 7127151086835929623, guid: 2fc395c913642e94c8be779d7b2f7b64, type: 3}
   canShoot: 1
   isShooting: 0
+  shootingAngle: 0
+  enemyCurrentHealth: 3
+  enemyMaxHealth: 3
 --- !u!70 &4477296007681240452
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -271,8 +275,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.031655014}
-  m_Size: {x: 0.28481343, y: 0.7286378}
+  m_Offset: {x: 0, y: -0.030103981}
+  m_Size: {x: 0.28481343, y: 0.72553575}
   m_Direction: 0
 --- !u!1 &6205201944407331805
 GameObject:

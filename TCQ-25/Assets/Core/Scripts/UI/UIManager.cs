@@ -107,9 +107,9 @@ public class UIManager : MonoBehaviour
         callhud.MorseCode(morse);
     }
 
-    public void ZerarMorse()
+    public void ZerarMorse(bool fadeO)
     {
-        callhud.ZerarMorse();
+        callhud.ZerarMorse(fadeO);
     }
     public void VidaHUD()
     {

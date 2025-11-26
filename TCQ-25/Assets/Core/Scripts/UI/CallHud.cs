@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 public class CallHud : MonoBehaviour
 {
-    //variáveis
+    //variï¿½veis
 
     [SerializeField] GameObject cutsceneGO;
     [SerializeField] private Sprite[] _vidas; // sprites de vida cheia e 
-    [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robô
+    [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robï¿½
     [SerializeField] private Animator _modosAnimator;
     [SerializeField] private PlayerController _playerController;
     [SerializeField] private Sprite[] MorseSprites, modoSprites;
@@ -25,12 +25,11 @@ public class CallHud : MonoBehaviour
     [SerializeField] private Image[] morseElements;
     [SerializeField] private Image modo, Personagem;
     [SerializeField] private GameObject GameOverPanel;
-    
-
+    [SerializeField] private Morse morseScript;
     private List<Image> _vidasTotais = new List<Image>();
     private List<Animator> _vidaAnimator = new List<Animator>();
     bool vidaFeita = false;
-
+    bool fadeO;
     [SerializeField] private GameObject gameObjectAtivo;
 
 
@@ -44,7 +43,7 @@ public class CallHud : MonoBehaviour
 
     private void Update()
     {
-        //if (_vidasTotais.Count <1 && !vidaFeita) { InstanciarVida(); } //Decomentar quando não for ativar o objeto da cutscen
+        //if (_vidasTotais.Count <1 && !vidaFeita) { InstanciarVida(); } //Decomentar quando nï¿½o for ativar o objeto da cutscen
             
     }
 
@@ -90,6 +89,7 @@ public class CallHud : MonoBehaviour
         }
         Animator morseAnim = morse.gameObject.GetComponent<Animator>();
         morseAnim.SetTrigger("FadeIn");
+        Debug.Log("FadeIndo morse!");
         if (_morseIndex < 3)
         {
             morseElements[_morseIndex].gameObject.SetActive(true);
@@ -106,18 +106,23 @@ public class CallHud : MonoBehaviour
         else { _morseIndex = 0; }
     }
 
-    public void ZerarMorse()
+    public void ZerarMorse(bool fadeO)
     {
         Animator morseAnim = morse.gameObject.GetComponent<Animator>();
-
+        if (fadeO)
+        {        
+            morseAnim.SetTrigger("FadeOut");
+        }
         for (int i = 0;i < morseElements.Length;i++)
         {
             morseElements[i].gameObject.SetActive(false);
         }
-        _morseIndex = 0;
-        morseAnim.SetTrigger("FadeOut");
         
+        _morseIndex = 0;
+                 
     }
+
+    
 
     public void VidaPersonagemHUD()
     {
@@ -166,7 +171,7 @@ public class CallHud : MonoBehaviour
         for (int i = 0; i<=_playerController.MaxHealth-1 ;i++)
         {
 
-            if (_playerController.MaxHealth - i > _playerController.CurrentHealth) // i tá sem vida
+            if (_playerController.MaxHealth - i > _playerController.CurrentHealth) // i tï¿½ sem vida
             {
                 _vidaAnimator[i].SetInteger("Life", -1);
 

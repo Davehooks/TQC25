@@ -36,7 +36,6 @@ public class RedHood : Enemy, IDamageable
     }
 
 
-
     //Override methods
     //RedHood vai se mover observando plataformas
     void Update()

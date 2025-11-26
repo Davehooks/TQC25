@@ -80,7 +80,8 @@ public class PlayerController : MonoBehaviour
                 TurnCheck();
             }
         }
-        _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
+        
+            _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
     }
 
     public void Walk(InputAction.CallbackContext input)

@@ -2,12 +2,14 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CallHud : MonoBehaviour
 {
     //variáveis
 
+    [SerializeField] GameObject cutsceneGO;
     [SerializeField] private Sprite[] _vidas; // sprites de vida cheia e 
     [SerializeField] private RuntimeAnimatorController[] _playerModosController; // Animator da tela do robô
     [SerializeField] private Animator _modosAnimator;
@@ -34,7 +36,6 @@ public class CallHud : MonoBehaviour
 
     private void Start()
     {
-
         _morseIndex = 0;
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
@@ -189,6 +190,29 @@ public class CallHud : MonoBehaviour
     public void CallGameOver()
     {
         GameOverPanel.SetActive(true);
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "SampleScene")
+        {
+            bool watchCutscene = PlayerPrefs.GetInt("WatchCutscene") == 1;
+
+            cutsceneGO.SetActive(watchCutscene);
+            if (!watchCutscene) { InstanciarVida(); }
+            PlayerPrefs.SetInt("WatchCutscene", 0);
+            PlayerPrefs.Save();
+        }
     }
 
 }

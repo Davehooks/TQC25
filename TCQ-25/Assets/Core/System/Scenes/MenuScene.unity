@@ -2776,7 +2776,8 @@ PrefabInstance:
       propertyPath: _MusicVolumeSliders
       value: 
       objectReference: {fileID: 8022379721210907147}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4706821083979368932, guid: d2442cc250b513443831cf00e7b76ffa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

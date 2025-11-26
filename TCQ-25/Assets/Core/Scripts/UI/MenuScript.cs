@@ -19,6 +19,8 @@ public class MenuScript : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("WatchCutscene", 1);
+        PlayerPrefs.Save();
         if (_buttons == null)
         {
             Debug.Log("Não tem botão no MenuSript");

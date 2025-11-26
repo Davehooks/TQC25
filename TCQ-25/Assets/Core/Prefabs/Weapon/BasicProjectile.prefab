@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: -2.5, y: 0}
+  speed: 7
   damage: 1
-  lifetime: 1
+  lifetime: 1.16
   _redHood: {fileID: 0}

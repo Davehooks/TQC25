@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -7,22 +8,32 @@ public class Projectile : MonoBehaviour
     [SerializeField] public int damage = 1;
     [SerializeField] private float lifetime = 3f;
 
-    [SerializeField] private RedHood _redHood;
-    private bool isReflected = false;
+    [SerializeField] private RedHood _shooter;
+    [SerializeField] private SpriteRenderer __shooterRenderer;
     private GameObject originalShooter;
+    private bool isReflected = false;
 
-    public int Damage => damage;
+    public void SetShooter(RedHood shooter)
+    {
+        this._shooter = shooter;
+        this.originalShooter = shooter.gameObject;
+    }
 
     private void Start()
     {
-        if (_redHood == null)
-            _redHood = GameObject.FindFirstObjectByType<RedHood>();
-
-        float weaponDirection = _redHood.IsFacingRight() ? 1f : -1f;
-        Vector2 direction = CreateVector2ByDegree(_redHood.shootingAngle);
+        if (_shooter == null)
+            _shooter = GameObject.FindFirstObjectByType<RedHood>();
+        if (__shooterRenderer == null)
+            __shooterRenderer = GetComponent<SpriteRenderer>();
+        if(_shooter.IsFacingRight())
+            __shooterRenderer.flipX = true;
+        float weaponDirection = _shooter.IsFacingRight() ? 1f : -1f; 
+        
+        Vector2 direction = CreateVector2ByDegree(_shooter.shootingAngle);
         velocity = direction * speed * weaponDirection;
-        originalShooter = _redHood.gameObject;
-
+        originalShooter = _shooter.gameObject;
+        transform.rotation = Quaternion.Euler(0f, 0f, _shooter.shootingAngle);
+        
         Destroy(gameObject, lifetime);
     }
 

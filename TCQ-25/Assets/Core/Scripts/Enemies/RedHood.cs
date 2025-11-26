@@ -19,7 +19,7 @@ public class RedHood : Enemy, IDamageable
     [SerializeField] private bool canShoot = true;
     [SerializeField] private bool isShooting = false;
 
-    public float shootingAngle = 180f;
+    [Range(-25f, 45f)]public float shootingAngle = 0f;
     [Header("Vida")]
     [SerializeField] private int enemyCurrentHealth = 3;
     [SerializeField] private int enemyMaxHealth = 3;
@@ -140,7 +140,14 @@ public class RedHood : Enemy, IDamageable
         isShooting = true;
         canShoot = false;
         Debug.Log("REDHOOD: Instanciei uma bala");
-        Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
+        GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
+        Projectile projectile = projectileObj.GetComponent<Projectile>();
+
+        if(projectile != null)
+        {
+            projectile.SetShooter(this);
+        }
+
         yield return new WaitForSeconds(timing);
         isShooting = false;
         canShoot = true;

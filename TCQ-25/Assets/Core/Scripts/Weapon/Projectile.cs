@@ -2,27 +2,41 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private Vector2 velocity;
+   [SerializeField] private Vector2 velocity;
     [SerializeField] private float speed = 7f;
-    [SerializeField] public int damage = 1;
+    public int damage = 1;
     [SerializeField] private float lifetime = 3f;
 
-    [SerializeField] private RedHood _redHood;
+    private RedHood _shooter;
     private bool isReflected = false;
     private GameObject originalShooter;
 
-    public int Damage => damage;
+    public void SetShooter(RedHood shooter)
+    {
+        this._shooter = shooter;
+        this.originalShooter = shooter.gameObject;
+
+        float direction = _shooter.IsFacingRight() ? 1f : -1f;
+        velocity = new Vector2(direction * speed, 0f);
+        
+        Debug.Log($"🎯 Bala configurada para {_shooter.name} - Direção: {direction}");
+    }
 
     private void Start()
     {
-        if (_redHood == null)
-            _redHood = GameObject.FindFirstObjectByType<RedHood>();
 
-        float weaponDirection = _redHood.IsFacingRight() ? 1f : -1f;
-        Vector2 direction = CreateVector2ByDegree(_redHood.shootingAngle);
-        velocity = direction * speed * weaponDirection;
-        originalShooter = _redHood.gameObject;
-
+        if (_shooter == null)
+        {
+            _shooter = GameObject.FindFirstObjectByType<RedHood>();
+            if (_shooter != null)
+            {
+                float direction = _shooter.IsFacingRight() ? 1f : -1f;
+                velocity = new Vector2(direction * speed, 0f);
+                originalShooter = _shooter.gameObject;
+                Debug.LogWarning($"⚠️ Bala usando fallback: {_shooter.name}");
+            }
+        }
+        
         Destroy(gameObject, lifetime);
     }
 

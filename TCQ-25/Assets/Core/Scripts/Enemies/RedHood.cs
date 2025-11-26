@@ -109,6 +109,26 @@ public class RedHood : Enemy, IDamageable
         StartCoroutine(Shooting(shootingTime));
     }
 
+    public IEnumerator Shooting(float timing)
+    {
+        isShooting = true;
+        canShoot = false;
+        
+        Debug.Log($"🔫 {name} está atirando");
+        
+        GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
+        Projectile projectile = projectileObj.GetComponent<Projectile>();
+        
+        if (projectile != null)
+        {
+            projectile.SetShooter(this);
+        }
+        
+        yield return new WaitForSeconds(timing);
+        isShooting = false;
+        canShoot = true;
+    }
+
 
 
     private void Flip()
@@ -134,15 +154,5 @@ public class RedHood : Enemy, IDamageable
         }
     }
     //COROUTINES
-    public IEnumerator Shooting(float timing)
-    {
-        //TODOOOOO
-        isShooting = true;
-        canShoot = false;
-        Debug.Log("REDHOOD: Instanciei uma bala");
-        Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
-        yield return new WaitForSeconds(timing);
-        isShooting = false;
-        canShoot = true;
-    }
+   
 }

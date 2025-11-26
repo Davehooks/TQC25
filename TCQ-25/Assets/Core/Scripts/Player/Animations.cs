@@ -17,6 +17,9 @@ public class Animations : MonoBehaviour
     }
     public void AnimationFunc(int currentModeState, bool IsGrounded, bool _isCrouching, Vector2 moveInput)
     {
+        if (_currentAnimator == null)
+            return;
+
         if (_currentAnimator.runtimeAnimatorController != _animators[currentModeState])
         {
             var main = _choqueParticle.main;
@@ -46,7 +49,10 @@ public class Animations : MonoBehaviour
             }
         }//Puxa os modos do personagem e coloca na cor certa
         
+
         UIManager.UImanagerInstance.ModoHud(currentModeState);
+
+
         _currentAnimator.SetBool("IsGrounded", IsGrounded); // mostra se t� no ch�o ou n�o
 
         _currentAnimator.SetBool("IsCrouching", _isCrouching); // t� agachado ou n�o
@@ -115,7 +121,11 @@ public class Animations : MonoBehaviour
         }
         else
         {
-            _currentAnimator.SetTrigger("Morte");
+            _currentAnimator.SetTrigger("Death");
         }
+    }
+    public void CallGameOver()
+    {
+        UIManager.UImanagerInstance.CallGameOver();
     }
 }

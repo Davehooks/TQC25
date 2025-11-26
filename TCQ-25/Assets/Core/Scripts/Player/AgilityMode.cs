@@ -5,7 +5,7 @@ public class AgilityMode : BasePlayerMode
 {
     private bool canDash = true;
     private float dashCooldown = 2f;
-    private float dashSpeed = 30f;
+   [SerializeField] private float dashSpeed = 20f;// 30 original
     private float dashDuration = 0.3f;
     private bool isDashing = false;
     private Vector2 dashDirection;
@@ -14,7 +14,7 @@ public class AgilityMode : BasePlayerMode
     {
         base.EnterMode(player);
         player.Speed = player._baseSpeed;
-        player.JumpForce = player._baseJumpForce* 1.5f;
+        player.JumpForce = player._baseJumpForce* 1.2f;
         Debug.Log($"Modo Agilidade ativado - Velocidade: {player.Speed}");
         base.playerSFX.PlayTrocarModo();
 

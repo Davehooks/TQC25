@@ -17,10 +17,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private AudioSource _testSound;
     [SerializeField] private Image PauseImage;
     [SerializeField] private Sprite[] pauseSprites;
+    
 
     [Header("InGame")]
     private CallHud callhud;
-
     private PlayerController _playerController;
     
    
@@ -32,11 +32,6 @@ public class UIManager : MonoBehaviour
         if (UImanagerInstance == null)
         {
             UImanagerInstance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 
@@ -125,5 +120,12 @@ public class UIManager : MonoBehaviour
     {
         callhud.InstanciarVida();
     }
+
+    public void CallGameOver()
+    {
+        callhud.CallGameOver();
+    }
+
+
 
 }

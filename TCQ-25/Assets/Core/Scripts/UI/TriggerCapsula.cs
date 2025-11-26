@@ -13,6 +13,7 @@ public class TriggerCapsula : MonoBehaviour
     [SerializeField] Dialog dialog;
     PlayerController playerController;
     [SerializeField] private float tempoCientistaOut = 2.0f;
+    [SerializeField] private bool StopCharacter;
 
 
     private void Start()
@@ -35,6 +36,7 @@ public class TriggerCapsula : MonoBehaviour
             {
                 CapsuleAnimator.SetTrigger("Entrou");
                 _Opened = true;
+                if (StopCharacter) { playerController.Speed = 0; }
             }
             else if (_OpenedEntire)
             {

@@ -20,6 +20,7 @@ public class DialogEnemy : MonoBehaviour
     [HideInInspector] public int _speakIndex;
 
     private PlayerController _playerController;
+    [SerializeField] ChoqueScript choqueScript;
 
 
     private void Start()
@@ -64,6 +65,7 @@ public class DialogEnemy : MonoBehaviour
             BalaoFala.SetActive(false);
             _playerController._isBeingHit = false;
             _playerController.Speed = _playerController._baseSpeed;
+            choqueScript.StopAllCoroutines();
         }
 
     }

@@ -22,10 +22,11 @@ public class Dialog : MonoBehaviour
 
     private Animator _profileAnimator;
     [HideInInspector]public int _speakIndex;
-    
+    [SerializeField] private PlayerController player;
 
     private void Start()
     {
+        player = FindAnyObjectByType<PlayerController>();
         _audioSource = GetComponent<AudioSource>();
         _profileAnimator = _profile.GetComponent<Animator>();
         _speakIndex = 0;
@@ -63,6 +64,7 @@ public class Dialog : MonoBehaviour
         }
         else
         {
+            player.Speed = player._baseSpeed;
             UnlockSkill();
             _EButton.SetActive(false);
         }

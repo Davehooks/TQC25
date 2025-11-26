@@ -50,7 +50,7 @@ public class Animations : MonoBehaviour
         }//Puxa os modos do personagem e coloca na cor certa
         
 
-        //UIManager.UImanagerInstance.ModoHud(currentModeState);
+        UIManager.UImanagerInstance.ModoHud(currentModeState);
 
 
         _currentAnimator.SetBool("IsGrounded", IsGrounded); // mostra se t� no ch�o ou n�o

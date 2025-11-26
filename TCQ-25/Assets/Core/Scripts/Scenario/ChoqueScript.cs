@@ -25,7 +25,6 @@ public class ChoqueScript : MonoBehaviour
             BalaoFala.SetActive(true);
             playerController.Speed = 0;
             Entered = true;
-
         }
     }
 

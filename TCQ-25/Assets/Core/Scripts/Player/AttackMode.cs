@@ -14,6 +14,8 @@ public class AttackMode : BasePlayerMode
     {
         base.EnterMode(player);        
         LoadReferences();
+        player.Speed = player._baseSpeed;
+        player.JumpForce = player._baseJumpForce;
         base.playerSFX.PlayTrocarModo();
     }
 

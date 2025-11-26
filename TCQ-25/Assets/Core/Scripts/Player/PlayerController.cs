@@ -63,6 +63,11 @@ public class PlayerController : MonoBehaviour
         SwitchMode(ModeState.Normal);
     }
 
+    private void Update()
+    {
+        if (_anim == null) _anim = GetComponent<Animations>();
+    }
+
     void FixedUpdate()
     {
         if (!_isBeingHit)
@@ -75,7 +80,8 @@ public class PlayerController : MonoBehaviour
                 TurnCheck();
             }
         }
-        _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
+        
+            _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
     }
 
     public void Walk(InputAction.CallbackContext input)
@@ -169,11 +175,12 @@ public class PlayerController : MonoBehaviour
         {
             CurrentHealth -= damage;
             _anim.PlayDamage(false);
-            UIManager.UImanagerInstance.VidaHUD();
-        if (CurrentHealth <= 0)
-        {
-                _anim.PlayDamage(true);
+            if (CurrentHealth <= 0)
+            {
+                    _anim.PlayDamage(true);
+                    soundScript.PlayDamage(true);
             }
+            UIManager.UImanagerInstance.VidaHUD();
         }
     }
 

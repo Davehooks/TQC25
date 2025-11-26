@@ -1,0 +1,3167 @@
+fileFormatVersion: 2
+guid: 23eff165553412248b0ac406bcf39ce1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4495992304105479372
+    second: GreenDeath0
+  - first:
+      213: 3898818369165745322
+    second: GreenDeath1
+  - first:
+      213: -6585308736075391430
+    second: GreenDeath2
+  - first:
+      213: -5063840900245023663
+    second: GreenDeath3
+  - first:
+      213: -5026334782101429830
+    second: GreenDeath4
+  - first:
+      213: 4675650236830785936
+    second: GreenDeath5
+  - first:
+      213: -5839024775910387017
+    second: GreenDeath6
+  - first:
+      213: -1498145775285994045
+    second: GreenDeath7
+  - first:
+      213: 3582645542320301519
+    second: GreenDeath8
+  - first:
+      213: 6571432164842502052
+    second: GreenDeath9
+  - first:
+      213: 2253942110585609951
+    second: GreenDeath10
+  - first:
+      213: 5525897982061873409
+    second: GreenDeath11
+  - first:
+      213: -7912901642934970860
+    second: GreenDeath12
+  - first:
+      213: -6235265120534294290
+    second: GreenDeath13
+  - first:
+      213: -6929034328308214686
+    second: GreenDeath14
+  - first:
+      213: -964897684272158474
+    second: GreenDeath15
+  - first:
+      213: -6170730836330797827
+    second: GreenDeath16
+  - first:
+      213: -2235175882209278311
+    second: GreenDeath17
+  - first:
+      213: -19936485843493322
+    second: BlueDeath0
+  - first:
+      213: -4910553747307764728
+    second: BlueDeath1
+  - first:
+      213: -2939408876820989227
+    second: BlueDeath2
+  - first:
+      213: -6422168221963941881
+    second: BlueDeath3
+  - first:
+      213: 7856809337398883066
+    second: BlueDeath4
+  - first:
+      213: 679120973277972754
+    second: BlueDeath5
+  - first:
+      213: -3657410083293374776
+    second: BlueDeath6
+  - first:
+      213: -5077081693703501731
+    second: BlueDeath7
+  - first:
+      213: -1819328394732363042
+    second: BlueDeath8
+  - first:
+      213: -5058726218572204663
+    second: BlueDeath9
+  - first:
+      213: 1632407365694501446
+    second: BlueDeath10
+  - first:
+      213: -3370118850122343766
+    second: BlueDeath11
+  - first:
+      213: 1388194491648005995
+    second: BlueDeath12
+  - first:
+      213: 350727577100119351
+    second: BlueDeath13
+  - first:
+      213: -2861662338478077884
+    second: BlueDeath14
+  - first:
+      213: 5848717695788545222
+    second: BlueDeath15
+  - first:
+      213: -4870821443906596079
+    second: BlueDeath16
+  - first:
+      213: -5134120698191899839
+    second: BlueDeath17
+  - first:
+      213: 426659609731360646
+    second: RedDeath0
+  - first:
+      213: -8948025670892595206
+    second: RedDeath1
+  - first:
+      213: -6159403231499310038
+    second: RedDeath2
+  - first:
+      213: -8532888905806470798
+    second: RedDeath3
+  - first:
+      213: 5545968074882671281
+    second: RedDeath4
+  - first:
+      213: 3557200927712149218
+    second: RedDeath5
+  - first:
+      213: -2245500087541907497
+    second: RedDeath6
+  - first:
+      213: 3107408599361418151
+    second: RedDeath7
+  - first:
+      213: -7951253649660187028
+    second: RedDeath8
+  - first:
+      213: 2638465292288776870
+    second: RedDeath9
+  - first:
+      213: 5517302041935038785
+    second: RedDeath10
+  - first:
+      213: 3752659994732530474
+    second: RedDeath11
+  - first:
+      213: 734301986424972768
+    second: RedDeath12
+  - first:
+      213: -817503194384097871
+    second: RedDeath13
+  - first:
+      213: 2974617904185385577
+    second: RedDeath14
+  - first:
+      213: -3651156764566021191
+    second: RedDeath15
+  - first:
+      213: 1709690811808086537
+    second: RedDeath16
+  - first:
+      213: 6535007529608320176
+    second: RedDeath17
+  - first:
+      213: -4026374554861160728
+    second: GreyDeath0
+  - first:
+      213: -3004302685397360397
+    second: GreyDeath1
+  - first:
+      213: 7798453801849408090
+    second: GreyDeath2
+  - first:
+      213: 2295514140845228777
+    second: GreyDeath3
+  - first:
+      213: -2301896781117820034
+    second: GreyDeath4
+  - first:
+      213: 1364147722131613733
+    second: GreyDeath5
+  - first:
+      213: 6350610485764213393
+    second: GreyDeath6
+  - first:
+      213: -463920434608398458
+    second: GreyDeath7
+  - first:
+      213: -6762662919118219351
+    second: GreyDeath8
+  - first:
+      213: -8125261498838865995
+    second: GreyDeath9
+  - first:
+      213: 6669245996647104350
+    second: GreyDeath10
+  - first:
+      213: 676415196157525697
+    second: GreyDeath11
+  - first:
+      213: 8893525506091433485
+    second: GreyDeath12
+  - first:
+      213: -6417403088655658297
+    second: GreyDeath13
+  - first:
+      213: -8164841846484138174
+    second: GreyDeath14
+  - first:
+      213: 6603151257909879442
+    second: GreyDeath15
+  - first:
+      213: -7049401938081067561
+    second: GreyDeath16
+  - first:
+      213: 7735431522657143173
+    second: GreyDeath17
+  - first:
+      213: 643378233392126283
+    second: RoboDeath_72
+  - first:
+      213: 1192212503266427513
+    second: RoboDeath_73
+  - first:
+      213: -767781329595375626
+    second: RoboDeath_74
+  - first:
+      213: 1630481738277532381
+    second: RoboDeath_75
+  - first:
+      213: 7388183908022616269
+    second: RoboDeath_76
+  - first:
+      213: 2020663677024657498
+    second: RoboDeath_77
+  - first:
+      213: -6700669797420406746
+    second: RoboDeath_78
+  - first:
+      213: 3934791459008327752
+    second: RoboDeath_79
+  - first:
+      213: -7965749029602514156
+    second: RoboDeath_80
+  - first:
+      213: -3199151409373871905
+    second: RoboDeath_81
+  - first:
+      213: 8798099392160200399
+    second: RoboDeath_82
+  - first:
+      213: -1773459640438448406
+    second: RoboDeath_83
+  - first:
+      213: -4989996961517987555
+    second: RoboDeath_84
+  - first:
+      213: -5848720483062085543
+    second: RoboDeath_85
+  - first:
+      213: -8572616935131228460
+    second: RoboDeath_86
+  - first:
+      213: -9185984991889188093
+    second: RoboDeath_87
+  - first:
+      213: 3527809643902345714
+    second: RoboDeath_88
+  - first:
+      213: -7752510257158704875
+    second: RoboDeath_89
+  - first:
+      213: -7829026445914004080
+    second: RoboDeath_90
+  - first:
+      213: -2733983036779509356
+    second: RoboDeath_91
+  - first:
+      213: 3612158515286889647
+    second: RoboDeath_92
+  - first:
+      213: -2925912959908272927
+    second: RoboDeath_93
+  - first:
+      213: -9110637500784954612
+    second: RoboDeath_94
+  - first:
+      213: -553391258596968463
+    second: RoboDeath_95
+  - first:
+      213: -2908397259781861227
+    second: RoboDeath_96
+  - first:
+      213: -122495534593011033
+    second: RoboDeath_97
+  - first:
+      213: -3956402817191176243
+    second: RoboDeath_98
+  - first:
+      213: 6058371930357118090
+    second: RoboDeath_99
+  - first:
+      213: 2794718951813836388
+    second: RoboDeath_100
+  - first:
+      213: 8313878657178577399
+    second: RoboDeath_101
+  - first:
+      213: -5242329659840307263
+    second: RoboDeath_102
+  - first:
+      213: -1329164076968864275
+    second: RoboDeath_103
+  - first:
+      213: -5729033549793657649
+    second: RoboDeath_104
+  - first:
+      213: -3439755849445841019
+    second: RoboDeath_105
+  - first:
+      213: -4824369587303773624
+    second: RoboDeath_106
+  - first:
+      213: -1217611903392843028
+    second: RoboDeath_107
+  - first:
+      213: 8068122326448958068
+    second: RoboDeath_108
+  - first:
+      213: -8000819815205979452
+    second: RoboDeath_109
+  - first:
+      213: 8559088118713516243
+    second: RoboDeath_110
+  - first:
+      213: 6883686999945892241
+    second: RoboDeath_111
+  - first:
+      213: -4038265114842656527
+    second: RoboDeath_112
+  - first:
+      213: 7208495474626314740
+    second: RoboDeath_113
+  - first:
+      213: -472418954139924844
+    second: RoboDeath_114
+  - first:
+      213: -77060299688928374
+    second: RoboDeath_115
+  - first:
+      213: -695241008046837969
+    second: RoboDeath_116
+  - first:
+      213: 1340938590508962197
+    second: RoboDeath_117
+  - first:
+      213: -1640903005825676668
+    second: RoboDeath_118
+  - first:
+      213: -4137998776746313876
+    second: RoboDeath_119
+  - first:
+      213: 6410099247207064281
+    second: RoboDeath_120
+  - first:
+      213: -8401635856049832888
+    second: RoboDeath_121
+  - first:
+      213: 9196323422351519263
+    second: RoboDeath_122
+  - first:
+      213: 171446982512378150
+    second: RoboDeath_123
+  - first:
+      213: 8712963309126888327
+    second: RoboDeath_124
+  - first:
+      213: 9202052494616772600
+    second: RoboDeath_125
+  - first:
+      213: -4984430601362399228
+    second: RoboDeath_126
+  - first:
+      213: -7242693342196219711
+    second: RoboDeath_127
+  - first:
+      213: 6263061985950237513
+    second: RoboDeath_128
+  - first:
+      213: -5086608238011088773
+    second: RoboDeath_129
+  - first:
+      213: -2411070149248982590
+    second: RoboDeath_130
+  - first:
+      213: 7827454289311608048
+    second: RoboDeath_131
+  - first:
+      213: 3933322483258061571
+    second: RoboDeath_132
+  - first:
+      213: 7294353546545152324
+    second: RoboDeath_133
+  - first:
+      213: 638911659736718337
+    second: RoboDeath_134
+  - first:
+      213: -2193359360771980153
+    second: RoboDeath_135
+  - first:
+      213: -7707183342908277382
+    second: RoboDeath_136
+  - first:
+      213: -5247450037928248769
+    second: RoboDeath_137
+  - first:
+      213: 7317863667113944740
+    second: RoboDeath_138
+  - first:
+      213: -4399104110495545697
+    second: RoboDeath_139
+  - first:
+      213: 4551177836506208683
+    second: RoboDeath_140
+  - first:
+      213: -6550359571160284085
+    second: RoboDeath_141
+  - first:
+      213: 8815272522480348500
+    second: RoboDeath_142
+  - first:
+      213: -4852574930312118790
+    second: RoboDeath_143
+  - first:
+      213: 6533472585914951017
+    second: RoboDeath_144
+  - first:
+      213: 669520138439690132
+    second: RoboDeath_145
+  - first:
+      213: 586982926275851553
+    second: RoboDeath_146
+  - first:
+      213: -4833802800066148187
+    second: RoboDeath_147
+  - first:
+      213: 8050833300241041910
+    second: RoboDeath_148
+  - first:
+      213: 3719918476848097968
+    second: RoboDeath_149
+  - first:
+      213: -5616759674074369746
+    second: RoboDeath_150
+  - first:
+      213: 5492809219192735863
+    second: RoboDeath_151
+  - first:
+      213: -7053174095154175573
+    second: RoboDeath_152
+  - first:
+      213: 4891231905873418301
+    second: RoboDeath_153
+  - first:
+      213: -6427543865328637573
+    second: RoboDeath_154
+  - first:
+      213: 5245484256949392751
+    second: RoboDeath_155
+  - first:
+      213: 9118920512618293659
+    second: RoboDeath_156
+  - first:
+      213: -3837968071112352574
+    second: RoboDeath_157
+  - first:
+      213: 206560129400536628
+    second: RoboDeath_158
+  - first:
+      213: 4485583292459907112
+    second: RoboDeath_159
+  - first:
+      213: 2829004997638451655
+    second: RoboDeath_160
+  - first:
+      213: -618156001837010009
+    second: RoboDeath_161
+  - first:
+      213: -1170570483474519858
+    second: RoboDeath_162
+  - first:
+      213: -4575985821926055664
+    second: RoboDeath_163
+  - first:
+      213: 87839875117872827
+    second: RoboDeath_164
+  - first:
+      213: -1968338321116758512
+    second: RoboDeath_165
+  - first:
+      213: -2071289450375277135
+    second: RoboDeath_166
+  - first:
+      213: -172706526469325573
+    second: RoboDeath_167
+  - first:
+      213: -8835695099993423871
+    second: RoboDeath_168
+  - first:
+      213: 6642184406760787559
+    second: RoboDeath_169
+  - first:
+      213: -13291530726511825
+    second: RoboDeath_170
+  - first:
+      213: 4162618713584865196
+    second: RoboDeath_171
+  - first:
+      213: 1539248704577370269
+    second: RoboDeath_172
+  - first:
+      213: -5042800612041271147
+    second: RoboDeath_173
+  - first:
+      213: -5382400789230077357
+    second: RoboDeath_174
+  - first:
+      213: -4941904993089348670
+    second: RoboDeath_175
+  - first:
+      213: -1780898441416070791
+    second: RoboDeath_176
+  - first:
+      213: 1592357952989814973
+    second: RoboDeath_177
+  - first:
+      213: 232999356818548567
+    second: RoboDeath_178
+  - first:
+      213: 37945880393432803
+    second: RoboDeath_179
+  - first:
+      213: -928876459286722601
+    second: RoboDeath_180
+  - first:
+      213: -8632852932193215231
+    second: RoboDeath_181
+  - first:
+      213: 4784814962189278708
+    second: RoboDeath_182
+  - first:
+      213: -6337638859794059960
+    second: RoboDeath_183
+  - first:
+      213: 6214149314100724944
+    second: RoboDeath_184
+  - first:
+      213: -8163156691296916030
+    second: RoboDeath_185
+  - first:
+      213: 6101117742449468704
+    second: RoboDeath_186
+  - first:
+      213: -4635710150703017448
+    second: RoboDeath_187
+  - first:
+      213: 5865706494939136599
+    second: RoboDeath_188
+  - first:
+      213: -613354059724963862
+    second: RoboDeath_189
+  - first:
+      213: 799414764136691097
+    second: RoboDeath_190
+  - first:
+      213: -2223288189617012885
+    second: RoboDeath_191
+  - first:
+      213: -140347392176682989
+    second: RoboDeath_192
+  - first:
+      213: 7452925359327763093
+    second: RoboDeath_193
+  - first:
+      213: 2164861814241115638
+    second: RoboDeath_194
+  - first:
+      213: -1730494616630545203
+    second: RoboDeath_195
+  - first:
+      213: 5964584823965999133
+    second: RoboDeath_196
+  - first:
+      213: 6792842342456714928
+    second: RoboDeath_197
+  - first:
+      213: 7738702267351232407
+    second: RoboDeath_198
+  - first:
+      213: 7968047043378047223
+    second: RoboDeath_199
+  - first:
+      213: -2795235273106750672
+    second: RoboDeath_200
+  - first:
+      213: 3740503405118442324
+    second: RoboDeath_201
+  - first:
+      213: 2556787020282790208
+    second: RoboDeath_202
+  - first:
+      213: -1879637068689771701
+    second: RoboDeath_203
+  - first:
+      213: 4539572746220235487
+    second: RoboDeath_204
+  - first:
+      213: -5752770756631325701
+    second: RoboDeath_205
+  - first:
+      213: -3828854849765694105
+    second: RoboDeath_206
+  - first:
+      213: -1006376006728616842
+    second: RoboDeath_207
+  - first:
+      213: -38204571995433586
+    second: RoboDeath_208
+  - first:
+      213: 7547377840392457351
+    second: RoboDeath_209
+  - first:
+      213: -1285252145602963473
+    second: RoboDeath_210
+  - first:
+      213: 6023854909898427497
+    second: RoboDeath_211
+  - first:
+      213: -1802899111958817761
+    second: RoboDeath_212
+  - first:
+      213: -3606347960541668557
+    second: RoboDeath_213
+  - first:
+      213: -2275436597847201967
+    second: RoboDeath_214
+  - first:
+      213: 3354762089629951538
+    second: RoboDeath_215
+  - first:
+      213: 1373454669350845796
+    second: RoboDeath_216
+  - first:
+      213: -2347871486592289886
+    second: RoboDeath_217
+  - first:
+      213: 8330993939612385116
+    second: RoboDeath_218
+  - first:
+      213: -1396262095331164667
+    second: RoboDeath_219
+  - first:
+      213: 1181085574120308230
+    second: RoboDeath_220
+  - first:
+      213: -3085351096492601767
+    second: RoboDeath_221
+  - first:
+      213: 836621041743081351
+    second: RoboDeath_222
+  - first:
+      213: 5807008390020071386
+    second: RoboDeath_223
+  - first:
+      213: -4609066903740303360
+    second: RoboDeath_224
+  - first:
+      213: -4116345189834778399
+    second: RoboDeath_225
+  - first:
+      213: -1264924823514885562
+    second: RoboDeath_226
+  - first:
+      213: -8666091978724069563
+    second: RoboDeath_227
+  - first:
+      213: 2598116990580746178
+    second: RoboDeath_228
+  - first:
+      213: 1404082779583809597
+    second: RoboDeath_229
+  - first:
+      213: 8548347787484695440
+    second: RoboDeath_230
+  - first:
+      213: 5625879411067802637
+    second: RoboDeath_231
+  - first:
+      213: -245137002252119039
+    second: RoboDeath_232
+  - first:
+      213: -3421119727879778206
+    second: RoboDeath_233
+  - first:
+      213: -4622712404198814887
+    second: RoboDeath_234
+  - first:
+      213: -3555148173994378263
+    second: RoboDeath_235
+  - first:
+      213: -8288077651633502341
+    second: RoboDeath_236
+  - first:
+      213: -3702193238708946237
+    second: RoboDeath_237
+  - first:
+      213: -1098947706033186518
+    second: RoboDeath_238
+  - first:
+      213: 5800589920660577700
+    second: RoboDeath_239
+  - first:
+      213: -257165389190855239
+    second: RoboDeath_240
+  - first:
+      213: -8614909221227346258
+    second: RoboDeath_241
+  - first:
+      213: -5366639775478526429
+    second: RoboDeath_242
+  - first:
+      213: -6066226876807112867
+    second: RoboDeath_243
+  - first:
+      213: -507155934352675790
+    second: RoboDeath_244
+  - first:
+      213: 525929717154384387
+    second: RoboDeath_245
+  - first:
+      213: 3682139746558973446
+    second: RoboDeath_246
+  - first:
+      213: 6566442912765860888
+    second: RoboDeath_247
+  - first:
+      213: -5340962345091253300
+    second: RoboDeath_248
+  - first:
+      213: -6282326162493242950
+    second: RoboDeath_249
+  - first:
+      213: -2592350295615850996
+    second: RoboDeath_250
+  - first:
+      213: -2694591750313123778
+    second: RoboDeath_251
+  - first:
+      213: 6494323714137802888
+    second: RoboDeath_252
+  - first:
+      213: 2808162704539268400
+    second: RoboDeath_253
+  - first:
+      213: -4729850502082494322
+    second: RoboDeath_254
+  - first:
+      213: -3255204783386047029
+    second: RoboDeath_255
+  - first:
+      213: -7352741612969070845
+    second: RoboDeath_256
+  - first:
+      213: 3697814656488735198
+    second: RoboDeath_257
+  - first:
+      213: -6651004755214954064
+    second: RoboDeath_258
+  - first:
+      213: 6543609051361661988
+    second: RoboDeath_259
+  - first:
+      213: 2038875321127004358
+    second: RoboDeath_260
+  - first:
+      213: 948444131051846754
+    second: RoboDeath_261
+  - first:
+      213: 4534348684352608351
+    second: RoboDeath_262
+  - first:
+      213: -8623891432425166493
+    second: RoboDeath_263
+  - first:
+      213: -5450414706505544547
+    second: RoboDeath_264
+  - first:
+      213: -2594835618198911777
+    second: RoboDeath_265
+  - first:
+      213: 9045271916480835869
+    second: RoboDeath_266
+  - first:
+      213: -3593980489193385157
+    second: RoboDeath_267
+  - first:
+      213: 1912785636568858746
+    second: RoboDeath_268
+  - first:
+      213: 997176880809527690
+    second: RoboDeath_269
+  - first:
+      213: -7951174591964954844
+    second: RoboDeath_270
+  - first:
+      213: -2539788508725067547
+    second: RoboDeath_271
+  - first:
+      213: 3310366673223022166
+    second: RoboDeath_272
+  - first:
+      213: -2099455951124132525
+    second: RoboDeath_273
+  - first:
+      213: 8014029784311430932
+    second: RoboDeath_274
+  - first:
+      213: 4184198208681834150
+    second: RoboDeath_275
+  - first:
+      213: -6774750456247102165
+    second: RoboDeath_276
+  - first:
+      213: -7762071938155142102
+    second: RoboDeath_277
+  - first:
+      213: -116942926525984504
+    second: RoboDeath_278
+  - first:
+      213: 70764613407846542
+    second: RoboDeath_279
+  - first:
+      213: 8258755065412896108
+    second: RoboDeath_280
+  - first:
+      213: 1036827498828144788
+    second: RoboDeath_281
+  - first:
+      213: -7434830952161658284
+    second: RoboDeath_282
+  - first:
+      213: 1655861107223889992
+    second: RoboDeath_283
+  - first:
+      213: -3827125266275117327
+    second: RoboDeath_284
+  - first:
+      213: -3889402677506309901
+    second: RoboDeath_285
+  - first:
+      213: -7475776083764901840
+    second: RoboDeath_286
+  - first:
+      213: -6507743830910077760
+    second: RoboDeath_287
+  - first:
+      213: -5607904366185344390
+    second: RoboDeath_288
+  - first:
+      213: 2504077681942285922
+    second: RoboDeath_289
+  - first:
+      213: -2554505526399127645
+    second: RoboDeath_290
+  - first:
+      213: -5898260371347692801
+    second: RoboDeath_291
+  - first:
+      213: 8232165942238612354
+    second: RoboDeath_292
+  - first:
+      213: 528257681358196117
+    second: RoboDeath_293
+  - first:
+      213: -917666676864682031
+    second: RoboDeath_294
+  - first:
+      213: -8026399892086158070
+    second: RoboDeath_295
+  - first:
+      213: 8550704149392190906
+    second: RoboDeath_296
+  - first:
+      213: 2958431142093246026
+    second: RoboDeath_297
+  - first:
+      213: -2669483676757035359
+    second: RoboDeath_298
+  - first:
+      213: 2998986520236110300
+    second: RoboDeath_299
+  - first:
+      213: 1887366461949896381
+    second: RoboDeath_300
+  - first:
+      213: 7550472153445217805
+    second: RoboDeath_301
+  - first:
+      213: -7684413642861127816
+    second: RoboDeath_302
+  - first:
+      213: 8043595924572954466
+    second: RoboDeath_303
+  - first:
+      213: -291148711152825870
+    second: RoboDeath_304
+  - first:
+      213: 4520438580599623005
+    second: RoboDeath_305
+  - first:
+      213: -4733015788355010620
+    second: RoboDeath_306
+  - first:
+      213: -4172459866466416074
+    second: RoboDeath_307
+  - first:
+      213: -1089025659450274144
+    second: RoboDeath_308
+  - first:
+      213: -6466296697603396600
+    second: RoboDeath_309
+  - first:
+      213: 4439135352487629287
+    second: RoboDeath_310
+  - first:
+      213: -6021142571768800933
+    second: RoboDeath_311
+  - first:
+      213: 248448865345577185
+    second: RoboDeath_312
+  - first:
+      213: 6091054908820437056
+    second: RoboDeath_313
+  - first:
+      213: -4968693205408193441
+    second: RoboDeath_314
+  - first:
+      213: -4494323218483298559
+    second: RoboDeath_315
+  - first:
+      213: -6052999238576739491
+    second: RoboDeath_316
+  - first:
+      213: 3906942180839609896
+    second: RoboDeath_317
+  - first:
+      213: 6988587551458713265
+    second: RoboDeath_318
+  - first:
+      213: -6231591488677009767
+    second: RoboDeath_319
+  - first:
+      213: -1462677736896079151
+    second: RoboDeath_320
+  - first:
+      213: -7310323997833045116
+    second: RoboDeath_321
+  - first:
+      213: -2966150561022517806
+    second: RoboDeath_322
+  - first:
+      213: 5598373809076939845
+    second: RoboDeath_323
+  - first:
+      213: 943401207654719900
+    second: RoboDeath_324
+  - first:
+      213: -6289083872284073516
+    second: RoboDeath_325
+  - first:
+      213: 1831144870925987575
+    second: RoboDeath_326
+  - first:
+      213: -4211734881650315960
+    second: RoboDeath_327
+  - first:
+      213: -2789246380721197352
+    second: RoboDeath_328
+  - first:
+      213: 3412899302201201444
+    second: RoboDeath_329
+  - first:
+      213: -3100760931285365094
+    second: RoboDeath_330
+  - first:
+      213: 2663312738630584534
+    second: RoboDeath_331
+  - first:
+      213: 3377934858945252764
+    second: RoboDeath_332
+  - first:
+      213: 4797839663264095790
+    second: RoboDeath_333
+  - first:
+      213: -1493754581753542046
+    second: RoboDeath_334
+  - first:
+      213: 3073737216720256433
+    second: RoboDeath_335
+  - first:
+      213: 4045296480818944734
+    second: RoboDeath_336
+  - first:
+      213: -7347475690515841975
+    second: RoboDeath_337
+  - first:
+      213: 1599344313948841543
+    second: RoboDeath_338
+  - first:
+      213: 8290446603470049283
+    second: RoboDeath_339
+  - first:
+      213: -7641244221296732082
+    second: RoboDeath_340
+  - first:
+      213: 7586985459869647940
+    second: RoboDeath_341
+  - first:
+      213: -8443266686620127106
+    second: RoboDeath_342
+  - first:
+      213: -7795466601196506596
+    second: RoboDeath_343
+  - first:
+      213: 4469398735523569038
+    second: RoboDeath_344
+  - first:
+      213: -3372427530427532779
+    second: RoboDeath_345
+  - first:
+      213: 7959531536022421645
+    second: RoboDeath_346
+  - first:
+      213: 4784809969331996414
+    second: RoboDeath_347
+  - first:
+      213: -1351661918865016206
+    second: RoboDeath_348
+  - first:
+      213: -3200972765840888424
+    second: RoboDeath_349
+  - first:
+      213: -2170278167180740935
+    second: RoboDeath_350
+  - first:
+      213: 5078405985044220439
+    second: RoboDeath_351
+  - first:
+      213: 7656780875621715082
+    second: RoboDeath_352
+  - first:
+      213: -333278121728553190
+    second: RoboDeath_353
+  - first:
+      213: -3085280443778366823
+    second: RoboDeath_354
+  - first:
+      213: -3841539964195315257
+    second: RoboDeath_355
+  - first:
+      213: -7763968667784198892
+    second: RoboDeath_356
+  - first:
+      213: -6267389784147471545
+    second: RoboDeath_357
+  - first:
+      213: -8206533339727742512
+    second: RoboDeath_358
+  - first:
+      213: -3074625887140412526
+    second: RoboDeath_359
+  - first:
+      213: 6665056234130081954
+    second: RoboDeath_360
+  - first:
+      213: 5430255351866174705
+    second: RoboDeath_361
+  - first:
+      213: -4025342170545551465
+    second: RoboDeath_362
+  - first:
+      213: -1983417881427681304
+    second: RoboDeath_363
+  - first:
+      213: 9187696487848144906
+    second: RoboDeath_364
+  - first:
+      213: 6927249068576702317
+    second: RoboDeath_365
+  - first:
+      213: 3280549926314627911
+    second: RoboDeath_366
+  - first:
+      213: 3719584657685801946
+    second: RoboDeath_367
+  - first:
+      213: 902409259529610117
+    second: RoboDeath_368
+  - first:
+      213: -8619731886477821630
+    second: RoboDeath_369
+  - first:
+      213: 3011830332196728093
+    second: RoboDeath_370
+  - first:
+      213: 6836152082334845478
+    second: RoboDeath_371
+  - first:
+      213: 4165714998604818001
+    second: RoboDeath_372
+  - first:
+      213: -284831828022178028
+    second: RoboDeath_373
+  - first:
+      213: -5748427704517983424
+    second: RoboDeath_374
+  - first:
+      213: 6016366948882298089
+    second: RoboDeath_375
+  - first:
+      213: 5135991886267389798
+    second: RoboDeath_376
+  - first:
+      213: 4861635474198407550
+    second: RoboDeath_377
+  - first:
+      213: -5317969275947348154
+    second: RoboDeath_378
+  - first:
+      213: 2204777177362603670
+    second: RoboDeath_379
+  - first:
+      213: 3168670728292849496
+    second: RoboDeath_380
+  - first:
+      213: 5395211914654145265
+    second: RoboDeath_381
+  - first:
+      213: 4040632970518975892
+    second: RoboDeath_382
+  - first:
+      213: 1787373355289947806
+    second: RoboDeath_383
+  - first:
+      213: 2385439961516820186
+    second: RoboDeath_384
+  - first:
+      213: 6070076495782898971
+    second: RoboDeath_385
+  - first:
+      213: -199420578781590248
+    second: RoboDeath_386
+  - first:
+      213: -8074624967361257771
+    second: RoboDeath_387
+  - first:
+      213: -7170632998283390163
+    second: RoboDeath_388
+  - first:
+      213: 3973808961166920481
+    second: RoboDeath_389
+  - first:
+      213: 4202700028231631894
+    second: RoboDeath_390
+  - first:
+      213: -3905324626099096190
+    second: RoboDeath_391
+  - first:
+      213: 8873876333538626282
+    second: RoboDeath_392
+  - first:
+      213: -5386581593280638945
+    second: RoboDeath_393
+  - first:
+      213: 7948794652230731323
+    second: RoboDeath_394
+  - first:
+      213: 6876686839157477016
+    second: RoboDeath_395
+  - first:
+      213: -257224456648905805
+    second: RoboDeath_396
+  - first:
+      213: -954885158030034771
+    second: RoboDeath_397
+  - first:
+      213: -4138429687395556114
+    second: RoboDeath_398
+  - first:
+      213: 6668251243357006254
+    second: RoboDeath_399
+  - first:
+      213: -7354894852882134991
+    second: RoboDeath_400
+  - first:
+      213: -6856927043298076299
+    second: RoboDeath_401
+  - first:
+      213: -1642517910955982048
+    second: RoboDeath_402
+  - first:
+      213: 4034715005567425961
+    second: RoboDeath_403
+  - first:
+      213: -7321463735467664885
+    second: RoboDeath_404
+  - first:
+      213: 1920319454417719727
+    second: RoboDeath_405
+  - first:
+      213: 5982346830756028733
+    second: RoboDeath_406
+  - first:
+      213: -5866849100266427886
+    second: RoboDeath_407
+  - first:
+      213: -678480129919236569
+    second: RoboDeath_408
+  - first:
+      213: 885266322937965888
+    second: RoboDeath_409
+  - first:
+      213: -4384100026226869455
+    second: RoboDeath_410
+  - first:
+      213: -4683493799698978947
+    second: RoboDeath_411
+  - first:
+      213: -3866944171477361106
+    second: RoboDeath_412
+  - first:
+      213: 7842689451598814054
+    second: RoboDeath_413
+  - first:
+      213: -6988670018948743252
+    second: RoboDeath_414
+  - first:
+      213: 5565422911519088577
+    second: RoboDeath_415
+  - first:
+      213: -4460316087654132359
+    second: RoboDeath_416
+  - first:
+      213: -1285873803760165305
+    second: RoboDeath_417
+  - first:
+      213: -1795213581719586806
+    second: RoboDeath_418
+  - first:
+      213: 7338354084948671209
+    second: RoboDeath_419
+  - first:
+      213: 4723378349784580434
+    second: RoboDeath_420
+  - first:
+      213: -2422162193327824933
+    second: RoboDeath_421
+  - first:
+      213: -6093901582644714126
+    second: RoboDeath_422
+  - first:
+      213: 5865925444230569646
+    second: RoboDeath_423
+  - first:
+      213: -5080232366437924366
+    second: RoboDeath_424
+  - first:
+      213: 8894746492049989219
+    second: RoboDeath_425
+  - first:
+      213: -2440673924897964550
+    second: RoboDeath_426
+  - first:
+      213: 2339994124299619772
+    second: RoboDeath_427
+  - first:
+      213: 4185736991418430718
+    second: RoboDeath_428
+  - first:
+      213: -1261187559377032859
+    second: RoboDeath_429
+  - first:
+      213: 2875249008166355831
+    second: RoboDeath_430
+  - first:
+      213: -1212731884511120654
+    second: RoboDeath_431
+  - first:
+      213: 4980934737070592584
+    second: RoboDeath_432
+  - first:
+      213: -8541683148776645587
+    second: RoboDeath_433
+  - first:
+      213: -7811774007545772756
+    second: RoboDeath_434
+  - first:
+      213: -728019166058147668
+    second: RoboDeath_435
+  - first:
+      213: -929088785463353218
+    second: RoboDeath_436
+  - first:
+      213: 3323790610542926121
+    second: RoboDeath_437
+  - first:
+      213: -3561052168235531501
+    second: RoboDeath_438
+  - first:
+      213: 4669443049361075239
+    second: RoboDeath_439
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenDeath0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43327e8f1d60b91c0800000000000000
+      internalID: -4495992304105479372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac54e166a26b1630800000000000000
+      internalID: 3898818369165745322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e13f158984c94a0800000000000000
+      internalID: -6585308736075391430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1541dc5d78f99b9b0800000000000000
+      internalID: -5063840900245023663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab167a6752fde3ab0800000000000000
+      internalID: -5026334782101429830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09125442e1f33e040800000000000000
+      internalID: 4675650236830785936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2182d17ed97fea0800000000000000
+      internalID: -5839024775910387017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd735ada54853be0800000000000000
+      internalID: -1498145775285994045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5632a932d18b130800000000000000
+      internalID: 3582645542320301519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7730bacba623b50800000000000000
+      internalID: 6571432164842502052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdedfbd586c974f10800000000000000
+      internalID: 2253942110585609951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10988ddefeeefac40800000000000000
+      internalID: 5525897982061873409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416914e41e9bf2290800000000000000
+      internalID: -7912901642934970860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee09b22a863e779a0800000000000000
+      internalID: -6235265120534294290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26493b07dff17df90800000000000000
+      internalID: -6929034328308214686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f86c5c1baefb92f0800000000000000
+      internalID: -964897684272158474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df424ff8ff82d5aa0800000000000000
+      internalID: -6170730836330797827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenDeath17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 192
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996456aa06f0bf0e0800000000000000
+      internalID: -2235175882209278311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e9a3b2fdb29bff0800000000000000
+      internalID: -19936485843493322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804e14152653adbb0800000000000000
+      internalID: -4910553747307764728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da747f333f1537d0800000000000000
+      internalID: -2939408876820989227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708890a3700efd6a0800000000000000
+      internalID: -6422168221963941881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2f1a7177ef80d60800000000000000
+      internalID: 7856809337398883066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21940c35de8bc6900800000000000000
+      internalID: 679120973277972754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6dd5338e44e3dc0800000000000000
+      internalID: -3657410083293374776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d580a2f59159a89b0800000000000000
+      internalID: -5077081693703501731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed22236d67270c6e0800000000000000
+      internalID: -1819328394732363042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9857c067e4bcbc9b0800000000000000
+      internalID: -5058726218572204663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642b3f8a9d977a610800000000000000
+      internalID: 1632407365694501446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa1c9fe2ceea31d0800000000000000
+      internalID: -3370118850122343766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6755d1098bd34310800000000000000
+      internalID: 1388194491648005995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d6cf58fd80ed400800000000000000
+      internalID: 350727577100119351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44886efc3455948d0800000000000000
+      internalID: -2861662338478077884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c47409a1c1da2150800000000000000
+      internalID: 5848717695788545222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113979714bd576cb0800000000000000
+      internalID: -4870821443906596079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueDeath17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 128
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1439a4e3d60ffb8b0800000000000000
+      internalID: -5134120698191899839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6876b0e87accbe500800000000000000
+      internalID: 426659609731360646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7de5d9f0a32d380800000000000000
+      internalID: -8948025670892595206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c27161567658aa0800000000000000
+      internalID: -6159403231499310038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271a885dfb6159980800000000000000
+      internalID: -8532888905806470798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2e90f849c37fc40800000000000000
+      internalID: 5545968074882671281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eef8fa9567bd5130800000000000000
+      internalID: 3557200927712149218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfb4fa419166d0e0800000000000000
+      internalID: -2245500087541907497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a37ee848abbf1b20800000000000000
+      internalID: 3107408599361418151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ee9f4eee877a190800000000000000
+      internalID: -7951253649660187028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aad1134436bd9420800000000000000
+      internalID: 2638465292288776870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1494318a9f4619c40800000000000000
+      internalID: 5517302041935038785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b0adcf160241430800000000000000
+      internalID: 3752659994732530474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e569b224c3c03a00800000000000000
+      internalID: 734301986424972768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd1dff0d25a7a4f0800000000000000
+      internalID: -817503194384097871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962ac714937f74920800000000000000
+      internalID: 2974617904185385577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb17cc644c745dc0800000000000000
+      internalID: -3651156764566021191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90af1992cba0ab710800000000000000
+      internalID: 1709690811808086537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedDeath17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b49ec669b201ba50800000000000000
+      internalID: 6535007529608320176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e634dccca17f18c0800000000000000
+      internalID: -4026374554861160728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0632700a29e46d0800000000000000
+      internalID: -3004302685397360397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a47803a6ca93c60800000000000000
+      internalID: 7798453801849408090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e247fde2fd4bdf10800000000000000
+      internalID: 2295514140845228777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e737bd3d2150e00e0800000000000000
+      internalID: -2301896781117820034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52820de202d6ee210800000000000000
+      internalID: 1364147722131613733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ac8def696e12850800000000000000
+      internalID: 6350610485764213393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f1f1b92d2df89f0800000000000000
+      internalID: -463920434608398458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7904ab7e13622a0800000000000000
+      internalID: -6762662919118219351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b72d8e57b54d3f80800000000000000
+      internalID: -8125261498838865995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fb8d516ebed8c50800000000000000
+      internalID: 6669245996647104350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce35af790c136900800000000000000
+      internalID: 676415196157525697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0eb47fe3562c6b70800000000000000
+      internalID: 8893525506091433485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c25f2844edc0f6a0800000000000000
+      internalID: -6417403088655658297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247811d8997a0be80800000000000000
+      internalID: -8164841846484138174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29264e5851b13ab50800000000000000
+      internalID: 6603151257909879442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd4ab1694e7b2e90800000000000000
+      internalID: -7049401938081067561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyDeath17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589865c5cf5c95b60800000000000000
+      internalID: 7735431522657143173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 84ee924f839790145a31a01abdff378f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":7,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BlueDeath0: -19936485843493322
+      BlueDeath1: -4910553747307764728
+      BlueDeath10: 1632407365694501446
+      BlueDeath11: -3370118850122343766
+      BlueDeath12: 1388194491648005995
+      BlueDeath13: 350727577100119351
+      BlueDeath14: -2861662338478077884
+      BlueDeath15: 5848717695788545222
+      BlueDeath16: -4870821443906596079
+      BlueDeath17: -5134120698191899839
+      BlueDeath2: -2939408876820989227
+      BlueDeath3: -6422168221963941881
+      BlueDeath4: 7856809337398883066
+      BlueDeath5: 679120973277972754
+      BlueDeath6: -3657410083293374776
+      BlueDeath7: -5077081693703501731
+      BlueDeath8: -1819328394732363042
+      BlueDeath9: -5058726218572204663
+      GreenDeath0: -4495992304105479372
+      GreenDeath1: 3898818369165745322
+      GreenDeath10: 2253942110585609951
+      GreenDeath11: 5525897982061873409
+      GreenDeath12: -7912901642934970860
+      GreenDeath13: -6235265120534294290
+      GreenDeath14: -6929034328308214686
+      GreenDeath15: -964897684272158474
+      GreenDeath16: -6170730836330797827
+      GreenDeath17: -2235175882209278311
+      GreenDeath2: -6585308736075391430
+      GreenDeath3: -5063840900245023663
+      GreenDeath4: -5026334782101429830
+      GreenDeath5: 4675650236830785936
+      GreenDeath6: -5839024775910387017
+      GreenDeath7: -1498145775285994045
+      GreenDeath8: 3582645542320301519
+      GreenDeath9: 6571432164842502052
+      GreyDeath0: -4026374554861160728
+      GreyDeath1: -3004302685397360397
+      GreyDeath10: 6669245996647104350
+      GreyDeath11: 676415196157525697
+      GreyDeath12: 8893525506091433485
+      GreyDeath13: -6417403088655658297
+      GreyDeath14: -8164841846484138174
+      GreyDeath15: 6603151257909879442
+      GreyDeath16: -7049401938081067561
+      GreyDeath17: 7735431522657143173
+      GreyDeath2: 7798453801849408090
+      GreyDeath3: 2295514140845228777
+      GreyDeath4: -2301896781117820034
+      GreyDeath5: 1364147722131613733
+      GreyDeath6: 6350610485764213393
+      GreyDeath7: -463920434608398458
+      GreyDeath8: -6762662919118219351
+      GreyDeath9: -8125261498838865995
+      RedDeath0: 426659609731360646
+      RedDeath1: -8948025670892595206
+      RedDeath10: 5517302041935038785
+      RedDeath11: 3752659994732530474
+      RedDeath12: 734301986424972768
+      RedDeath13: -817503194384097871
+      RedDeath14: 2974617904185385577
+      RedDeath15: -3651156764566021191
+      RedDeath16: 1709690811808086537
+      RedDeath17: 6535007529608320176
+      RedDeath2: -6159403231499310038
+      RedDeath3: -8532888905806470798
+      RedDeath4: 5545968074882671281
+      RedDeath5: 3557200927712149218
+      RedDeath6: -2245500087541907497
+      RedDeath7: 3107408599361418151
+      RedDeath8: -7951253649660187028
+      RedDeath9: 2638465292288776870
+      RoboDeath_0: -4495992304105479372
+      RoboDeath_1: 3898818369165745322
+      RoboDeath_10: 2253942110585609951
+      RoboDeath_11: 5525897982061873409
+      RoboDeath_12: -7912901642934970860
+      RoboDeath_13: -6235265120534294290
+      RoboDeath_14: -6929034328308214686
+      RoboDeath_15: -964897684272158474
+      RoboDeath_16: -6170730836330797827
+      RoboDeath_17: -2235175882209278311
+      RoboDeath_18: -19936485843493322
+      RoboDeath_19: -4910553747307764728
+      RoboDeath_2: -6585308736075391430
+      RoboDeath_20: -2939408876820989227
+      RoboDeath_21: -6422168221963941881
+      RoboDeath_22: 7856809337398883066
+      RoboDeath_23: 679120973277972754
+      RoboDeath_24: -3657410083293374776
+      RoboDeath_25: -5077081693703501731
+      RoboDeath_26: -1819328394732363042
+      RoboDeath_27: -5058726218572204663
+      RoboDeath_28: 1632407365694501446
+      RoboDeath_29: -3370118850122343766
+      RoboDeath_3: -5063840900245023663
+      RoboDeath_30: 1388194491648005995
+      RoboDeath_31: 350727577100119351
+      RoboDeath_32: -2861662338478077884
+      RoboDeath_33: 5848717695788545222
+      RoboDeath_34: -4870821443906596079
+      RoboDeath_35: -5134120698191899839
+      RoboDeath_36: 426659609731360646
+      RoboDeath_37: -8948025670892595206
+      RoboDeath_38: -6159403231499310038
+      RoboDeath_39: -8532888905806470798
+      RoboDeath_4: -5026334782101429830
+      RoboDeath_40: 5545968074882671281
+      RoboDeath_41: 3557200927712149218
+      RoboDeath_42: -2245500087541907497
+      RoboDeath_43: 3107408599361418151
+      RoboDeath_44: -7951253649660187028
+      RoboDeath_45: 2638465292288776870
+      RoboDeath_46: 5517302041935038785
+      RoboDeath_47: 3752659994732530474
+      RoboDeath_48: 734301986424972768
+      RoboDeath_49: -817503194384097871
+      RoboDeath_5: 4675650236830785936
+      RoboDeath_50: 2974617904185385577
+      RoboDeath_51: -3651156764566021191
+      RoboDeath_52: 1709690811808086537
+      RoboDeath_53: 6535007529608320176
+      RoboDeath_54: -4026374554861160728
+      RoboDeath_55: -3004302685397360397
+      RoboDeath_56: 7798453801849408090
+      RoboDeath_57: 2295514140845228777
+      RoboDeath_58: -2301896781117820034
+      RoboDeath_59: 1364147722131613733
+      RoboDeath_6: -5839024775910387017
+      RoboDeath_60: 6350610485764213393
+      RoboDeath_61: -463920434608398458
+      RoboDeath_62: -6762662919118219351
+      RoboDeath_63: -8125261498838865995
+      RoboDeath_64: 6669245996647104350
+      RoboDeath_65: 676415196157525697
+      RoboDeath_66: 8893525506091433485
+      RoboDeath_67: -6417403088655658297
+      RoboDeath_68: -8164841846484138174
+      RoboDeath_69: 6603151257909879442
+      RoboDeath_7: -1498145775285994045
+      RoboDeath_70: -7049401938081067561
+      RoboDeath_71: 7735431522657143173
+      RoboDeath_8: 3582645542320301519
+      RoboDeath_9: 6571432164842502052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

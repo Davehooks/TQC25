@@ -2293,7 +2293,7 @@ MonoBehaviour:
   - Abrir opcoes
   - Ver quem fez
   - Sair :(
-  textSpeed: 0.1
+  textSpeed: 0.2
 --- !u!95 &1896224343
 Animator:
   serializedVersion: 7

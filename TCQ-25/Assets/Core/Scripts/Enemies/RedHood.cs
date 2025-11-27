@@ -34,7 +34,7 @@ public class RedHood : Enemy, IDamageable
     {
         return isFacingRight;
     }
-
+    
 
     //Override methods
     //RedHood vai se mover observando plataformas
@@ -84,7 +84,7 @@ public class RedHood : Enemy, IDamageable
 
     protected override void Die()
     {
-        base.Die();
+        animator.SetBool("Morto",true);
         Debug.Log($"{name} morreu!");
     }
 
@@ -135,12 +135,12 @@ public class RedHood : Enemy, IDamageable
     //COROUTINES
     public IEnumerator Shooting(float timing)
     {
-        //TODOOOOO
         isShooting = true;
         canShoot = false;
         
         GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
         Projectile projectile = projectileObj.GetComponent<Projectile>();
+        animator.SetTrigger("Shoot");
 
         if(projectile != null)
         {

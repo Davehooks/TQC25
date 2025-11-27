@@ -11,6 +11,8 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     [SerializeField] protected float moveSpeed = 2f;
     [SerializeField] protected float invincibilityTime = 0.5f;
 
+    private Animator _anim;
+
     [Header("Current in-game values")]
 
     protected int currentHealth;

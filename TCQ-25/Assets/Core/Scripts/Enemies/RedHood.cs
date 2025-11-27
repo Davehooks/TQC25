@@ -151,4 +151,9 @@ public class RedHood : Enemy, IDamageable
         isShooting = false;
         canShoot = true;
     }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
 }

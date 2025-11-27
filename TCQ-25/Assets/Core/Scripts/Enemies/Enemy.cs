@@ -86,4 +86,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(invincibilityTime);
         isInvincible = false;
     }
+
+    
 }

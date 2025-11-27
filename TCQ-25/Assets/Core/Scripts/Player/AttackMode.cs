@@ -7,7 +7,7 @@ public class AttackMode : BasePlayerMode
     private Transform firePoint;
     private bool canShootLaser = true;
     private float laserCooldown = 1.5f;
-    
+    public Collider2D meleeCollider;
     
 
     public override void EnterMode(PlayerController player)
@@ -15,6 +15,7 @@ public class AttackMode : BasePlayerMode
         base.EnterMode(player);        
         LoadReferences();
         player.Speed = player._baseSpeed;
+        meleeCollider.enabled = false;
         player.JumpForce = player._baseJumpForce;
         base.playerSFX.PlayTrocarModo();
     }
@@ -53,6 +54,7 @@ public class AttackMode : BasePlayerMode
     {
         MeleeAttack();
         base.playerSFX.PlayMeleeAttack();
+
     }
     
     public override void HandleAction2()
@@ -75,6 +77,9 @@ public class AttackMode : BasePlayerMode
     {
         player._anim.PlayAction1();
         base.playerSFX.PlayMeleeAttack();
+
+
+        meleeCollider.enabled = true;
         
     }
     

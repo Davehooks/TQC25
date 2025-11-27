@@ -9,7 +9,7 @@ public class Morse : MonoBehaviour
     private float pressStart;
     private bool isPressing = false;
 
-    private string currentMorse = "";
+    public string currentMorse = "";
     public float inputThreshold = 0.3f;
     public float morseTimeout = 2f;
     private Coroutine timeout;
@@ -51,6 +51,7 @@ public class Morse : MonoBehaviour
         {
             if(currentMorse.Length == 3)
             {
+                UIManager.UImanagerInstance.ZerarMorse(false);
                 currentMorse = "";
             }
             pressStart = Time.time;
@@ -67,7 +68,7 @@ public class Morse : MonoBehaviour
         {
             yield return new WaitForSeconds(morseTimeout);
             Debug.Log($"{morseTimeout} segundos sem apertar, limpando codigo");
-            UIManager.UImanagerInstance.ZerarMorse();
+            UIManager.UImanagerInstance.ZerarMorse(true);
             currentMorse = "";
         }
         if (keyboard.iKey.wasReleasedThisFrame && isPressing)
@@ -114,8 +115,9 @@ public class Morse : MonoBehaviour
                 playerController.SwitchMode(mode);
             }
 
+            
+            UIManager.UImanagerInstance.ZerarMorse(true);
             currentMorse = "";
-            UIManager.UImanagerInstance.ZerarMorse();
         }
     }
 }

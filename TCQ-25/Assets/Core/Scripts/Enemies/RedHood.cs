@@ -158,4 +158,17 @@ public class RedHood : Enemy, IDamageable
     {
         Destroy(gameObject);
     }
+    public void CantShoot()
+    {
+        this.gameObject.tag = "Untagged";
+        canShoot = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ReflectedProjectile"))
+        {
+            TakeDamage(1);
+        }
+    }
 }

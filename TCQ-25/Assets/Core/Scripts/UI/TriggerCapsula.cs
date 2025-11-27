@@ -22,10 +22,11 @@ public class TriggerCapsula : MonoBehaviour
         CapsuleAnimator = Capsule.GetComponent<Animator>();
 
     }
-    public void OnPartTriggerEnter()
-    {
-          if (StopCharacter == true) { playerController.Speed = 0;}
-    }
+
+    //private void FixedUpdate()
+    //{
+    //    Cientist.SetActive(false);
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,6 +36,7 @@ public class TriggerCapsula : MonoBehaviour
             {
                 CapsuleAnimator.SetTrigger("Entrou");
                 _Opened = true;
+                if (StopCharacter) { playerController.Speed = 0; }
             }
             else if (_OpenedEntire)
             {
@@ -70,11 +72,4 @@ public class TriggerCapsula : MonoBehaviour
         yield return new WaitForSeconds(tempoCientistaOut);
         Cientist.SetActive(false);
     }
-    IEnumerator WaitForStop()
-    {
-        yield return new WaitForSeconds(0.1f);
-        playerController.Speed = 0;
-    }
 }
-
-

@@ -27,6 +27,7 @@ public class RedHood : Enemy, IDamageable
     private void Start()
     {
         enemyCurrentHealth = enemyMaxHealth;
+        animator = GetComponent<Animator>();
         
     }
     //Getter / Setter
@@ -58,7 +59,7 @@ public class RedHood : Enemy, IDamageable
     }
     public void TakeDamage(int amount, GameObject source = null)
     {
-        Debug.Log($"Redhood: TakeDamage chamado Dano: {amount}, Vida antes: {enemyCurrentHealth}");
+        animator.SetTrigger("Damage");
         
         if (enemyCurrentHealth <= 0)
         {
@@ -84,7 +85,7 @@ public class RedHood : Enemy, IDamageable
 
     protected override void Die()
     {
-        animator.SetBool("Morto",true);
+        animator.SetBool("Death",true);
         Debug.Log($"{name} morreu!");
     }
 
@@ -96,6 +97,7 @@ public class RedHood : Enemy, IDamageable
         {
             if (canShoot)
                 Atack();
+            animator.SetTrigger("Shoot");
         }
         //checks if the mob sees the border of the tilemap
         if (!Physics2D.Linecast(groundCheck.position, transform.position, groundLayer))
@@ -140,7 +142,7 @@ public class RedHood : Enemy, IDamageable
         
         GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
         Projectile projectile = projectileObj.GetComponent<Projectile>();
-        animator.SetTrigger("Shoot");
+        
 
         if(projectile != null)
         {

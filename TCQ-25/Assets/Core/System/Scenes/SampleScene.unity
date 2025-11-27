@@ -109614,8 +109614,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "   Acampamento fanatico \nRobos nao sao bem vindos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
-  m_sharedMaterial: {fileID: -1634018907126835127, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -122692,8 +122692,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "   Acampamento fanatico \nRobos nao sao bem vindos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
-  m_sharedMaterial: {fileID: -1634018907126835127, guid: 4a0187d9e17f25d4d84a9898077bfaaa, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -124322,7 +124322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1072942456706511294, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: orthographic size
-      value: 2.8125
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 1535070419855691567, guid: a4aab6fecc80ba04cbdabae0637fc3e5, type: 3}
       propertyPath: m_IsActive

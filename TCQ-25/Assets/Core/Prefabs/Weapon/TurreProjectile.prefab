@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2435979874392634206}
   - component: {fileID: 8303689611668835052}
   - component: {fileID: 3401391667879877512}
+  - component: {fileID: 2088401937311167963}
   m_Layer: 0
   m_Name: TurreProjectile
   m_TagString: Projectile
@@ -166,3 +167,30 @@ MonoBehaviour:
   lifetime: 2.5
   _shooter: {fileID: 0}
   __shooterRenderer: {fileID: 0}
+--- !u!50 &2088401937311167963
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243747837184202170}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

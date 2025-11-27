@@ -16,7 +16,7 @@ public class Checkpoint : MonoBehaviour
         if(collision.CompareTag("Player") && !entered)
         {
             _animator.SetTrigger("Entered");
-            PlayerPrefs.SetInt("CheckPoints", CheckPointOrdem);
+            PlayerPrefs.SetInt("CheckPoint", CheckPointOrdem);
             entered = true;
         }
     }

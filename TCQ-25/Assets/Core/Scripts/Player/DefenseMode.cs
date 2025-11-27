@@ -105,7 +105,7 @@ public class DefenseMode : BasePlayerMode
             
             Vector2 directionToProjectile = (projectile.transform.position - player.transform.position).normalized;
             float distance = Vector2.Distance(player.transform.position, projectile.transform.position);
-            
+            projectile.tag = "ReflectedProjectile";
             bool isInDistance = distance <= reflectRadius;
             bool isInFront = Vector2.Dot(reflectDirection, directionToProjectile) > 0.3f;
             

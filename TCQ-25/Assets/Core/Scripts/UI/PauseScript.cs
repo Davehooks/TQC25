@@ -39,6 +39,7 @@ public class PauseScript : MonoBehaviour
         {
             _pausePanel.SetActive(true);
             Time.timeScale = 0;
+                
         }
         else if (Time.timeScale == 0 && !UIManager.UImanagerInstance._SettingsPanel.activeInHierarchy)
         {

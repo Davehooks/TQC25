@@ -15,7 +15,6 @@ public class SetPauseCamera : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {

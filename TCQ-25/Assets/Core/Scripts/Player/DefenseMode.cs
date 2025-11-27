@@ -57,21 +57,6 @@ public class DefenseMode : BasePlayerMode
         }
     }
 
-    public override void HandleMovement(Vector2 moveInput)
-    {
-        if (isBlocking)
-        {
-            player.Rigidbody.linearVelocity = new Vector2(
-                moveInput.x * player.Speed * 0.4f * Time.deltaTime,
-                player.Rigidbody.linearVelocity.y
-            );
-        }
-        else
-        {
-            base.HandleMovement(moveInput);
-        }
-    }
-
     private void Reflect()
     {
         player._anim.PlayAction1();

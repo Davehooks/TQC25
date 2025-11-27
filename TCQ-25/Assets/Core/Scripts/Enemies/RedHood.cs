@@ -2,7 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class RedHood : Enemy, IDamageable
+public class RedHood : Enemy
 {
     [Header("RedHood Variabels")]
 
@@ -20,13 +20,9 @@ public class RedHood : Enemy, IDamageable
     [SerializeField] private bool isShooting = false;
 
     [Range(-25f, 45f)]public float shootingAngle = 0f;
-    [Header("Vida")]
-    [SerializeField] private int enemyCurrentHealth = 3;
-    [SerializeField] private int enemyMaxHealth = 3;
 
     private void Start()
     {
-        enemyCurrentHealth = enemyMaxHealth;
         animator = GetComponent<Animator>();
         
     }
@@ -61,26 +57,12 @@ public class RedHood : Enemy, IDamageable
     {
         animator.SetTrigger("Damage");
         
-        if (enemyCurrentHealth <= 0)
-        {
-            Debug.Log("RedHood morto");
-            return;
-        }
-        
-        enemyCurrentHealth -= amount;
-        Debug.Log($"Vida inimigo: {enemyCurrentHealth}");
-        
-        if (enemyCurrentHealth <= 0)
-        {
-            Debug.Log("Redhood morreu");
-            Die();
-        }
+        base.TakeDamage(amount, source);
     }
 
     protected override void OnHitAnimation(int amountDamage, GameObject source)
     {
         base.OnHitAnimation(amountDamage, source);
-        Debug.Log($"{name} foi atingido Vida atual: {enemyCurrentHealth}");
     }
 
     protected override void Die()
@@ -168,7 +150,12 @@ public class RedHood : Enemy, IDamageable
     {
         if (collision.gameObject.CompareTag("ReflectedProjectile"))
         {
-            TakeDamage(1);
+            Projectile projectile = collision.gameObject.GetComponent<Projectile>();
+            if (projectile != null)
+            {
+                TakeDamage(projectile.damage, collision.gameObject);
+            }
+            
         }
     }
 }

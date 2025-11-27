@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [Header("Componentes")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Animator _animator;
-    [SerializeField] private GameObject[] CheckPoints;
+
     [Header("Estatísticas")]
     [SerializeField] private int maxHealth;
     [SerializeField] private int currentHealth = 3;
@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        transform.position = CheckPoints[PlayerPrefs.GetInt("CheckPoint")].transform.position;
         if (_anim == null) _anim = GetComponent<Animations>();
         if (Rb == null) Rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();

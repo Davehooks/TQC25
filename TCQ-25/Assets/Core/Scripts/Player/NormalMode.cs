@@ -8,7 +8,7 @@ public class NormalMode : BasePlayerMode
         player.Speed = player._baseSpeed;
         player.JumpForce = player._baseJumpForce;
         base.playerSFX.PlayErrouModo();
-        Debug.Log("Normal Mode Ativado");
+        //Debug.Log("Normal Mode Ativado");
     }
     
     public override void ExitMode()

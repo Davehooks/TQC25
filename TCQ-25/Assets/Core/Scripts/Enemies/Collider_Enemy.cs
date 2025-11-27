@@ -1,16 +1,19 @@
+using System.Collections;
 using UnityEngine;
+
 
 public class Collider_Enemy : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            PlayerCollider playerCollider = collision.gameObject.GetComponent<PlayerCollider>();
+            
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+
 }
+

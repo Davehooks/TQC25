@@ -26,7 +26,12 @@ public class PlayerCollider : MonoBehaviour
         {
             Debug.Log("COLLIDER: Perdeu uma vida no Collision");
             playerController.TakeDamage(1);
-            QuicaQuica();
+            QuicaQuica(false);
+        }
+        else if(collision.gameObject.CompareTag("Enemy"))
+        {
+            playerController.TakeDamage(1);
+            QuicaQuica(true);
         }
     }
     //se tem trigger estou lidando com o pé
@@ -35,21 +40,14 @@ public class PlayerCollider : MonoBehaviour
         // Verifica se o que colidiu é um inimigo que implementa IDamageable
         IDamageable enemy = collision.gameObject.GetComponent<IDamageable>();
 
-        if (enemy != null && collision.CompareTag("Obstacle"))
-        {
-            Debug.Log("COLLIDER: Perdeu uma vida no Trigger");
-            QuicaQuica();
-            playerController.TakeDamage(1);
-        }
-        else if (enemy != null)
+        
+        if (enemy != null && collision.CompareTag("Enemy"))
         {
             //Todo -- Se ele não for null dá dano no inimigo, quica pra cima pelo impacto
 
             //aqui dá dano no inimigo indiferente de qual seja pela interface
             enemy.TakeDamage(1, this.gameObject);
-
-
-        QuicaQuica();
+            QuicaQuica(true);
             return;
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
@@ -65,15 +63,19 @@ public class PlayerCollider : MonoBehaviour
     }
     
 
-    public void QuicaQuica()
+    public void QuicaQuica(bool isEnemy)
     {
         //aqui ele quica pra cima
             _rb.linearVelocity = Vector2.zero;
             _rb.AddForceY(_bounceY, ForceMode2D.Impulse);
-
-        float direction = playerController.IsFacingRight ? -1f : 1f;
-        Debug.Log($"Foi ejetado a {_bounceX}bounces/s e estava virado para direita: {playerController.IsFacingRight} ");
-            _rb.AddForceX(_bounceX * direction, ForceMode2D.Impulse);
+            
+            if(isEnemy)
+        {
+            float directionWin = playerController.IsFacingRight ? 1f : -1f;
+            _rb.AddForceX(_bounceX/2 * directionWin, ForceMode2D.Impulse);
+        }
+            float directionLost = playerController.IsFacingRight ? -1f : 1f;
+            _rb.AddForceX(_bounceX * directionLost, ForceMode2D.Impulse);
 
     }
     /* void OnCollisionEnter2D(Collision2D collision)

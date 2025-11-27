@@ -27,7 +27,7 @@ public class RedHood : Enemy, IDamageable
     private void Start()
     {
         enemyCurrentHealth = enemyMaxHealth;
-        Debug.Log($"RedHood iniciado com {enemyCurrentHealth} de vida");
+        
     }
     //Getter / Setter
     public bool IsFacingRight()
@@ -139,7 +139,7 @@ public class RedHood : Enemy, IDamageable
         //TODOOOOO
         isShooting = true;
         canShoot = false;
-        Debug.Log("REDHOOD: Instanciei uma bala");
+        
         GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
         Projectile projectile = projectileObj.GetComponent<Projectile>();
 

@@ -8,18 +8,18 @@ public class PlayerController : MonoBehaviour
     [Header("Componentes")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Animator _animator;
-    
+
     [Header("Estatísticas")]
     [SerializeField] private int maxHealth;
     [SerializeField] private int currentHealth = 3;
-    public  float _baseSpeed = 1000f;
-    public  float _baseJumpForce = 15f;
+    public float _baseSpeed = 1000f;
+    public float _baseJumpForce = 15f;
     [SerializeField] private float _impulseJump = 2f;
     [SerializeField] private float _crouchSlow = 0.7f;
 
     [Header("Som")]
     [SerializeField] private PlayerSFX soundScript;
-    
+
     [Header("Estado")]
     [SerializeField] private bool _isGrounded = true;
     [SerializeField] public bool _isFacingRight = false;
@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Animations _anim;
 
     private Vector2 moveInput;
-    
+
     public Dictionary<ModeState, IPlayerMode> modeInstances;
     private IPlayerMode currentMode;
     private ModeState currentModeState;
 
-    public Rigidbody2D Rigidbody => _rb;
+    public Rigidbody2D Rigidbody => Rb;
     public Animator Animator => _animator;
     public Animations AnimationSystem => _anim;
     public bool IsGrounded { get => _isGrounded; set => _isGrounded = value; }
-    public bool IsBeingHit {  get => _isBeingHit; set => _isBeingHit = value; }
+    public bool IsBeingHit { get => _isBeingHit; set => _isBeingHit = value; }
     public bool IsCrouching { get => _isCrouching; set => _isCrouching = value; }
     public bool IsFacingRight { get => _isFacingRight; set => _isFacingRight = value; }
     public float Speed { get; set; }
@@ -45,16 +45,17 @@ public class PlayerController : MonoBehaviour
     public float ImpulseJump => _impulseJump;
     public float CrouchSlow => _crouchSlow;
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
-    public int MaxHealth { get => maxHealth;}
+    public int MaxHealth { get => maxHealth; }
+    public Rigidbody2D Rb { get => _rb; set => _rb = value; }
 
     public enum ModeState { Normal, Agility, Defense, Attack }
 
     void Awake()
     {
         if (_anim == null) _anim = GetComponent<Animations>();
-        if (_rb == null) _rb = GetComponent<Rigidbody2D>();
+        if (Rb == null) Rb = GetComponent<Rigidbody2D>();
         if (_animator == null) _animator = GetComponent<Animator>();
-        if ( soundScript == null) soundScript = GetComponent<PlayerSFX>();
+        if (soundScript == null) soundScript = GetComponent<PlayerSFX>();
         _isGrounded = true;
         Speed = _baseSpeed;
         JumpForce = _baseJumpForce;
@@ -74,14 +75,14 @@ public class PlayerController : MonoBehaviour
         {
             currentMode?.HandleMovement(moveInput);
             currentMode?.UpdateAnimations();
-            
+
             if (moveInput.x > 0 || moveInput.x < 0)
             {
                 TurnCheck();
             }
         }
-        
-            _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
+
+        _anim.AnimationFunc(SetAnimationMode(), IsGrounded, IsCrouching, moveInput);
     }
 
     public void Walk(InputAction.CallbackContext input)
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
         {
             currentMode?.HandleAction1();
         }
-        
+
     }
 
     public void InputAction2(InputAction.CallbackContext input)
@@ -114,7 +115,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext input)
     {
-        if (_isGrounded && input.performed &&  !_isBeingHit)
+        if (_isGrounded && input.performed && !_isBeingHit)
         {
             currentMode?.HandleJump();
             _anim.PlayJump();
@@ -156,29 +157,29 @@ public class PlayerController : MonoBehaviour
     {
         _anim.PlayTurn(_isFacingRight);
         if (_isFacingRight)
-    {
-           
-        transform.localScale = new Vector3(-1, 1, 1);
-        _isFacingRight = false;
-    }
-    else
-    {
-        
-         transform.localScale = new Vector3(1, 1, 1);
-        _isFacingRight = true;
-    }
+        {
+
+            transform.localScale = new Vector3(-1, 1, 1);
+            _isFacingRight = false;
+        }
+        else
+        {
+
+            transform.localScale = new Vector3(1, 1, 1);
+            _isFacingRight = true;
+        }
     }
 
     public void TakeDamage(int damage)
     {
-        if(!_isBeingHit)
+        if (!_isBeingHit)
         {
             CurrentHealth -= damage;
             _anim.PlayDamage(false);
             if (CurrentHealth <= 0)
             {
-                    _anim.PlayDamage(true);
-                    soundScript.PlayDamage(true);
+                _anim.PlayDamage(true);
+                soundScript.PlayDamage(true);
             }
             UIManager.UImanagerInstance.VidaHUD();
         }
@@ -191,16 +192,18 @@ public class PlayerController : MonoBehaviour
         {
             if (currentMode is DefenseMode defenseMode)
             {
+                Debug.Log("PLAYER CONTROLLER: ENTROU NO IF DO COLLIDER");
                 defenseMode.OnProjectileHit(collision.gameObject);
             }
             else
             {
+                Debug.Log("PLAYER CONTROLLER: ENTROU NO ELSE DO COLLIDER");
                 TakeDamage(projectile.damage);
                 Destroy(collision.gameObject);
             }
         }
     }
-    
+
     private int SetAnimationMode()
     {
         if (currentModeState == ModeState.Attack) { return 3; }
@@ -220,3 +223,4 @@ public class PlayerController : MonoBehaviour
         IsBeingHit = false;
     }
 }
+

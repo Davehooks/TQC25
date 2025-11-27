@@ -27,6 +27,7 @@ public class RedHood : Enemy, IDamageable
     private void Start()
     {
         enemyCurrentHealth = enemyMaxHealth;
+        animator = GetComponent<Animator>();
         
     }
     //Getter / Setter
@@ -34,7 +35,7 @@ public class RedHood : Enemy, IDamageable
     {
         return isFacingRight;
     }
-
+    
 
     //Override methods
     //RedHood vai se mover observando plataformas
@@ -58,7 +59,7 @@ public class RedHood : Enemy, IDamageable
     }
     public void TakeDamage(int amount, GameObject source = null)
     {
-        Debug.Log($"Redhood: TakeDamage chamado Dano: {amount}, Vida antes: {enemyCurrentHealth}");
+        animator.SetTrigger("Damage");
         
         if (enemyCurrentHealth <= 0)
         {
@@ -84,7 +85,7 @@ public class RedHood : Enemy, IDamageable
 
     protected override void Die()
     {
-        base.Die();
+        animator.SetBool("Death",true);
         Debug.Log($"{name} morreu!");
     }
 
@@ -96,6 +97,7 @@ public class RedHood : Enemy, IDamageable
         {
             if (canShoot)
                 Atack();
+            animator.SetTrigger("Shoot");
         }
         //checks if the mob sees the border of the tilemap
         if (!Physics2D.Linecast(groundCheck.position, transform.position, groundLayer))
@@ -135,12 +137,12 @@ public class RedHood : Enemy, IDamageable
     //COROUTINES
     public IEnumerator Shooting(float timing)
     {
-        //TODOOOOO
         isShooting = true;
         canShoot = false;
         
         GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
         Projectile projectile = projectileObj.GetComponent<Projectile>();
+        
 
         if(projectile != null)
         {
@@ -150,5 +152,23 @@ public class RedHood : Enemy, IDamageable
         yield return new WaitForSeconds(timing);
         isShooting = false;
         canShoot = true;
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
+    public void CantShoot()
+    {
+        this.gameObject.tag = "Untagged";
+        canShoot = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ReflectedProjectile"))
+        {
+            TakeDamage(1);
+        }
     }
 }

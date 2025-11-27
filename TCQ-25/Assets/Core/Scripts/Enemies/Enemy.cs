@@ -24,7 +24,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected virtual void Awake()
     {
         currentHealth = maxHealth;
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -84,4 +83,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(invincibilityTime);
         isInvincible = false;
     }
+
+    
 }

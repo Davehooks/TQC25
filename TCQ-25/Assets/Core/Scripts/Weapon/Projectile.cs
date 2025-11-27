@@ -12,6 +12,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private SpriteRenderer __shooterRenderer;
     private GameObject originalShooter;
     private bool isReflected = false;
+    private Animator _anim;
 
     public void SetShooter(RedHood shooter)
     {
@@ -21,6 +22,8 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
+        if(_anim == null) 
+            _anim = GetComponent<Animator>();
         if (_shooter == null)
             _shooter = GameObject.FindFirstObjectByType<RedHood>();
         if (__shooterRenderer == null)

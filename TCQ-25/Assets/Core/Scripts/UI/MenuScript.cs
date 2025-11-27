@@ -16,25 +16,28 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private TMP_Text[] _textMeshPro;
     [SerializeField] private string[] textos;
     [SerializeField] private float textSpeed;
-
+    private Coroutine _currentCoroutine;
     void Start()
     {
         PlayerPrefs.SetInt("WatchCutscene", 1);
+        PlayerPrefs.SetInt("CheckPoint", 0);
         PlayerPrefs.Save();
         if (_buttons == null)
         {
             Debug.Log("Não tem botão no MenuSript");
         }
         _anim = GetComponent<Animator>();
-        
-
     }
     void Update()
     {
         if (_textMeshPro[_indexButton].text == "")
         {
-            for(int i = 0;i < _textMeshPro.Length;i++) { _textMeshPro[i].text = ""; }
-            StartCoroutine(Text());
+            for (int i = 0; i < _textMeshPro.Length; i++) { _textMeshPro[i].text = ""; }
+            if (_currentCoroutine != null)
+            {
+                StopCoroutine(_currentCoroutine);
+            }
+         _currentCoroutine=StartCoroutine(Text());
         }
             foreach (Button button in _buttons)
             {
@@ -42,7 +45,6 @@ public class MenuScript : MonoBehaviour
             }
         _buttons[_indexButton].image.sprite = _spriteButtons[1];
     }
-
     public void IndexPlus(InputAction.CallbackContext context)
     {
         if (!_configPanel.activeInHierarchy && context.performed)
@@ -78,7 +80,6 @@ public class MenuScript : MonoBehaviour
             }
         }
     }
-
     IEnumerator Text()
     {
         foreach (TMP_Text texto in _textMeshPro)
@@ -91,22 +92,18 @@ public class MenuScript : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-
     public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
-
     public void OpenConfigPanel()
     {
         _configPanel.SetActive(true);
     }
-
     public void QuitGame()
     {
         Application.Quit();
     }
-
     public void ClosePanel(InputAction.CallbackContext context)
     {
 
@@ -115,5 +112,4 @@ public class MenuScript : MonoBehaviour
         UIManager.UImanagerInstance.ClosePanel();
         }
     }
-
 }

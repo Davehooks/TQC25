@@ -190,17 +190,10 @@ public class PlayerController : MonoBehaviour
         Projectile projectile = collision.GetComponent<Projectile>();
         if (projectile != null)
         {
-            if (currentMode is DefenseMode defenseMode)
-            {
-                Debug.Log("PLAYER CONTROLLER: ENTROU NO IF DO COLLIDER");
-                defenseMode.OnProjectileHit(collision.gameObject);
-            }
-            else
-            {
                 Debug.Log("PLAYER CONTROLLER: ENTROU NO ELSE DO COLLIDER");
                 TakeDamage(projectile.damage);
                 Destroy(collision.gameObject);
-            }
+            
         }
     }
 

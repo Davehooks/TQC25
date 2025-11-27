@@ -9,6 +9,9 @@ public class AttackMode : BasePlayerMode
     private float laserCooldown = 1.5f;
     public Collider2D meleeCollider;
     
+    private bool canMelee = true;
+    private float meleeCooldown = 0.5f;
+    private float meleeDuration = 1f;
 
     public override void EnterMode(PlayerController player)
     {
@@ -39,6 +42,19 @@ public class AttackMode : BasePlayerMode
                 CreateFirePoint();
             }
         }
+
+        if (meleeCollider == null)
+    {
+        Transform meleeTransform = player.transform.Find("MeleeCollider");
+        if (meleeTransform != null)
+        {
+            meleeCollider = meleeTransform.GetComponent<Collider2D>();
+            if (meleeCollider != null)
+            {
+                Debug.Log("Meleecollider encontrado no payer");
+            }
+        }
+}
     }
     
     private void CreateFirePoint()
@@ -52,8 +68,10 @@ public class AttackMode : BasePlayerMode
     
     public override void HandleAction1()
     {
-        MeleeAttack();
-        base.playerSFX.PlayMeleeAttack();
+        if (canMelee)
+        {
+            MeleeAttack();
+        }
 
     }
     
@@ -75,11 +93,21 @@ public class AttackMode : BasePlayerMode
     
     private void MeleeAttack()
     {
+        if(meleeCollider == null)
+        {
+            Debug.Log("Nao achou collider");
+        }
+        
         player._anim.PlayAction1();
         base.playerSFX.PlayMeleeAttack();
 
-
         meleeCollider.enabled = true;
+        
+        Debug.Log("Deu soco");
+        
+        canMelee = false;
+        player.StartCoroutine(MeleeCooldown());
+        player.StartCoroutine(DisableMeleeCollider());
         
     }
     
@@ -111,6 +139,18 @@ public class AttackMode : BasePlayerMode
         yield return new WaitForSeconds(laserCooldown);
         canShootLaser = true;
         Debug.Log("Laser pronto");
+    }
+    
+    private IEnumerator DisableMeleeCollider()
+    {
+        yield return new WaitForSeconds(meleeDuration);
+        meleeCollider.enabled = false;
+    }
+    
+    private IEnumerator MeleeCooldown()
+    {
+        yield return new WaitForSeconds(meleeCooldown);
+        canMelee = true;
     }
     
     public override void ExitMode()

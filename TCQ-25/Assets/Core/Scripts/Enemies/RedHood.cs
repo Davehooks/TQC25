@@ -53,12 +53,12 @@ public class RedHood : Enemy
             rb.linearVelocityX = 0;
         }
     }
-    public void TakeDamage(int amount, GameObject source = null)
+    public override void TakeDamage(int amount, GameObject source = null)
     {
         animator.SetTrigger("Damage");
-        
         base.TakeDamage(amount, source);
     }
+
 
     protected override void OnHitAnimation(int amountDamage, GameObject source)
     {

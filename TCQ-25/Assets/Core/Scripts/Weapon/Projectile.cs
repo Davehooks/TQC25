@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
     private GameObject originalShooter;
     private bool isReflected = false;
     private Animator _anim;
+    private GameObject ignoreCollision;
 
     public void SetShooter(RedHood shooter)
     {
@@ -50,12 +51,11 @@ public class Projectile : MonoBehaviour
         if (isReflected) return;
 
         isReflected = true;
-
-        originalShooter = reflector;
+        ignoreCollision = reflector;
 
         velocity = new Vector2(-velocity.x, 0f);
 
-        damage *= 2;
+        damage = 10;
 
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         if (sprite != null)
@@ -71,13 +71,12 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"Colisao: Bala atingiu {collision.gameObject.name} (Tag: {collision.tag})");
-
-        if (collision.gameObject == originalShooter)
+        if (collision.gameObject == ignoreCollision)
         {
-            Debug.Log("Ignorando colisão com atirador original");
             return;
         }
+    
+
 
         if (isReflected && collision.CompareTag("Enemy"))
         {

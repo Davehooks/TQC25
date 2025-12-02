@@ -8,7 +8,7 @@ public class DefenseMode : BasePlayerMode
     private bool canReflect = true;
     private float reflectCooldown = 1f;
     private float blockCooldown = 0.5f;
-
+    private float reflectRadius = 2f;
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);
@@ -63,9 +63,9 @@ public class DefenseMode : BasePlayerMode
         
         Debug.Log("Reflect executado");
         
-        ReflectNearbyProjectiles();
         
         canReflect = false;
+        player.StartCoroutine(ReflectWindow());
         player.StartCoroutine(ReflectCooldownCoroutine());
     }
 
@@ -113,11 +113,8 @@ public class DefenseMode : BasePlayerMode
             {
                 projectile.Reflect(player.gameObject);
                 reflectedCount++;
-                Debug.Log($"Bala refletida Distância: {distance}");
             }
         }
-        
-        Debug.Log($"Balas refletidas: {reflectedCount}");
     }
 
 
@@ -134,7 +131,7 @@ public class DefenseMode : BasePlayerMode
     {
         if (player == null) return;
         
-        float reflectRadius = 3f;
+        
         Vector2 reflectDirection = player.IsFacingRight ? Vector2.right : Vector2.left;
         
         DrawDebugCircle(player.transform.position, reflectRadius, 12, Color.yellow);
@@ -148,7 +145,18 @@ public class DefenseMode : BasePlayerMode
         canReflect = true;
         Debug.Log("Reflect pronto");
     }
+    private IEnumerator ReflectWindow()
+{
+    float duration = 0.3f; 
+    float timer = 0f;
 
+    while (timer < duration)
+    {
+        ReflectNearbyProjectiles();
+        timer += Time.deltaTime;
+        yield return null;
+    }
+}
         private void DrawDebugCircle(Vector2 center, float radius, int segments, Color color)
     {
         float angle = 0f;

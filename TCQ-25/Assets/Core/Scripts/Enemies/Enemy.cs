@@ -63,7 +63,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         // Tem o amount caso a gente queira dar feedback diferente dependendo do dano
         if (animator != null)
-            animator.SetTrigger("Hit");
+            animator.SetTrigger("Damage");
     }
 
 

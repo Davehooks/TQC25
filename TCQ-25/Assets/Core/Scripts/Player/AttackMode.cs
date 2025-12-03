@@ -7,7 +7,7 @@ public class AttackMode : BasePlayerMode
     private Transform firePoint;
     private bool canShootLaser = true;
     private float laserCooldown = 1.5f;
-    public Collider2D meleeCollider;
+    public MeleeAtt melee;
     
     private bool canMelee = true;
     private float meleeCooldown = 0.5f;
@@ -18,7 +18,7 @@ public class AttackMode : BasePlayerMode
         base.EnterMode(player);        
         LoadReferences();
         player.Speed = player._baseSpeed;
-        meleeCollider.enabled = false;
+        melee.DisableAttack();
         player.JumpForce = player._baseJumpForce;
         base.playerSFX.PlayTrocarModo();
     }
@@ -43,18 +43,21 @@ public class AttackMode : BasePlayerMode
             }
         }
 
-        if (meleeCollider == null)
+        if (melee == null)
+{
+    Transform meleeTransform = player.transform.Find("MeleeCollider");
+    if (meleeTransform != null)
     {
-        Transform meleeTransform = player.transform.Find("MeleeCollider");
-        if (meleeTransform != null)
-        {
-            meleeCollider = meleeTransform.GetComponent<Collider2D>();
-            if (meleeCollider != null)
-            {
-                Debug.Log("Meleecollider encontrado no payer");
-            }
-        }
+        melee = meleeTransform.GetComponent<MeleeAtt>();
+        if (melee == null)
+            Debug.LogError("MeleeCollider encontrado sem script");
+    }
+    else
+    {
+        Debug.LogError("Nenhum MeleeCollider encontrado");
+    }
 }
+
     }
     
     private void CreateFirePoint()
@@ -93,7 +96,7 @@ public class AttackMode : BasePlayerMode
     
     private void MeleeAttack()
     {
-        if(meleeCollider == null)
+        if(melee == null)
         {
             Debug.Log("Nao achou collider");
         }
@@ -101,8 +104,7 @@ public class AttackMode : BasePlayerMode
         player._anim.PlayAction1();
         base.playerSFX.PlayMeleeAttack();
 
-        meleeCollider.enabled = true;
-        
+        melee.EnableAttack();
         Debug.Log("Deu soco");
         
         canMelee = false;
@@ -144,7 +146,8 @@ public class AttackMode : BasePlayerMode
     private IEnumerator DisableMeleeCollider()
     {
         yield return new WaitForSeconds(meleeDuration);
-        meleeCollider.enabled = false;
+        melee.DisableAttack();
+
     }
     
     private IEnumerator MeleeCooldown()

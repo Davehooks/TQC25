@@ -2,28 +2,34 @@ using UnityEngine;
 
 public class MeleeAtt : MonoBehaviour
 {
-    [SerializeField] private int damage = 2;
-    private PlayerController player;
+    [SerializeField] private int damage = 10;
+    private Collider2D col;
 
-    private void Start()
+    private void Awake()
     {
-        player = GetComponentInParent<PlayerController>();
-        GetComponent<Collider2D>().enabled = false;
+        col = GetComponent<Collider2D>();
+        col.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
-        {            
-            Enemy enemy = collision.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                Debug.Log($"Acertou o: {collision.gameObject.name}");
-                enemy.TakeDamage(damage);
-            } else
-            {
-                Debug.Log("Acertou nao");
-            }
+        Enemy enemy = collision.GetComponentInParent<Enemy>();
+
+        if (enemy != null)
+        {
+            Debug.Log($"melee acertou: {enemy.name}");
+            enemy.TakeDamage(damage);
         }
     }
+
+    public void EnableAttack()
+    {
+        col.enabled = true;
+    }
+
+    public void DisableAttack()
+    {
+        col.enabled = false;
+    }
 }
+

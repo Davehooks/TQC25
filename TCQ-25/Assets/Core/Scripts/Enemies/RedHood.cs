@@ -67,7 +67,8 @@ public class RedHood : Enemy
 
     protected override void Die()
     {
-        animator.SetBool("Death",true);
+        animator.SetTrigger("Death");
+        Destroy(gameObject, 1.2f);
         Debug.Log($"{name} morreu!");
     }
 
@@ -136,10 +137,7 @@ public class RedHood : Enemy
         canShoot = true;
     }
 
-    public void Death()
-    {
-        Destroy(gameObject);
-    }
+
     public void CantShoot()
     {
         this.gameObject.tag = "Untagged";

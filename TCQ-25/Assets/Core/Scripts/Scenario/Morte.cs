@@ -6,8 +6,12 @@ public class Morte : MonoBehaviour
     {
         Debug.Log("Alguem entrou");
  
-        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            player.CurrentHealth = 0;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            player.TakeDamage(player.MaxHealth);
+        }
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -17,7 +21,7 @@ public class Morte : MonoBehaviour
         {
 
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            player.CurrentHealth = 0;
+            player.TakeDamage(player.MaxHealth);
         }
     }
 }

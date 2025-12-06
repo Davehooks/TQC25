@@ -6,7 +6,7 @@ public class DefenseMode : BasePlayerMode
     private bool isBlocking = false;
     private bool canBlock = true;
     private bool canReflect = true;
-    private float reflectCooldown = 1f;
+    private float reflectCooldown = 0.5f;
     private float blockCooldown = 0.5f;
     private float reflectRadius = 2f;
     public override void EnterMode(PlayerController player)

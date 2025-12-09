@@ -3,10 +3,9 @@ using UnityEngine;
 public class LaserProjectile : MonoBehaviour
 {
     [Header("Configurações")]
-    [SerializeField] private float speed = 15f;
-    [SerializeField] private float lifetime = 2f;
-    [SerializeField] private int damage = 10;
-    [SerializeField] private GameObject hitEffect;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float lifetime = 4f;
+    [SerializeField] private int damage = 1;
     
     private Vector2 direction;
     private Rigidbody2D rb;
@@ -53,10 +52,6 @@ public class LaserProjectile : MonoBehaviour
 
     private void DestroyLaser()
     {
-        if (hitEffect != null)
-        {
-            Instantiate(hitEffect, transform.position, Quaternion.identity);
-        }
         Destroy(gameObject);
     }
 }

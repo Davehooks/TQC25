@@ -9,12 +9,16 @@ public class DefenseMode : BasePlayerMode
     private float reflectCooldown = 0.5f;
     private float blockCooldown = 0.5f;
     private float reflectRadius = 2f;
+
+    private PlayerController _playerGambiarra;
+
     public override void EnterMode(PlayerController player)
     {
         base.EnterMode(player);
         player.Speed = player._baseSpeed;
         player.JumpForce = player._baseJumpForce;
         Debug.Log("Defense Mode Ativado");
+        _playerGambiarra = player;
     }
     
     public override void ExitMode()
@@ -59,8 +63,9 @@ public class DefenseMode : BasePlayerMode
 
     private void Reflect()
     {
-        player._anim.PlayAction1();
         
+        player._anim.PlayAction1();
+        player.StartCoroutine(player.ActiveShield());
         Debug.Log("Reflect executado");
         
         

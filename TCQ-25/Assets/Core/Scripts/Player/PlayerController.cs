@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(PlayerInput), typeof(Animator))]
 public class PlayerController : MonoBehaviour
@@ -26,7 +27,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool _isBeingHit = false;
     [SerializeField] private bool _isCrouching = false;
     [SerializeField] public Animations _anim;
-
+    [Header("Gambiarras")]
+    public GameObject shieldEff;
+    [SerializeField]private float shieldTiming;
     private Vector2 moveInput;
 
     public Dictionary<ModeState, IPlayerMode> modeInstances;
@@ -96,6 +99,7 @@ public class PlayerController : MonoBehaviour
         if (input.started)
         {
             currentMode?.HandleAction1();
+            
         }
 
     }
@@ -215,6 +219,14 @@ public class PlayerController : MonoBehaviour
     public void UnsetBeingHit()
     {
         IsBeingHit = false;
+    }
+
+    //else
+    public IEnumerator  ActiveShield()
+    {
+        shieldEff.SetActive(true);
+        yield return new WaitForSeconds(shieldTiming);
+        shieldEff.SetActive(false);
     }
 }
 

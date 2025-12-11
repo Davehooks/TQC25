@@ -14,6 +14,7 @@ public class TriggerCapsula : MonoBehaviour
     PlayerController playerController;
     [SerializeField] private float tempoCientistaOut = 2.0f;
     [SerializeField] private bool StopCharacter;
+    private Animator anim;
 
 
     private void Start()
@@ -24,7 +25,11 @@ public class TriggerCapsula : MonoBehaviour
     }
     public void OnPartTriggerEnter()
     {
-          if (StopCharacter == true) { playerController.Speed = 0;}
+          if (StopCharacter == true && !_Opened) {
+            playerController.Speed = 0;
+            anim.SetTrigger("Entrou");
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

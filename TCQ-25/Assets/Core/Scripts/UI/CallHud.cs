@@ -31,10 +31,12 @@ public class CallHud : MonoBehaviour
     bool vidaFeita = false;
     bool fadeO;
     [SerializeField] private GameObject gameObjectAtivo;
+    [SerializeField] private Animator morseAnim;
 
 
     private void Start()
     {
+        morseAnim = morse.gameObject.GetComponent<Animator>();
         _morseIndex = 0;
         _playerController = FindAnyObjectByType<PlayerController>();
         _modosAnimator = Personagem.GetComponent<Animator>();
@@ -87,9 +89,7 @@ public class CallHud : MonoBehaviour
         {
             morse.gameObject.SetActive(true);
         }
-        Animator morseAnim = morse.gameObject.GetComponent<Animator>();
         morseAnim.SetTrigger("FadeIn");
-        Debug.Log("FadeIndo morse!");
         if (_morseIndex < 3)
         {
             morseElements[_morseIndex].gameObject.SetActive(true);
@@ -108,8 +108,8 @@ public class CallHud : MonoBehaviour
 
     public void ZerarMorse(bool fadeO)
     {
-        Animator morseAnim = morse.gameObject.GetComponent<Animator>();
-        if (fadeO)
+        bool OnTutorial = morseAnim.GetBool("Tutorial");
+        if (fadeO && !OnTutorial)
         {        
             morseAnim.SetTrigger("FadeOut");
         }
@@ -122,7 +122,10 @@ public class CallHud : MonoBehaviour
                  
     }
 
-    
+    public void morseTutorialOff()
+    {
+        morseAnim.SetBool("Tutorial", false);
+    }
 
     public void VidaPersonagemHUD()
     {

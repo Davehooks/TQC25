@@ -1,0 +1,282 @@
+fileFormatVersion: 2
+guid: b4b038cb5f61e21438e1bbd2a0446167
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3702201803869855899
+    second: parallax_cidade2-export_0
+  - first:
+      213: 6679115788255743879
+    second: parallax_cidade2-export_1
+  - first:
+      213: 2707378818594930753
+    second: parallax_cidade2-export_2
+  - first:
+      213: -654805682798004066
+    second: parallax_cidade2-export_3
+  - first:
+      213: 3747780648282912175
+    second: parallax_cidade2-export_4
+  - first:
+      213: -8093919918003681511
+    second: parallax_cidade2-export_5
+  - first:
+      213: -6214988643140760836
+    second: parallax_cidade2-export_6
+  - first:
+      213: -7860000625815373781
+    second: parallax_cidade2-export_7
+  - first:
+      213: 6991315393153107672
+    second: parallax_cidade2-export_8
+  - first:
+      213: -7191935715901818396
+    second: parallax_cidade2-export_9
+  - first:
+      213: 4376675897838672638
+    second: parallax_cidade2-export_10
+  - first:
+      213: -2459690535903064416
+    second: parallax_cidade2-export_11
+  - first:
+      213: 5040124500462483778
+    second: parallax_cidade2-export_12
+  - first:
+      213: 7192412835654557115
+    second: parallax_cidade2-export_13
+  - first:
+      213: 8838592533281932246
+    second: parallax_cidade2-export_14
+  - first:
+      213: -1576557601992660658
+    second: parallax_cidade2-export_15
+  - first:
+      213: -2679807219440022977
+    second: parallax_cidade2-export_16
+  - first:
+      213: -405375829577646788
+    second: parallax_cidade2-export_17
+  - first:
+      213: 8507007544151856691
+    second: parallax_cidade2-export_18
+  - first:
+      213: -8198566892382121088
+    second: parallax_cidade2-export_19
+  - first:
+      213: -1393061504643736063
+    second: parallax_cidade2-export_20
+  - first:
+      213: -316589779137687343
+    second: parallax_cidade2-export_21
+  - first:
+      213: 7701992037662530593
+    second: parallax_cidade2-export_22
+  - first:
+      213: 6951220948846143346
+    second: parallax_cidade2-export_23
+  - first:
+      213: -2729290330497707034
+    second: parallax_cidade2-export_24
+  - first:
+      213: 8860653089906012393
+    second: parallax_cidade2-export_25
+  - first:
+      213: 105375317780224245
+    second: parallax_cidade2-export_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "C\xE9u"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 384
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90297eececd06330800000000000000
+      internalID: 3702201803869855899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 384
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fcfa40c6cf0bc50800000000000000
+      internalID: 6679115788255743879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ItensTerra
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14084c2f0ba829520800000000000000
+      internalID: 2707378818594930753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 07bafaec13d74f647a9b0ab75a4dc532
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":3.0},"gridSpriteSize":{"x":384.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "C\xE9u": 3702201803869855899
+      ItensTerra: 2707378818594930753
+      Terra: 6679115788255743879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

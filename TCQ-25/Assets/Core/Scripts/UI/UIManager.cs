@@ -100,7 +100,10 @@ public class UIManager : MonoBehaviour
         PauseImage.sprite = pauseSprites[modo];
     }
 
-
+    public void morseTutorialOff()
+    {
+        callhud.morseTutorialOff();
+    }
 
     public void MorseHud(char morse)
     {

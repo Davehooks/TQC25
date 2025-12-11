@@ -10,6 +10,7 @@ public class Animations : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     [SerializeField] private ParticleSystem[] _particle;
     [SerializeField] private ParticleSystem _choqueParticle;
+    [SerializeField] bool morseTutorial = true;
     private void Start()
     {
         player = GetComponent<PlayerController>();
@@ -35,6 +36,7 @@ public class Animations : MonoBehaviour
                     _currentAnimator.runtimeAnimatorController = _animators[1]; // agility
                     main.startColor = Color.green;
                     _choqueParticle.Play();
+                    if(morseTutorial) UIManager.UImanagerInstance.morseTutorialOff();
                     return;
                 case 2:
                     _currentAnimator.runtimeAnimatorController = _animators[2]; //defense

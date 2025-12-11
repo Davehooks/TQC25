@@ -11,6 +11,7 @@ public class ChoqueScript : MonoBehaviour
     [SerializeField] private bool Entered = false;
     [SerializeField] private DialogEnemy dialogEnemy;
     float playerSpeed;
+    private Animator anim;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !Entered)
@@ -25,6 +26,7 @@ public class ChoqueScript : MonoBehaviour
             BalaoFala.SetActive(true);
             playerController.Speed = 0;
             Entered = true;
+            anim = GetComponent<Animator>(); anim.SetTrigger("Entrou");
         }
     }
 

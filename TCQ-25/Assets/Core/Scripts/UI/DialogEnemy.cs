@@ -66,6 +66,9 @@ public class DialogEnemy : MonoBehaviour
             _playerController._isBeingHit = false;
             _playerController.Speed = _playerController._baseSpeed;
             choqueScript.StopAllCoroutines();
+            Animations Playeranim = _playerController.gameObject.GetComponent<Animations>();
+            Playeranim.PlayAction1();
+            Animator Choqueanim = choqueScript.gameObject.GetComponent<Animator>();Choqueanim.SetTrigger("Quebrou");
         }
 
     }

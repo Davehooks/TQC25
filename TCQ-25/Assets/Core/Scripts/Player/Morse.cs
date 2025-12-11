@@ -114,8 +114,6 @@ public class Morse : MonoBehaviour
                 PlayerController.ModeState mode = GetModeFromChar(letter);
                 playerController.SwitchMode(mode);
             }
-
-            
             UIManager.UImanagerInstance.ZerarMorse(true);
             currentMorse = "";
         }

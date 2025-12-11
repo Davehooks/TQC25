@@ -32,6 +32,7 @@ public class CallHud : MonoBehaviour
     bool fadeO;
     [SerializeField] private GameObject gameObjectAtivo;
     [SerializeField] private Animator morseAnim;
+    bool TutorialMorse = true;
 
 
     private void Start()
@@ -89,6 +90,7 @@ public class CallHud : MonoBehaviour
         {
             morse.gameObject.SetActive(true);
         }
+        morseAnim.SetBool("Tutorial", TutorialMorse);
         morseAnim.SetTrigger("FadeIn");
         if (_morseIndex < 3)
         {
@@ -124,7 +126,7 @@ public class CallHud : MonoBehaviour
 
     public void morseTutorialOff()
     {
-        morseAnim.SetBool("Tutorial", false);
+        TutorialMorse = false;
     }
 
     public void VidaPersonagemHUD()

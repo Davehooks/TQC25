@@ -8,7 +8,7 @@ public class TriggerCapsula : MonoBehaviour
     [SerializeField] private GameObject Capsule;
     [SerializeField] private GameObject Cientist;
     private Animator CapsuleAnimator;
-    private bool _Opened = false;
+    [SerializeField] private bool _Opened = false;
     public bool _OpenedEntire = false;
     [SerializeField] Dialog dialog;
     PlayerController playerController;
@@ -25,9 +25,11 @@ public class TriggerCapsula : MonoBehaviour
     }
     public void OnPartTriggerEnter()
     {
-          if (StopCharacter == true && !_Opened) {
+          if (StopCharacter == true && !_OpenedEntire)
+        {
             playerController.Speed = 0;
             anim.SetTrigger("Entrou");
+            Debug.Log("Entrou no parent da capsula");
         }
 
     }

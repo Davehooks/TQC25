@@ -138816,10 +138816,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1038977753134260858, guid: f500193c67bdfa25eae944198854b855, type: 3}
-      propertyPath: shieldTiming
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1038977753134260858, guid: f500193c67bdfa25eae944198854b855, type: 3}
       propertyPath: 'CheckPoints.Array.data[0]'
       value: 
       objectReference: {fileID: 1967477488}

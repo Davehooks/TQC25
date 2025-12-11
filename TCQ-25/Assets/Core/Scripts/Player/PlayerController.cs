@@ -71,6 +71,17 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (_anim == null) _anim = GetComponent<Animations>();
+        var keyboard = Keyboard.current;
+        if (keyboard == null)
+        {
+            return;
+        }
+
+        if (keyboard.rKey.wasPressedThisFrame)
+        {
+            TakeDamage(10);
+        }
+
     }
 
     void FixedUpdate()

@@ -8,6 +8,8 @@ public class PauseScript : MonoBehaviour
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private Button[] buttons;
     private int _indexButton;
+    [SerializeField] private Image PauseImage;
+    [SerializeField] private Sprite[] pauseSprites;
 
     private void Start()
     {
@@ -25,7 +27,7 @@ public class PauseScript : MonoBehaviour
             {
                 buttons.image.color = Color.white;
             }
-            buttons[_indexButton].image.color = Color.yellow;
+            buttons[_indexButton].image.color = Color.lightGreen;
         }
         else return;
     }
@@ -37,6 +39,7 @@ public class PauseScript : MonoBehaviour
         {
             _pausePanel.SetActive(true);
             Time.timeScale = 0;
+                
         }
         else if (Time.timeScale == 0 && !UIManager.UImanagerInstance._SettingsPanel.activeInHierarchy)
         {

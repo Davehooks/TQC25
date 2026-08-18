@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -184,10 +184,10 @@ TextureImporter:
       name: RedEnemySheet_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 127
-        width: 38
-        height: 53
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: RedEnemySheet_1
       rect:
         serializedVersion: 2
-        x: 78
-        y: 127
-        width: 38
-        height: 52
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: RedEnemySheet_2
       rect:
         serializedVersion: 2
-        x: 142
-        y: 127
-        width: 38
-        height: 53
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: RedEnemySheet_3
       rect:
         serializedVersion: 2
-        x: 206
-        y: 127
-        width: 39
-        height: 53
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: RedEnemySheet_4
       rect:
         serializedVersion: 2
-        x: 270
-        y: 127
-        width: 38
-        height: 53
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: RedEnemySheet_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 127
-        width: 38
-        height: 52
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: RedEnemySheet_6
       rect:
         serializedVersion: 2
-        x: 398
-        y: 127
-        width: 38
-        height: 53
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +338,10 @@ TextureImporter:
       name: RedEnemySheet_7
       rect:
         serializedVersion: 2
-        x: 14
-        y: 63
-        width: 38
-        height: 53
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: RedEnemySheet_8
       rect:
         serializedVersion: 2
-        x: 70
-        y: 63
-        width: 46
-        height: 53
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +382,10 @@ TextureImporter:
       name: RedEnemySheet_9
       rect:
         serializedVersion: 2
-        x: 14
+        x: 0
         y: 0
-        width: 38
-        height: 52
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: RedEnemySheet_10
       rect:
         serializedVersion: 2
-        x: 78
+        x: 64
         y: 0
-        width: 38
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: RedEnemySheet_11
       rect:
         serializedVersion: 2
-        x: 140
+        x: 128
         y: 0
-        width: 38
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: RedEnemySheet_12
       rect:
         serializedVersion: 2
-        x: 206
+        x: 192
         y: 0
-        width: 38
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: RedEnemySheet_13
       rect:
         serializedVersion: 2
-        x: 258
+        x: 256
         y: 0
-        width: 62
-        height: 35
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,10 +492,10 @@ TextureImporter:
       name: RedEnemySheet_14
       rect:
         serializedVersion: 2
-        x: 322
+        x: 320
         y: 0
-        width: 62
-        height: 35
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,7 +514,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 126798a73c45a184394bf2a7186a4e99
     internalID: 0
     vertices: []
     indices: 
@@ -522,7 +522,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":3.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       RedEnemySheet_0: -4890769148847542423
       RedEnemySheet_1: 874568475132065081

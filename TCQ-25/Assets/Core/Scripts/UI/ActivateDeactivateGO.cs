@@ -6,6 +6,7 @@ public class ActivateDeactivateGO : MonoBehaviour
     [SerializeField] private GameObject[] _gameObject;
     [SerializeField] private Image[] _imagens;
     [SerializeField] private Dialog _dialog;
+    [SerializeField] private DialogEnemy _dialogEnemy;
     [SerializeField] private TriggerCapsula trigger;
 
 
@@ -40,7 +41,15 @@ public class ActivateDeactivateGO : MonoBehaviour
 
     public void CallDialog() // usado na animação pra chamar o balão de fala
     {
-        _dialog.CallText();
+        if (_dialogEnemy != null)
+        {
+            _dialogEnemy.CallText();
+        }
+        else if (_dialog != null) 
+        {
+            _dialog.CallText();
+
+        }
     }
 
     public void OpenEntire() // Vai ser usado na animação pra aparecer o cientista quando a fumaça subir, mamãe saiu
@@ -57,5 +66,10 @@ public class ActivateDeactivateGO : MonoBehaviour
             Destroy(_gameObject[i]);
         }
         }
+    }
+
+    public void InstanciateLifes()
+    {
+        UIManager.UImanagerInstance.InstanciateVida();
     }
 }

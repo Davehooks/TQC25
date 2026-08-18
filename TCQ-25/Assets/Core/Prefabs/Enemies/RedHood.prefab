@@ -76,9 +76,10 @@ GameObject:
   - component: {fileID: 8692624543346183366}
   - component: {fileID: 81457673683521864}
   - component: {fileID: 4477296007681240452}
+  - component: {fileID: 8022513852095485835}
   m_Layer: 7
   m_Name: RedHood
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +146,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4890769148847542423, guid: 6a246e270516e564a8a2a9688e65f486, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -165,7 +166,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5729508093691826425}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -233,11 +234,52 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   checkRadius: 0.09
+  isFacingRight: 0
   shootingTime: 0.5
   _prefabProjectile: {fileID: 7127151086835929623, guid: 2fc395c913642e94c8be779d7b2f7b64, type: 3}
   canShoot: 1
   isShooting: 0
+  shootingAngle: 0
+  enemyCurrentHealth: 3
+  enemyMaxHealth: 3
 --- !u!70 &4477296007681240452
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729508093691826425}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.08692169}
+  m_Size: {x: 0.28481343, y: 0.6119003}
+  m_Direction: 0
+--- !u!70 &8022513852095485835
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,12 +309,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.031655014}
-  m_Size: {x: 0.28481343, y: 0.7286378}
+  m_Offset: {x: 0.007682994, y: 0.19}
+  m_Size: {x: 0.2777876, y: 0.32}
   m_Direction: 0
 --- !u!1 &6205201944407331805
 GameObject:

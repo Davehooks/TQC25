@@ -1,12 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class BasePlayerMode : IPlayerMode
 {
     protected PlayerController player;
-    
+    [SerializeField] protected PlayerSFX playerSFX;
+
     public virtual void EnterMode(PlayerController player)
     {
         this.player = player;
+        playerSFX = player.GetComponent<PlayerSFX>();
     }
     
     public virtual void ExitMode() { }
@@ -31,11 +34,11 @@ public abstract class BasePlayerMode : IPlayerMode
     
     public virtual void HandleJump()
     {
-        player.ParticleJump.Play();
         player.Rigidbody.AddForce(Vector2.up * player.JumpForce, ForceMode2D.Impulse);
         player.IsGrounded = false;
+        playerSFX.PlayJump();
     }
-    
+
     public virtual void HandleAction1() { }
     public virtual void HandleAction2() { }
     
@@ -44,18 +47,5 @@ public abstract class BasePlayerMode : IPlayerMode
         player.IsCrouching = !player.IsCrouching;
     }
     
-    public virtual void UpdateAnimations()
-    {
-        player.Animator.SetBool("IsGrounded", player.IsGrounded);
-        player.Animator.SetBool("IsCrouching", player.IsCrouching);
-        
-        if (Mathf.Abs(player.Rigidbody.linearVelocity.x) > 0.1f && player.IsGrounded)
-        {
-            player.Animator.SetBool("IsWalking", true);
-        }
-        else
-        {
-            player.Animator.SetBool("IsWalking", false);
-        }
-    }
+    public virtual void UpdateAnimations() { }
 }

@@ -24,7 +24,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     protected virtual void Awake()
     {
         currentHealth = maxHealth;
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -64,7 +63,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         // Tem o amount caso a gente queira dar feedback diferente dependendo do dano
         if (animator != null)
-            animator.SetTrigger("Hit");
+            animator.SetTrigger("Damage");
     }
 
 
@@ -84,4 +83,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(invincibilityTime);
         isInvincible = false;
     }
+
+    
 }

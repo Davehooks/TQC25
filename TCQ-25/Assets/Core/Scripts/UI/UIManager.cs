@@ -1,5 +1,7 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -13,28 +15,31 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider _FXVolumeSliders;
     [SerializeField] private Toggle _isFullScreen;
     [SerializeField] private AudioSource _testSound;
+    [SerializeField] private Image PauseImage;
+    [SerializeField] private Sprite[] pauseSprites;
+    
 
     [Header("InGame")]
-    [SerializeField] private TextMeshPro _morseUI;
-    [SerializeField] private GameObject[] _vida;
-    [SerializeField] private Sprite[] _vidas;
+    private CallHud callhud;
+    private PlayerController _playerController;
+    
+   
 
+    private bool gameStarted = false;
 
     private void Awake()
     {
         if (UImanagerInstance == null)
         {
             UImanagerInstance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
+        if(_playerController == null && SceneManager.GetActiveScene().name == "SampleScene")
+            FindAnyObjectByType(typeof(PlayerController));
+        callhud =GetComponent<CallHud>();
         _isFullScreen.isOn = GameSettingsManager.SettingsInstance.IsFullScreen();
         _FXVolumeSliders.value = GameSettingsManager.SettingsInstance.GetFXVolume();
         _MusicVolumeSliders.value = GameSettingsManager.SettingsInstance.GetMusicVolume();
@@ -49,6 +54,8 @@ public class UIManager : MonoBehaviour
     public void OnFxVolumeChanged(float volume) // vai no Slider FX
     {
         GameSettingsManager.SettingsInstance.SetFxVolume(volume);
+
+        if (!gameStarted ) { gameStarted = true;return; }
 
         if (!_testSound.isPlaying)
         {
@@ -81,6 +88,47 @@ public class UIManager : MonoBehaviour
     {
         _SettingsPanel.SetActive(false);
     }
+
+    public void UnlockSkill(int i)
+    {
+        callhud.EnableSkill(i);
+    }
+
+    public void ModoHud(int modo)
+    {
+        callhud.ChangeModo(modo);
+        PauseImage.sprite = pauseSprites[modo];
+    }
+
+    public void morseTutorialOff()
+    {
+        callhud.morseTutorialOff();
+    }
+
+    public void MorseHud(char morse)
+    {
+        callhud.MorseCode(morse);
+    }
+
+    public void ZerarMorse(bool fadeO)
+    {
+        callhud.ZerarMorse(fadeO);
+    }
+    public void VidaHUD()
+    {
+        callhud.VidaPersonagemHUD();
+    }
+
+    public void InstanciateVida()
+    {
+        callhud.InstanciarVida();
+    }
+
+    public void CallGameOver()
+    {
+        callhud.CallGameOver();
+    }
+
 
 
 }

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7132972475241718609}
   - component: {fileID: 3490856810620426720}
   - component: {fileID: 1138197783466032046}
+  - component: {fileID: 5888412226002616927}
   m_Layer: 0
   m_Name: BasicProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +162,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: -2.5, y: 0}
+  speed: 7
   damage: 1
-  lifetime: 1
-  _redHood: {fileID: 0}
+  lifetime: 1.16
+  _shooter: {fileID: 0}
+  __shooterRenderer: {fileID: 0}
+--- !u!50 &5888412226002616927
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127151086835929623}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

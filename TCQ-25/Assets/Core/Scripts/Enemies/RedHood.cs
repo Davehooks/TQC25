@@ -1,6 +1,5 @@
 using System.Collections;
 using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class RedHood : Enemy
@@ -14,19 +13,25 @@ public class RedHood : Enemy
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float checkRadius = 0.1f; //bem baixo para ser preciso
     
-    private bool isFacingRight = false;
+    [SerializeField] private bool isFacingRight = false;
     [SerializeField] private float shootingTime = 0.2f;
     [SerializeField] private GameObject _prefabProjectile;
     [SerializeField] private bool canShoot = true;
     [SerializeField] private bool isShooting = false;
 
+    [Range(-25f, 45f)]public float shootingAngle = 0f;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        
+    }
     //Getter / Setter
     public bool IsFacingRight()
     {
         return isFacingRight;
     }
-
-
+    
 
     //Override methods
     //RedHood vai se mover observando plataformas
@@ -48,15 +53,22 @@ public class RedHood : Enemy
             rb.linearVelocityX = 0;
         }
     }
+    public override void TakeDamage(int amount, GameObject source = null)
+    {
+        animator.SetTrigger("Damage");
+        base.TakeDamage(amount, source);
+    }
+
+
     protected override void OnHitAnimation(int amountDamage, GameObject source)
     {
         base.OnHitAnimation(amountDamage, source);
-        Debug.Log($"{name} foi atingido! Vida atual: {currentHealth}");
     }
 
     protected override void Die()
     {
-        base.Die();
+        animator.SetTrigger("Death");
+        Destroy(gameObject, 1.2f);
         Debug.Log($"{name} morreu!");
     }
 
@@ -68,6 +80,7 @@ public class RedHood : Enemy
         {
             if (canShoot)
                 Atack();
+            animator.SetTrigger("Shoot");
         }
         //checks if the mob sees the border of the tilemap
         if (!Physics2D.Linecast(groundCheck.position, transform.position, groundLayer))
@@ -107,13 +120,40 @@ public class RedHood : Enemy
     //COROUTINES
     public IEnumerator Shooting(float timing)
     {
-        //TODOOOOO
         isShooting = true;
         canShoot = false;
-        Debug.Log("REDHOOD: Instanciei uma bala");
-        Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
+        
+        GameObject projectileObj = Instantiate(_prefabProjectile, weaponPosition.position, Quaternion.identity);
+        Projectile projectile = projectileObj.GetComponent<Projectile>();
+        
+
+        if(projectile != null)
+        {
+            projectile.SetShooter(this);
+        }
+
         yield return new WaitForSeconds(timing);
         isShooting = false;
         canShoot = true;
+    }
+
+
+    public void CantShoot()
+    {
+        this.gameObject.tag = "Untagged";
+        canShoot = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ReflectedProjectile"))
+        {
+            Projectile projectile = collision.gameObject.GetComponent<Projectile>();
+            if (projectile != null)
+            {
+                TakeDamage(projectile.damage, collision.gameObject);
+            }
+            
+        }
     }
 }

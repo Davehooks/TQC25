@@ -38,8 +38,8 @@ public class GameSettingsManager : MonoBehaviour
     private void LoadSettings()
     {
         _isFullScreen = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
-        musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
-        fxVolume = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
+        musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.1f);
+        fxVolume = PlayerPrefs.GetFloat("SFXVolume", 0.1f);
 
         SetFullscreen(_isFullScreen);
         SetMusicVolume(musicVolume);
